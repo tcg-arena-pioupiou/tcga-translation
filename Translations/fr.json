@@ -1,0 +1,12 @@
+{
+  "decks": {
+    "deckbuilder": {
+      "cardSearch": {
+        "currentFilterInfo": {
+          "cardsWithName": "ee",
+          "cardsWithNameAndFilter": "test"
+        }
+      }
+    }
+  }
+}
