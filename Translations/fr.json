@@ -1,11 +1,318 @@
 {
+  "generic": {
+    "cancel": "Annuler"
+  },
+  "navigation": {
+  },
+  "homepage": {
+    "main": {
+    }
+  },
+  "games": {
+    "playerGames": {
+      "empty": {
+      },
+      "delete": {
+      }
+    },
+    "findGames": {
+      "game": {
+      }
+    }
+  },
   "decks": {
+    "playerDecks": {
+      "create": {
+      },
+      "deckbox": {
+        "delete": {
+        }
+      }
+    },
     "deckbuilder": {
+      "categories": {
+      },
+      "deckInfo": {
+        "edit": {
+        },
+        "export": {
+          "standardTab": {
+          },
+          "starterTab": {
+          }
+        },
+        "import": {
+        }
+      },
       "cardSearch": {
+        "filters": {
+          "multiPickers": {
+          }
+        },
         "currentFilterInfo": {
           "cardsWithName": "ee",
           "cardsWithNameAndFilter": "test"
         }
+      },
+      "cardList": {
+        "move": {
+        }
+      },
+      "costCurve": {
+      },
+      "handSimulation": {
+      }
+    },
+    "legality": {
+      "total": {
+        "min": {
+        },
+        "max": {
+        }
+      },
+      "maxPerCard": {
+      },
+      "cardLegality": {
+      },
+      "categoryCardTotal": {
+        "min": {
+        },
+        "max": {
+        }
+      }
+    }
+  },
+  "play": {
+    "generic": {
+      "visible": {
+      },
+      "panelCard": {
+      }
+    },
+    "leftMenuBar": {
+      "endTurn": {
+      },
+      "turnStartPauseToggle": {
+      },
+      "manualModeToggle": {
+      },
+      "eliminationToggle": {
+      },
+      "connect": {
+        "connectTab": {
+          "publicTab": {
+            "hostLobby": {
+              "title": {
+              },
+              "descriptionField": {
+              },
+              "passwordField": {
+              }
+            },
+            "publicLobbies": {
+              "lobby": {
+              }
+            }
+          },
+          "directConnectTab": {
+          },
+          "friendsTab": {
+          },
+          "matchmakingTab": {
+            "hoverInfo": {
+              "info1": {
+              },
+              "info2": {
+              }
+            }
+          }
+        },
+        "playersTab": {
+          "maxPlayers": {
+          },
+          "players": {
+          },
+          "becomeActivePlayer": {
+          }
+        }
+      },
+      "start": {
+        "startPanel": {
+        },
+        "deckPickerPanel": {
+          "yourDecksTab": {
+          },
+          "preconstructedDecksTab": {
+          }
+        },
+        "sideboardPanel": {
+        },
+        "mulliganPanel": {
+        }
+      },
+      "preferences": {
+      },
+      "help": {
+      },
+      "dice": {
+      },
+      "forwardCancel": {
+      },
+      "linksCancel": {
+      },
+      "createTokens": {
+      },
+      "exit": {
+      }
+    },
+    "landing": {
+      "learn": {
+      },
+      "connect": {
+      },
+      "play": {
+      }
+    },
+    "card": {
+      "hover": {
+      },
+      "rightClickMenu": {
+        "toDeck": {
+        }
+      },
+      "rightClickMenuMultiSelect": {
+        "applyTo": {
+        },
+        "toDeckRandom": {
+        }
+      }
+    },
+    "deck": {
+      "hover": {
+      },
+      "rightClickMenu": {
+        "searchPanel": {
+        },
+        "manageTopPanel": {
+        },
+        "drawXPanel": {
+        }
+      }
+    },
+    "discard": {
+      "rightClickMenu": {
+        "generic": {
+        },
+        "discardPanel": {
+        },
+        "removedPanel": {
+        },
+        "removedHiddenPanel": {
+        },
+        "sideboardPanel": {
+        }
+      }
+    },
+    "sectionQuickAction": {
+      "hand": {
+      }
+    },
+    "logs": {
+      "server": {
+        "errors": {
+        },
+        "matchmaking": {
+        }
+      },
+      "game": {
+        "dice": {
+        },
+        "mulligan": {
+          "drawAgainX": {
+          },
+          "putBottomX": {
+          }
+        }
+      },
+      "section": {
+        "toDeckBottomRandom": {
+        },
+        "toDeckBottom": {
+        }
+      },
+      "card": {
+        "multiReveal": {
+        },
+        "multiHide": {
+        },
+        "multiHideFromOpponents": {
+        },
+        "multiHideFromPlayer": {
+        },
+        "multiRevealToPlayer": {
+        },
+        "multiShuffledInto": {
+        },
+        "multiToTop": {
+        },
+        "multiToBottom": {
+        }
+      },
+      "deck": {
+        "allLookedToBottom": {
+        },
+        "lookedAtTopDeck": {
+        },
+        "lookedAtTopDeckAndReorganized": {
+        }
+      },
+      "discard": {
+        "multiShuffleInto": {
+        },
+        "multiToTop": {
+        },
+        "multiToBottom": {
+        },
+        "multiToTopRandomOrder": {
+        },
+        "multiToBottomRandomOrder": {
+        }
+      },
+      "hand": {
+        "toDeckBottom": {
+        }
+      },
+      "player": {
+        "cardMove": {
+          "play": {
+            "from": {
+            }
+          },
+          "playTo": {
+            "from": {
+            }
+          },
+          "hand": {
+            "from": {
+            }
+          },
+          "discard": {
+            "from": {
+            }
+          },
+          "exile": {
+            "from": {
+            }
+          },
+          "exileHidden": {
+            "from": {
+            }
+          }
+        }
+      }
+    },
+    "others": {
+      "connectionStatus": {
       }
     }
   }
