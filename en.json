@@ -1,0 +1,795 @@
+{
+    "generic": {
+        "or": "or",
+        "cancel": "Cancel",
+        "continue": "Continue",
+        "copy": "Copy",
+        "copySuccess": "Copied !",
+        "close": "Close",
+        "search": "Search",
+        "recently": "recently",
+        "select": "Select",
+        "unselect": "Unselect",
+        "disabled": "Disabled",
+        "online": "Online",
+        "offline": "Offline",
+        "refresh": "Refresh",
+        "wait": "Wait"
+    },
+    "navigation": {
+        "games": "Games",
+        "decks": "Decks",
+        "play": "Play",
+        "preferences": "Preferences",
+        "customGames": "Custom games - BETA",
+        "discord": "Discord",
+        "support": "Support",
+        "login": "Login"
+    },
+    "homepage": {
+        "main": {
+            "title": "An easy to use simulator for <b>all your favorite TCGs</b>",
+            "subtitle": "Build decks and play with up to 3 other players."
+        }
+    },
+    "games": {
+        "playerGames": {
+            "title": "Your games",
+            "empty": {
+                "partOne": "You don't have any games yet. To play you need to add games first.",
+                "partTwo": "Add games below."
+            },
+            "delete": {
+                "title": "Delete game",
+                "content": "This action cannot be undone.",
+                "deleteKeepDataButton": "Delete game but keep data",
+                "deleteAllDataButton": "Delete game and all data"
+            }
+        },
+        "findGames": {
+            "title": "Find more games",
+            "game": {
+                "addButton": "Add to your games"
+            }
+        }
+    },
+    "decks": {
+        "playerDecks": {
+            "formatPickerLabel": "Choose format",
+            "create": {
+                "button": "Create deck",
+                "title": "New deck",
+                "nameFieldLabel": "Name",
+                "nameFieldPlaceholder": "Deck name",
+                "formatsPickerLabel": "Formats",
+                "confirmButton": "Create deck"
+            },
+            "deckbox": {
+                "editButton": "Edit deck",
+                "cardCount": "Cards: {{count}}",
+                "lastModifiedTimeAgo": "Last modified",
+                "delete": {
+                    "title": "Delete deck",
+                    "content": "This action cannot be undone.",
+                    "confirmButton": "Delete deck"
+                }
+            },
+            "saveOrderChangeButton": "Save new deck order",
+            "cancelOrderChangeButton": "Cancel new deck order"
+        },
+        "deckbuilder": {
+            "categories": {
+                "sideboard": "Sideboard"
+            },
+            "deckInfo": {
+                "edit": {
+                    "title": "Edit deck",
+                    "confirmButton": "Apply changes"
+                },
+                "createdTimeAgo": "Created",
+                "lastModifiedTimeAgo": "Last modified",
+                "export": {
+                    "button": "Export",
+                    "title": "Export",
+                    "standardTab": {
+                        "title": "Standard"
+                    },
+                    "starterTab": {
+                        "title": "Starter deck",
+                        "info": "ONLY USE THIS IF YOU ARE BUILDING STARTER DECKS FOR YOUR CUSTOM GAME. This is the internal decklists used by the app. Beside from building starter decks, there are no reasons for you to be using this."
+                    }
+                },
+                "import": {
+                    "button": "Import",
+                    "title": "Import",
+                    "cardListPlaceholder": "X Card name",
+                    "importAndAdd": "Import and add",
+                    "importAndReplace": "Import and replace"
+                },
+                "saveButton": "Save",
+                "saveButtonSuccess": "Saved !"
+            },
+            "cardSearch": {
+                "filters": {
+                    "title": "Filters",
+                    "cardType": "type",
+                    "cardName": "Card name",
+                    "multiPickers": {
+                        "exactly": "Exactly",
+                        "including": "Including",
+                        "atMost": "At most"
+                    }
+                },
+                "currentFilterInfo": {
+                    "allCards": "All cards",
+                    "allZ": "allZ",
+                    "cardsWithName": "All cards with {{name}} in their name",
+                    "cardsWithFilter": "All cards with {{filters}}",
+                    "cardsWithNameAndFilter": "All cards with {{name}} in their name and {{filters}}"
+                },
+                "resultsRange": "Results {{start}} to {{end}} of {{total}}"
+            },
+            "cardList": {
+                "cardsTotal": "Total cards",
+                "move": {
+                    "moveTo": "Move to {{name}}",
+                    "removeFrom": "Move to {{name}}",
+                    "one": "one",
+                    "all": "all"
+                }
+            },
+            "costCurve": {
+                "graphXAxis": "Cards by cost",
+                "graphBarHoverInfo": "Cost {{cost}}: {{total}} cards",
+                "averageAndMedian": "The average cost is {{average}}, the median cost is {{median}}."
+            },
+            "handSimulation": {
+                "drawButton": "Draw ({{count}} remaining)",
+                "newHandButton": "New hand"
+            }
+        },
+        "legality": {
+            "deckIsLegal": "deck is legal",
+            "deckIsNotLegal": "deck is not legal",
+            "playerDeckIsLegal": "{{player}}'s deck is legal -> DANS LOGS ??",
+            "playerDeckIsNotLegal": "{{player}}'s deck is not legal",
+            "total": {
+                "min": {
+                    "one": "Deck must have at least {{limit}} card",
+                    "other": "Deck must have at least {{limit}} cards"
+                },
+                "max": {
+                    "one": "Deck can't have more than {{limit}} card",
+                    "other": "Deck can't have more than {{limit}} cards"
+                }
+            },
+            "maxPerCard": {
+                "title": "Too many of the following cards:",
+                "max": "{{card}}: max {{limit}}",
+                "maxForCategory": "{{card}}: max {{limit}} in {{category}}"
+            },
+            "cardLegality": {
+                "title": "The following cards are not allowed in this format:"
+            },
+            "categoryCardTotal": {
+                "title": "Incorrect card totals:",
+                "min": {
+                    "one": "{{category}} need at least {{limit}} card, currently {{current}}",
+                    "other": "{{category}} need at least {{limit}} cards, currently {{current}}"
+                },
+                "max": {
+                    "one": "{{category}} can't have more than {{limit}} card, currently {{current}}",
+                    "other": "{{category}} can't have more than {{limit}} cards, currently {{current}}"
+                }
+            }
+        }
+    },
+    "play": {
+        "generic": {
+            "shuffle": "Shuffle",
+            "top": "Top",
+            "bottom": "Bottom",
+            "shuffled": "Shuffled",
+            "discard": "Discard",
+            "remove": "Remove",
+            "removeHidden": "Remove Hidden",
+            "random": "Random",
+            "show": "Show",
+            "play": "Play",
+            "reveal": "Reveal",
+            "allToHand": "All to hand",
+            "allToDiscard": "All to discard",
+            "allToRemove": "All to remove",
+            "allToRemoveHidden": "All to remove hidden",
+            "visible": {
+                "visibleBy": "Visible by",
+                "topCardVisibleBy": "Top card visibility",
+                "all": "All",
+                "noOne": "No one (face down)",
+                "onlyYou": "Only you",
+                "you": "You",
+                "keepOnDeckChange": "Keep on deck change"
+            },
+            "panelCard": {
+                "toHand": "To hand",
+                "toDiscard": "Discard",
+                "toRemove": "Remove",
+                "toRemoveHidden": "Remove hidden",
+                "toRemoveHiddenCompact": "Hidden",
+                "toDeck": "To deck",
+                "toTop": "To top",
+                "toBottom": "To bottom",
+                "givePlayer": "Give to player",
+                "playAll": "Play all",
+                "toDeckRandomOrder": "To deck (random order)"
+            }
+        },
+        "leftMenuBar": {
+            "turnCount": "Turn",
+            "endTurn": {
+                "hoverInfo": "End your turn (space)"
+            },
+            "turnStartPauseToggle": {
+                "hoverInfo": "Pause before drawing on your next turn. Click again to continue your turn"
+            },
+            "manualModeToggle": {
+                "hoverInfo": "Disable auto untap and draw"
+            },
+            "eliminationToggle": {
+                "hoverInfo": "Toggle eliminated"
+            },
+            "connect": {
+                "hoverInfo": "Connect with other players and manage turn order",
+                "title": "Multiplayer",
+                "closeHostingButton": "Hide lobby and close",
+                "connectTab": {
+                    "button": "Connect",
+                    "title": "Connect with other players",
+                    "browserCompatibilityWarning": "If you have issues connecting with your friends, please make sure that you are all using Chrome or Firefox.",
+                    "gameStartedCantJoin": "A FAIRE",
+                    "publicTab": {
+                        "title": "Public lobbies",
+                        "hostLobby": {
+                            "title": {
+                                "hosting": "Your lobby is now visible to others",
+                                "notHosting": "Host your own lobby"
+                            },
+                            "hostToggle": "Host lobby",
+                            "descriptionField": {
+                                "label": "Description",
+                                "placeholder": "Deck lvl, new player, etc..."
+                            },
+                            "passwordField": {
+                                "label": "Password",
+                                "placeholder": "Optional"
+                            }
+                        },
+                        "publicLobbies": {
+                            "title": "Public lobbies for {{name}}",
+                            "refreshButton": "Refresh lobbies",
+                            "refreshButtonProgress": "Refreshing...",
+                            "empty": "No lobbies found.",
+                            "lobby": {
+                                "noDescription": "No description",
+                                "join": "Join",
+                                "passwordFieldLabel": "Enter password",
+                                "passwordFieldPlaceholder": "Password"
+                            }
+                        }
+                    },
+                    "directConnectTab": {
+                        "title": "Direct connect",
+                        "sendToOtherPlayers": "Send your id to other players",
+                        "enterFromOtherPlayer": "Or enter their id",
+                        "connectButton": "Connect",
+                        "connectButtonProgress": "Connecting..."
+                    },
+                    "friendsTab": {
+                        "title": "Friends",
+                        "subtitle": "Your friends",
+                        "noFriends": "No friends added yet. Add friends via Preferences > Account.",
+                        "inGame": "In game",
+                        "inLobby": "Lobby"
+                    },
+                    "matchmakingTab": {
+                        "title": "Matchmaking",
+                        "button": "Matchmaking",
+                        "inProgress": "Waiting...",
+                        "initialization": "Initialization...",
+                        "hoverInfo": {
+                            "info1": {
+                                "title": "1v1 only."
+                            },
+                            "info2": {
+                                "title": "No skill-based matchmaking.",
+                                "content": "Matches are not determined by player rank, as this app does not track ranking data."
+                            }
+                        }
+                    }
+                },
+                "playersTab": {
+                    "button": "Players and spectators",
+                    "maxPlayers": {
+                        "title": "Max players",
+                        "label": "Limit of players allowed in this room"
+                    },
+                    "players": {
+                        "title": "Players and Turn Order",
+                        "kickButton": "Kick",
+                        "goToSpectators": "Go to spectators",
+                        "leaveSpectators": "Leave spectators"
+                    },
+                    "becomeActivePlayer": {
+                        "label": "End current player turn and become the active player",
+                        "button": "Become active player"
+                    }
+                }
+            },
+            "start": {
+                "hoverInfo": "Start a new game",
+                "startPanel": {
+                    "title": "Start the game",
+                    "subtitle": "Game options",
+                    "optionFormat": "Format",
+                    "optionStartingPlayer": "Starting player",
+                    "restartWarning": "End current game and start a new one.",
+                    "startButton": "Start"
+                },
+                "deckPickerPanel": {
+                    "title": "Deck selection",
+                    "searchFieldPlaceholder": "Deck name",
+                    "yourDecksTab": {
+                        "title": "Your decks",
+                        "description": "Your decks for this format.",
+                        "noDecksAvailable": "You don't have any decks for this format, use preconstructed decks.",
+                        "deckSelectorLabel": "Choose your deck"
+                    },
+                    "preconstructedDecksTab": {
+                        "title": "Preconstructed decks",
+                        "description": "You can play with any preconstructed decks this game offers for this format.",
+                        "noDecksAvailable": "This game has no preconstructed decks.",
+                        "deckSelectorLabel": "Choose your precon"
+                    }
+                },
+                "sideboardPanel": {
+                    "title": "Swap cards with your sideboard",
+                    "swapButton": "Click to swap",
+                    "deckTitle": "Deck",
+                    "sideboardTitle": "Sideboard"
+                },
+                "mulliganPanel": {
+                    "title": "Mulligan",
+                    "keepAndStart": "Keep hand and start",
+                    "putAtBottomAndStart": "Put selected cards to the bottom and start"
+                }
+            },
+            "preferences": {
+                "hoverInfo": "Preferences"
+            },
+            "help": {
+                "hoverInfo": "Help"
+            },
+            "dice": {
+                "hoverInfo": "Roll a dice",
+                "title": "Dice",
+                "info": "Choose a dice to roll",
+                "rolled": "Rolled !"
+            },
+            "forwardCancel": {
+                "hoverInfo": "Cancel all forwards cards"
+            },
+            "linksCancel": {
+                "hoverInfo": "Delete all your card links"
+            },
+            "createTokens": {
+                "hoverInfo": "Create tokens and cards",
+                "title": "Create tokens and cards",
+                "searchFieldPlaceholder": "Token name",
+                "searchCardsToggle": "Search for non token cards",
+                "create": "Create",
+                "created": "Created !",
+                "noTokens": "This game doesn't have any token",
+                "noPreviouslyPicked": "No tokens recently picked. Search a token by name in the top left corner."
+            },
+            "exit": {
+                "hoverInfo": "Exit",
+                "title": "Exit",
+                "content": "Are you sure you want to return to the main menu ? Game progress will be lost.",
+                "button": "Exit"
+            }
+        },
+        "landing": {
+            "learn": {
+                "title": "Learn",
+                "content": "Use the {{image}} button to learn how to use the app and view all available shortcuts."
+            },
+            "connect": {
+                "title": "Connect"
+            },
+            "play": {
+                "title": "Play",
+                "content": "Once all players have joined, use the {{image}} button to start the game."
+            }
+        },
+        "card": {
+            "hover": {
+                "target": "Target",
+                "play": "Play",
+                "groupWith": "Group with",
+                "ping": "Ping",
+                "addToken": "Add token",
+                "forward": "Forward",
+                "hand": "Hand",
+                "addEffect": "Add effect",
+                "invert": "Invert",
+                "hideReveal": "Hide/Reveal",
+                "flip": "Flip",
+                "noFlip": "No flip!",
+                "primaryAdd": "Primary +1",
+                "secondaryAdd": "Secondary +1",
+                "primaryRemove": "Primary -1",
+                "secondaryRemove": "Secondary -1",
+                "ungroup": "Ungroup",
+                "group": "Group",
+                "alreadyGrouped": "Already grouped",
+                "resource": "Resource",
+                "unselect": "Unselect",
+                "select": "Select",
+                "untap": "Untap",
+                "tap": "Tap"
+            },
+            "rightClickMenu": {
+                "toDeck": {
+                    "title": "To Deck",
+                    "xFromTop": "X from top"
+                },
+                "returnToSideboard": "Return to sideboard",
+                "to": "To",
+                "flip": "Flip",
+                "group": "Group",
+                "ungroup": "Ungroup",
+                "duplicate": "Duplicate",
+                "createToken": "Create token",
+                "giveToPlayer": "Give to player",
+                "doesntUntap": "Doesn't untap",
+                "toggleCounter1": "Toggle counter 1",
+                "toggleCounter2": "Toggle counter 2",
+                "editNotes": "Edit notes"
+            },
+            "rightClickMenuMultiSelect": {
+                "applyTo": {
+                    "one": "Apply to {{count}} card",
+                    "other": "Apply to {{count}} cards"
+                },
+                "toDeckRandom": {
+                    "title": "To deck (random order)"
+                },
+                "presentForward": "Present forward",
+                "cancelForward": "Cancel forward",
+                "clearSelection": "Clear selection"
+            }
+        },
+        "deck": {
+            "hover": {
+                "draw": "Draw",
+                "drawBottom": "Draw from bottom",
+                "discard": "Mill",
+                "discardBottom": "Mill bottom",
+                "remove": "Remove",
+                "removeBottom": "Remove bottom",
+                "ressource": "Ressource",
+                "ressourceBottom": "Bottom to ressource",
+                "dropToTop": "Top deck",
+                "dropToBottom": "Bottom deck"
+            },
+            "rightClickMenu": {
+                "searchPanel": {
+                    "button": "Search",
+                    "title": "Search for cards in your deck",
+                    "closeAndShuffle": "Close and shuffle",
+                    "searchFieldLabel": "Search",
+                    "searchFieldPlaceholder": "Card name"
+                },
+                "manageTopPanel": {
+                    "button": "Manage top cards",
+                    "title": "Look and manage the top of your deck",
+                    "cardsCount": "Cards shown",
+                    "showOneMore": "Show one more",
+                    "autoRevealToggle": "Reveal new cards",
+                    "allToBottom": "All randomly at bottom",
+                    "empty": "You are not looking at any card yet"
+                },
+                "giveTopHidden": "Give top hidden",
+                "drawXPanel": {
+                    "button": "Draw X",
+                    "title": "Draw X",
+                    "cardsCountLabel": "Cards to draw",
+                    "destinationLabel": "Destination",
+                    "drawX": "Draw {{count}}"
+                }
+            }
+        },
+        "discard": {
+            "rightClickMenu": {
+                "generic": {
+                    "multiSelectToggle": "Select multiple cards",
+                    "selectAll": "Select all",
+                    "unselectAll": "Unselect all",
+                    "applyToSelection": "Apply to selection"
+                },
+                "discardPanel": {
+                    "button": "Show discard",
+                    "title": "Cards in your discard",
+                    "empty": "Your discard is empty"
+                },
+                "removedPanel": {
+                    "button": "Show removed",
+                    "title": "Cards remove from the game",
+                    "empty": "You don't have any cards removed from the game"
+                },
+                "removedHiddenPanel": {
+                    "button": "Show removed hidden",
+                    "title": "Cards remove from the game and hidden from your opponents",
+                    "empty": "You don't have any cards removed hidden from the game"
+                },
+                "sideboardPanel": {
+                    "button": "Show sideboard",
+                    "title": "Cards in your sideboard",
+                    "empty": "Your sideboard is empty"
+                }
+            }
+        },
+        "sectionQuickAction": {
+            "tapAll": "Tap all",
+            "untapAll": "Untap all",
+            "toHandAll": "To hand all",
+            "revealAllToYou": "Reveal all to you",
+            "revealAll": "Reveal all",
+            "hideAll": "Hide all (faced down)",
+            "allToDeckBottom": "All to deck bottom",
+            "allToDeckBottomRandom": "To deck bottom (random order)",
+            "tapRessource": "Ressource -",
+            "untapRessource": "Ressource +",
+            "hand": {
+                "discardOneRandomly": "Discard one randomly",
+                "hideAll": "Hide all"
+            }
+        },
+        "logs": {
+            "server": {
+                "playerKicked": "{{playerName}} has been kicked",
+                "youKicked": "You have been kicked",
+                "playerJoined": "{{playerName}} joined the lobby",
+                "errors": {
+                    "LOBBY_FULL": "Lobby is already full",
+                    "WRONG_APPVERSION": "The host is playing on a different version of TCGA",
+                    "WRONG_GAME": "The host is playing a different game"
+                },
+                "connectionLostWith": "Connection lost with {{playerName}}",
+                "reconnectedWith": "Reconnection successful with {{playerName}}",
+                "youAreOffline": "You are offline",
+                "connectingWithYourself": "You can't connect with yourself",
+                "cantConnectWith": "No player found with id {{playerId}}",
+                "playerHasLeft": "{{playerName}} has left the lobby",
+                "matchmaking": {
+                    "noOpponentFound": "No opponent found in time"
+                },
+                "joinSpectators": "is now spectating",
+                "leaveSpectators": "left spectators",
+                "changeLobbyPlayerLimit": "changed the players limit to {{limit}}"
+            },
+            "game": {
+                "turnEnded": "{{playerName}} ended their turn",
+                "turnStarted": "{{playerName}} starting turn {{turnCount}}",
+                "tokenLost": "has lost the {{token}} token",
+                "tokenTaken": "has taken the {{token}} token",
+                "hasLost": "is eliminated",
+                "giveCardHidden": "has given a card hidden",
+                "giveCard": "has given {{card}}",
+                "dice": {
+                    "roll": "rolled a {{result}}/{{faces}}",
+                    "flip": "flipped {{result}}",
+                    "heads": "heads",
+                    "tails": "tails"
+                },
+                "mulligan": {
+                    "drawAgainX": {
+                        "one": "mulliganed {{count}} card",
+                        "other": "mulliganed {{count}} cards"
+                    },
+                    "drawAgainHand": "drew a new hand",
+                    "putBottomX": {
+                        "one": "put back {{count}} card to the bottom of their deck",
+                        "other": "put back {{count}} cards to the bottom of their deck"
+                    },
+                    "complete": "has finished taking their mulligan"
+                }
+            },
+            "section": {
+                "hidAll": "hid all cards in {{section}}",
+                "hidAllToOpponent": "hid all cards in {{section}} to other players",
+                "revealedAll": "revealed all cards in {{section}}",
+                "toDeckBottomRandom": {
+                    "one": "Put randomly all {{count}} card from {{section}} to the bottom of their deck",
+                    "other": "Put randomly all {{count}} cards from {{section}} to the bottom of their deck"
+                },
+                "toDeckBottom": {
+                    "one": "Put all {{count}} card from {{section}} to the bottom of their deck in order",
+                    "other": "Put all {{count}} cards from {{section}} to the bottom of their deck in order"
+                }
+            },
+            "card": {
+                "hiddenCardNameReplacement": "a card",
+                "reveal": "revealed {{card}}",
+                "hide": "hid {{card}}",
+                "hideFromOpponents": "hid {{card}} from other players",
+                "hideFromPlayer": "hid {{card}} from {{playerName}}",
+                "revealToPlayer": "hid {{card}} from {{playerName}}",
+                "sendTo": "sent {{card}} to {{section}}",
+                "multiReveal": {
+                    "one": "revealed {{cards}} ({{count}} card)",
+                    "other": "revealed {{cards}} ({{count}} cards)"
+                },
+                "multiHide": {
+                    "one": "hid {{cards}} ({{count}} card)",
+                    "other": "hid {{cards}} ({{count}} cards)"
+                },
+                "multiHideFromOpponents": {
+                    "one": "hid {{cards}} ({{count}} card) from other players",
+                    "other": "hid {{cards}} ({{count}} cards) from other players"
+                },
+                "multiHideFromPlayer": {
+                    "one": "hid {{cards}} ({{count}} card) from {{playerName}}",
+                    "other": "hid {{cards}} ({{count}} cards) from {{playerName}}"
+                },
+                "multiRevealToPlayer": {
+                    "one": "revealed {{cards}} ({{count}} card) to {{playerName}}",
+                    "other": "revealed {{cards}} ({{count}} cards) to {{playerName}}"
+                },
+                "multiShuffledInto": {
+                    "one": "shuffled {{cards}} ({{count}} card) into their {{deck}}",
+                    "other": "shuffled {{cards}} ({{count}} cards) into their {{deck}}"
+                },
+                "multiToTop": {
+                    "one": "sent {{cards}} ({{count}} card) to the top of their {{deck}}",
+                    "other": "sent {{cards}} ({{count}} cards) to the top of their {{deck}}"
+                },
+                "multiToBottom": {
+                    "one": "sent {{cards}} ({{count}} card) to the bottom of their {{deck}}",
+                    "other": "sent {{cards}} ({{count}} cards) to the bottom of their {{deck}}"
+                }
+            },
+            "deck": {
+                "searched": "searched and shuffled their {{deck}}",
+                "shuffled": "shuffled their {{deck}}",
+                "shuffledInto": "shuffled {{card}} into their {{deck}}",
+                "toBottom": "sent {{card}} to the bottom of their {{deck}}",
+                "toTop": "sent {{card}} to the top of their {{deck}}",
+                "xFromTop": "sent {{card}} to their {{deck}} {{x}} from trop",
+                "topCardReveal": "revealed their {{deck}} top card",
+                "topCardRevealToYourself": "looked at their {{deck}} top card",
+                "topCardHideFromPlayer": "hid their {{deck}} top card from {{playerName}}",
+                "topCardRevealToPlayer": "revealed their {{deck}} top card to {{playerName}}",
+                "keepDeckVisibilityEnable": "{{deck}} top card will be hidden on deck change",
+                "keepDeckVisibilityDisable": "{{deck}} top card will keep visibility on deck change",
+                "topCardHidden": "hid their {{deck}} top card",
+                "revealCard": "revealed {{card}} from {{deck}}",
+                "lookedToBottom": "put {{card}} from the top of their {{deck}} to the bottom",
+                "allLookedToBottom": {
+                    "one": "put the looked card to the bottom of their {{deck}} in a random order",
+                    "other": "put all {{count}} looked cards to the bottom of their {{deck}} in a random order"
+                },
+                "lookedAtTopDeck": {
+                    "one": "looked at the top card of their {{deck}}",
+                    "other": "looked at the top {{count}} cards of their {{deck}}"
+                },
+                "lookedAtTopDeckAndReorganized": {
+                    "one": "looked at the top card of their {{deck}} and reorganized it",
+                    "other": "looked at the top {{count}} cards of their {{deck}} and reorganized it"
+                }
+            },
+            "discard": {
+                "multiShuffleInto": {
+                    "one": "shuffled {{cards}} ({{count}} card) into their {{deck}} from {{section}}",
+                    "other": "shuffled {{cards}} ({{count}} cards) into their {{deck}} from {{section}}"
+                },
+                "multiToTop": {
+                    "one": "sent {{cards}} ({{count}} card) to the top of their {{deck}} from {{section}}",
+                    "other": "sent {{cards}} ({{count}} cards) to the top of their {{deck}} from {{section}}"
+                },
+                "multiToBottom": {
+                    "one": "sent {{cards}} ({{count}} card) to the bottom of their {{deck}} from {{section}}",
+                    "other": "sent {{cards}} ({{count}} cards) to the bottom of their {{deck}} from {{section}}"
+                },
+                "multiToTopRandomOrder": {
+                    "one": "sent {{cards}} ({{count}} card) in a random order to the top of their {{deck}} from {{section}}",
+                    "other": "sent {{cards}} ({{count}} cards) in a random order to the top of their {{deck}} from {{section}}"
+                },
+                "multiToBottomRandomOrder": {
+                    "one": "sent {{cards}} ({{count}} card) in a random order to the bottom of their {{deck}} from {{section}}",
+                    "other": "sent {{cards}} ({{count}} cards) in a random order to the bottom of their {{deck}} from {{section}}"
+                },
+                "ping": "pinged {{card}} from {{section}}"
+            },
+            "hand": {
+                "hide": "hid their hand",
+                "reveal": "revealed their hand",
+                "toDeckBottom": {
+                    "one": "put hand ({{count}} card) in a random order to the bottom of their deck",
+                    "other": "put hand ({{count}} cards) in a random order to the bottom of their deck"
+                }
+            },
+            "player": {
+                "counterIncrease": "counter {{counter}} increased by {{difference}} to {{value}}",
+                "counterDecrease": "counter {{counter}} decreased by {{difference}} to {{value}}",
+                "createToken": "created {{card}} token",
+                "draw": "drew {{count}}",
+                "drawFromBottom": "drew {{count}} from the bottom",
+                "drawTo": "drew {{count}} to {{section}}",
+                "drawToFromBottom": "drew {{count}} to {{section}} from the bottom",
+                "cardMove": {
+                    "play": {
+                        "root": "played {{card}}",
+                        "from": {
+                            "hand": "played {{card}} from hand",
+                            "discard": "played {{card}} from discard",
+                            "sideboard": "played {{card}} from sideboard",
+                            "exile": "played {{card}} from exile",
+                            "exileHidden": "played {{card}} from exile face down",
+                            "deck": "played {{card}} from their deck"
+                        }
+                    },
+                    "playTo": {
+                        "root": "played {{card}} to {{section}}",
+                        "from": {
+                            "hand": "played {{card}} from hand to {{section}}",
+                            "discard": "played {{card}} from discard to {{section}}",
+                            "sideboard": "played {{card}} from sideboard to {{section}}",
+                            "exile": "played {{card}} from exile to {{section}}",
+                            "exileHidden": "played {{card}} from exile face down to {{section}}",
+                            "deck": "played {{card}} from their deck to {{section}}"
+                        }
+                    },
+                    "hand": {
+                        "root": "returned {{card}} to hand",
+                        "from": {
+                            "deck": "drew {{card}} from deck",
+                            "deckBottom": "drew {{card}} from the bottom of their deck",
+                            "discard": "returned {{card}} to hand from discard",
+                            "exile": "returned {{card}} to hand from removed",
+                            "exileHidden": "returned {{card}} to hand from removed hidden"
+                        }
+                    },
+                    "discard": {
+                        "root": "discarded {{card}}",
+                        "from": {
+                            "hand": "discarded {{card}} from hand",
+                            "deck": "discarded {{card}} from their deck",
+                            "deckBottom": "discarded {{card}} from the bottom of their deck"
+                        }
+                    },
+                    "exile": {
+                        "root": "removed {{card}}",
+                        "from": {
+                            "deck": "removed {{card}} from their deck",
+                            "deckBottom": "removed {{card}} from the bottom of deck"
+                        }
+                    },
+                    "exileHidden": {
+                        "root": "removed {{card}} face down",
+                        "from": {
+                            "deck": "removed face down {{card}} from their deck",
+                            "deckBottom": "removed face down {{card}} from the bottom of deck"
+                        }
+                    }
+                }
+            }
+        },
+        "others": {
+            "connectionStatus": {
+                "disconnected": "Disconnected",
+                "timeout": "Timeout"
+            }
+        }
+    }
+}
