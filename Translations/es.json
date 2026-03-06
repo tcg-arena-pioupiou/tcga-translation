@@ -1,0 +1,391 @@
+{
+  "generic": {
+    "or": "or",
+    "cancel": "Cancelar",
+    "continue": "Continuar",
+    "copy": "Copiar",
+    "copySuccess": "Copiado !",
+    "close": "Cerrar",
+    "search": "Buscar",
+    "recently": "recientemente",
+    "select": "Seleccionar",
+    "unselect": "Deseleccionar",
+    "disabled": "Deshabilitado",
+    "online": "En línea",
+    "offline": "Desconectado",
+    "refresh": "Actualizar",
+    "wait": "Esperar"
+  },
+  "navigation": {
+    "games": "Juegos",
+    "decks": "Mazos",
+    "play": "Jugar",
+    "preferences": "Opciones",
+    "customGames": "Juegos personalizados (BETA)",
+    "support": "Ayuda",
+    "login": "Iniciar sesión"
+  },
+  "homepage": {
+    "main": {
+      "title": "Un simulador fácil de usar para <b>todos tus TCGs favoritos</b>",
+      "subtitle": "Construye mazos y juega hasta con otros 3 jugadores."
+    }
+  },
+  "games": {
+    "playerGames": {
+      "title": "Tus juegos",
+      "empty": {
+        "partOne": "Aún no tienes juegos. Primero necesitas agregarlo para poder jugarlo. ",
+        "partTwo": "Agrega juegos abajo."
+      },
+      "delete": {
+        "title": "Eliminar juego",
+        "content": "Esta acción no se puede deshacer.",
+        "deleteKeepDataButton": "Eliminar juego, pero mantener datos",
+        "deleteAllDataButton": "Eliminar juego y todos los datos"
+      }
+    },
+    "findGames": {
+      "title": "Encuentra más juegos",
+      "game": {
+        "addButton": "Agregar a tus juegos"
+      }
+    }
+  },
+  "decks": {
+    "playerDecks": {
+      "formatPickerLabel": "Elegir formato",
+      "create": {
+        "button": "Crear mazo",
+        "title": "Nuevo mazo",
+        "nameFieldLabel": "Nombre",
+        "nameFieldPlaceholder": "Nombre del mazo",
+        "formatsPickerLabel": "Formatos",
+        "confirmButton": "Crear mazo"
+      },
+      "deckbox": {
+        "editButton": "Editar mazo",
+        "cardCount": "Cartas: {{count}}",
+        "lastModifiedTimeAgo": "Última modificación",
+        "delete": {
+          "title": "Eliminar mazo",
+          "content": "Esta acción no se puede deshacer.",
+          "confirmButton": "Eliminar mazo"
+        }
+      },
+      "saveOrderChangeButton": "Guardar nuevo orden de mazos",
+      "cancelOrderChangeButton": "Cancelar nuevo orden de mazos"
+    },
+    "deckbuilder": {
+      "categories": {
+      },
+      "deckInfo": {
+        "edit": {
+          "title": "Editar mazo",
+          "confirmButton": "Aplicar cambios"
+        },
+        "createdTimeAgo": "Creado",
+        "lastModifiedTimeAgo": "Última modificación",
+        "export": {
+          "button": "Exportar",
+          "title": "Exportar",
+          "standardTab": {
+            "title": "Normal"
+          },
+          "starterTab": {
+            "title": "Mazo inicial",
+            "info": "SOLO USA ESTO SI ESTÁS CREANDO MAZOS INICIALES PARA TU JUEGO PERSONALIZADO. Esta es la lista interna usada por la app. Aparte de crear mazos iniciales, no hay más razones para usar esto."
+          }
+        },
+        "import": {
+          "button": "Importar",
+          "title": "Importar",
+          "cardListPlaceholder": "X Nombre de la carta",
+          "importAndAdd": "Importar y agregar",
+          "importAndReplace": "Importar y reemplazar"
+        },
+        "saveButton": "Guardar",
+        "saveButtonSuccess": "Guardado !"
+      },
+      "cardSearch": {
+        "filters": {
+          "title": "Filtros",
+          "cardType": "tipo",
+          "cardName": "Nombre de la carta",
+          "multiPickers": {
+            "exactly": "Exactamente",
+            "including": "Incluyendo",
+            "atMost": "Como máximo"
+          }
+        },
+        "currentFilterInfo": {
+          "allCards": "Todas las cartas",
+          "cardsWithName": "Todas las cartas con {{name}} en su nombre",
+          "cardsWithFilter": "Todas las cartas con {{filters}}",
+          "cardsWithNameAndFilter": "Todas las cartas con {{name}} en su nombre y {{filters}}"
+        },
+        "resultsRange": "Resultados {{start}} a {{end}} de {{total}}"
+      },
+      "cardList": {
+        "move": {
+        }
+      },
+      "costCurve": {
+      },
+      "handSimulation": {
+      }
+    },
+    "legality": {
+      "total": {
+        "min": {
+        },
+        "max": {
+        }
+      },
+      "maxPerCard": {
+      },
+      "cardLegality": {
+      },
+      "categoryCardTotal": {
+        "min": {
+        },
+        "max": {
+        }
+      }
+    }
+  },
+  "play": {
+    "generic": {
+      "visible": {
+      },
+      "panelCard": {
+      }
+    },
+    "leftMenuBar": {
+      "endTurn": {
+      },
+      "turnStartPauseToggle": {
+      },
+      "manualModeToggle": {
+      },
+      "eliminationToggle": {
+      },
+      "connect": {
+        "connectTab": {
+          "publicTab": {
+            "hostLobby": {
+              "title": {
+              },
+              "descriptionField": {
+              },
+              "passwordField": {
+              }
+            },
+            "publicLobbies": {
+              "lobby": {
+              }
+            }
+          },
+          "directConnectTab": {
+          },
+          "friendsTab": {
+          },
+          "matchmakingTab": {
+            "hoverInfo": {
+              "info1": {
+              },
+              "info2": {
+              }
+            }
+          }
+        },
+        "playersTab": {
+          "maxPlayers": {
+          },
+          "players": {
+          },
+          "becomeActivePlayer": {
+          }
+        }
+      },
+      "start": {
+        "startPanel": {
+        },
+        "deckPickerPanel": {
+          "yourDecksTab": {
+          },
+          "preconstructedDecksTab": {
+          }
+        },
+        "sideboardPanel": {
+        },
+        "mulliganPanel": {
+        }
+      },
+      "preferences": {
+      },
+      "help": {
+      },
+      "dice": {
+      },
+      "forwardCancel": {
+      },
+      "linksCancel": {
+      },
+      "createTokens": {
+      },
+      "exit": {
+      }
+    },
+    "landing": {
+      "learn": {
+      },
+      "connect": {
+      },
+      "play": {
+      }
+    },
+    "card": {
+      "hover": {
+      },
+      "rightClickMenu": {
+        "toDeck": {
+        }
+      },
+      "rightClickMenuMultiSelect": {
+        "applyTo": {
+        },
+        "toDeckRandom": {
+        }
+      }
+    },
+    "deck": {
+      "hover": {
+      },
+      "rightClickMenu": {
+        "searchPanel": {
+        },
+        "manageTopPanel": {
+        },
+        "drawXPanel": {
+        }
+      }
+    },
+    "discard": {
+      "rightClickMenu": {
+        "generic": {
+        },
+        "discardPanel": {
+        },
+        "removedPanel": {
+        },
+        "removedHiddenPanel": {
+        },
+        "sideboardPanel": {
+        }
+      }
+    },
+    "sectionQuickAction": {
+      "hand": {
+      }
+    },
+    "logs": {
+      "server": {
+        "errors": {
+        },
+        "matchmaking": {
+        }
+      },
+      "game": {
+        "dice": {
+        },
+        "mulligan": {
+          "drawAgainX": {
+          },
+          "putBottomX": {
+          }
+        }
+      },
+      "section": {
+        "toDeckBottomRandom": {
+        },
+        "toDeckBottom": {
+        }
+      },
+      "card": {
+        "multiReveal": {
+        },
+        "multiHide": {
+        },
+        "multiHideFromOpponents": {
+        },
+        "multiHideFromPlayer": {
+        },
+        "multiRevealToPlayer": {
+        },
+        "multiShuffledInto": {
+        },
+        "multiToTop": {
+        },
+        "multiToBottom": {
+        }
+      },
+      "deck": {
+        "allLookedToBottom": {
+        },
+        "lookedAtTopDeck": {
+        },
+        "lookedAtTopDeckAndReorganized": {
+        }
+      },
+      "discard": {
+        "multiShuffleInto": {
+        },
+        "multiToTop": {
+        },
+        "multiToBottom": {
+        },
+        "multiToTopRandomOrder": {
+        },
+        "multiToBottomRandomOrder": {
+        }
+      },
+      "hand": {
+        "toDeckBottom": {
+        }
+      },
+      "player": {
+        "cardMove": {
+          "play": {
+            "from": {
+            }
+          },
+          "playTo": {
+            "from": {
+            }
+          },
+          "hand": {
+            "from": {
+            }
+          },
+          "discard": {
+            "from": {
+            }
+          },
+          "exile": {
+            "from": {
+            }
+          },
+          "exileHidden": {
+            "from": {
+            }
+          }
+        }
+      }
+    },
+    "others": {
+      "connectionStatus": {
+      }
+    }
+  }
+}
