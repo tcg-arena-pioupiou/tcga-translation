@@ -1,3 +1,3 @@
-# tcga-translation
+# TCG Arena - Translation
 
 Hello there
