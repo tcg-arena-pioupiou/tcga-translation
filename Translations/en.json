@@ -14,7 +14,9 @@
         "online": "Online",
         "offline": "Offline",
         "refresh": "Refresh",
-        "wait": "Wait"
+        "wait": "Wait",
+        "applyChanges": "Apply changes",
+        "applyChangesSuccess": "Applied!"
     },
     "navigation": {
         "games": "Games",
@@ -49,7 +51,8 @@
         "findGames": {
             "title": "Find more games",
             "game": {
-                "addButton": "Add to your games"
+                "addButton": "Add to your games",
+                "manageBy": "Mod managed by {{author}}"
             }
         }
     },
@@ -67,7 +70,6 @@
             "deckbox": {
                 "editButton": "Edit deck",
                 "cardCount": "Cards: {{count}}",
-                "lastModifiedTimeAgo": "Last modified",
                 "delete": {
                     "title": "Delete deck",
                     "content": "This action cannot be undone.",
@@ -83,11 +85,10 @@
             },
             "deckInfo": {
                 "edit": {
-                    "title": "Edit deck",
-                    "confirmButton": "Apply changes"
+                    "title": "Edit deck"
                 },
-                "createdTimeAgo": "Created",
-                "lastModifiedTimeAgo": "Last modified",
+                "createdTimeAgo": "Created {{time}}",
+                "lastModifiedTimeAgo": "Last modified {{time}}",
                 "export": {
                     "button": "Export",
                     "title": "Export",
@@ -122,7 +123,6 @@
                 },
                 "currentFilterInfo": {
                     "allCards": "All cards",
-                    "allZ": "allZ",
                     "cardsWithName": "All cards with {{name}} in their name",
                     "cardsWithFilter": "All cards with {{filters}}",
                     "cardsWithNameAndFilter": "All cards with {{name}} in their name and {{filters}}"
@@ -272,6 +272,7 @@
                             "lobby": {
                                 "noDescription": "No description",
                                 "join": "Join",
+                                "createdAt": "Created {{time}}",
                                 "passwordFieldLabel": "Enter password",
                                 "passwordFieldPlaceholder": "Password"
                             }
@@ -282,7 +283,8 @@
                         "sendToOtherPlayers": "Send your id to other players",
                         "enterFromOtherPlayer": "Or enter their id",
                         "connectButton": "Connect",
-                        "connectButtonProgress": "Connecting..."
+                        "connectButtonProgress": "Connecting...",
+                        "spectateButton": "Spectate"
                     },
                     "friendsTab": {
                         "title": "Friends",
@@ -315,7 +317,17 @@
                     },
                     "players": {
                         "title": "Players and Turn Order",
+                        "header": {
+                            "name": "Name",
+                            "ping": "Ping",
+                            "turnOrder": "Turn order"
+                        },
                         "kickButton": "Kick",
+                        "blockButton": {
+                            "default": "Block player",
+                            "blocked": "Blocked",
+                            "loggedOut": "Login to block"
+                        },
                         "goToSpectators": "Go to spectators",
                         "leaveSpectators": "Leave spectators"
                     },
@@ -329,9 +341,12 @@
                 "hoverInfo": "Start a new game",
                 "startPanel": {
                     "title": "Start the game",
-                    "subtitle": "Game options",
-                    "optionFormat": "Format",
-                    "optionStartingPlayer": "Starting player",
+                    "option": {
+                        "title": "Game options",
+                        "format": "Format",
+                        "startingPlayer": "Starting player",
+                        "disableSideboard": "Disable sideboard for all players"
+                    },
                     "restartWarning": "End current game and start a new one.",
                     "startButton": "Start"
                 },
@@ -355,7 +370,9 @@
                     "title": "Swap cards with your sideboard",
                     "swapButton": "Click to swap",
                     "deckTitle": "Deck",
-                    "sideboardTitle": "Sideboard"
+                    "sideboardTitle": "Sideboard",
+                    "sideboardDisabled": "Disabled for all players by the host",
+                    "cancelChanges": "Reset sideboard"
                 },
                 "mulliganPanel": {
                     "title": "Mulligan",
@@ -367,7 +384,15 @@
                 "hoverInfo": "Preferences"
             },
             "help": {
-                "hoverInfo": "Help"
+                "hoverInfo": "Help",
+                "shortucut": {
+                    "general": {
+
+                    },
+                    "cards": {
+
+                    }
+                }
             },
             "dice": {
                 "hoverInfo": "Roll a dice",
@@ -785,10 +810,209 @@
                 }
             }
         },
+        "playerCounter": {
+            "notesPlaceholder": "Notes...",
+            "token": {
+                "take": "Take {{token}}",
+                "remove": "Remove {{token}}"
+            },
+            "linkToPlayer": "Link to player"
+        },
         "others": {
             "connectionStatus": {
                 "disconnected": "Disconnected",
                 "timeout": "Timeout"
+            },
+            "logsSection": {
+                "chat": {
+                    "sendMessagePlaceholder": "Chat..."
+                }
+            }
+        }
+    },
+    "preferences": {
+        "options": {
+            "title": "Options",
+            "gameplay": {
+                "title": "Gameplay",
+                "visiblePlayArea": {
+                    "label": "Keep card play areas visible at all time"
+                },
+                "autopayRessources": {
+                    "label": "Auto pay resource cost when playing cards"
+                },
+                "focusedCardSize": {
+                    "label": "Focused card size",
+                    "values": {
+                        "None": "None",
+                        "Default": "Default",
+                        "Bigger": "Bigger",
+                        "Huge": "Huge"
+                    }
+                },
+                "autoPlayToStack": {
+                    "label": "Auto play from hand always go to the pile"
+                },
+                "zoomOnActivePlayer": {
+                    "label": "Zoom on current player's board on each new turn"
+                },
+                "allowCardReplacements": {
+                    "label": "See yours and your opponents card replacements"
+                },
+                "hideOpponentPlaymats": {
+                    "label": "Hide opponent's playmats"
+                }
+            },
+            "game": {
+                "title": "Game",
+                "uiLanguage": {
+                    "label": "Preferred UI language"
+                },
+                "gameLanguage": {
+                    "label": "Preferred game language (when available)"
+                },
+                "tappedRotation": {
+                    "label": "Override game's tapped card rotation"
+                }
+            },
+            "connectivity": {
+                "title": "Connectivity",
+                "useSafeMode": {
+                    "label": "Use Safe Connectivity mode"
+                },
+                "preferredServer": {
+                    "label": "Preferred server"
+                }
+            }, 
+            "others": {
+                "title": "Others",
+                "debugMode": {
+                    "label": "Activate debug mode"
+                }
+            },
+            "generic": {
+                "leavePlayToApply": "return to the main menu and press play again"
+            }
+        },
+        "profile": {
+            "title": "Profile",
+            "username": {
+                "title": "Username"
+            },
+            "avatar": {
+                "title": "Avatar",
+                "content": "Your avatar will be displayed next to your counters. For a better look, try to find a squared image.",
+                "noAvatar": "No avatar"
+            },
+            "reactions": {
+                "title": "Reactions",
+                "content": "Select 7 emojis to quickly react in game. You'll find them near the chat. The first one can be sent quickly by pressing Enter."
+            }
+        },
+        "playmat": {
+            "title": "Playmat",
+            "current": {
+                "title": "Current playmat"
+            },
+            "previous": {
+                "title": "Previous playmats",
+                "noPreviousPlaymats": "You don't have any previously used playmat."
+            },
+            "custom": {
+                "title": "Custom playmat",
+                "content": "To ensure that the playmat will look great on your board, try to find a 16:9 image with a resolution of at least 1080p.",
+                "invalidURL": "Invalid URL"
+            },
+            "defaults": {
+                "title": "Default playmats for {{game}}",
+                "applyColor": "Apply color"
+            }
+        },
+        "account": {
+            "title": "Account",
+            "loggedOut": "You need to be logged in."
+        },
+        "sleeves": {
+            "title": "Sleeves"
+        },
+        "imageReplacement": {
+            "title": "Image replacement"
+        },
+        "generic": {
+            "inPlayLocked": "Return to the main menu to change this setting.",
+            "imageUrl": "Image web link..."
+        }
+    },
+    "login": {
+        "signIn": {
+            "title": "Login",
+            "buttonLabel": "Login",
+            "buttonLabelProgress": "Logging in...",
+            "bottomTextSignUp": {
+                "content": "No account?",
+                "link": "Sign up"
+            },
+            "bottomTextResetPassword": {
+                "link": "Forgot password?"
+            }
+        },
+        "signUp": {
+            "title": "Sign Up",
+            "buttonLabel": "Sign Up",
+            "buttonLabelProgress": "Signing Up...",
+            "bottomTextSignIn": {
+                "content": "Already have an account?",
+                "link": "Log in"
+            },
+            "emailVerification": {
+                "info": "Nothing? (check your spams)",
+                "buttonLabel": "Send another mail",
+                "buttonLabelSuccess": "Sent!",
+                "error": "Error while sending."
+            },
+            "success": "Account created! A verification email has been sent. Please check your email."
+        },
+        "resetPassword": {
+            "title": "Reset Password",
+            "buttonLabel": "Send Reset Link",
+            "buttonLabelProgress": "Sending...",
+            "bottomText": {
+                "content": "No account?",
+                "link": "Sign up"
+            },
+            "bottomTextSignIn": {
+                "content": "Remembered your password?",
+                "link": "Log in"
+            },
+            "success": "Reset email sent. Check your inbox."
+        },
+        "generic": {
+            "email": {
+                "title": "Email",
+                "placeholder": "Enter email"
+            },
+            "password": {
+                "title": "Password",
+                "placeholder": "Password"
+            },
+            "confirmPassword": {
+                "title": "Confirm Password",
+                "placeholder": "Confirm password"
+            }
+        },
+        "error": {
+            "unverifiedLogin": "Please verify your email address before logging in.",
+            "differentPasswords": "The passwords do not match."
+        },
+        "info": {
+            "title": "Why create an account?",
+            "feature": {
+                "feature1": "Save your decks online",
+                "feature2": "Access your decks and preferences on all your devices"
+            },
+            "warning": {
+                "warning1": "Accounts are not required to use the app!",
+                "warning2": "Make sure to use the same mail on KoFi to get your supporter rewards"
             }
         }
     }
