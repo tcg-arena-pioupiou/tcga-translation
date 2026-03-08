@@ -151,7 +151,7 @@
         "legality": {
             "deckIsLegal": "deck is legal",
             "deckIsNotLegal": "deck is not legal",
-            "playerDeckIsLegal": "{{player}}'s deck is legal -> DANS LOGS ??",
+            "playerDeckIsLegal": "{{player}}'s deck is legal",
             "playerDeckIsNotLegal": "{{player}}'s deck is not legal",
             "total": {
                 "min": {
@@ -246,7 +246,7 @@
                     "button": "Connect",
                     "title": "Connect with other players",
                     "browserCompatibilityWarning": "If you have issues connecting with your friends, please make sure that you are all using Chrome or Firefox.",
-                    "gameStartedCantJoin": "A FAIRE",
+                    "gameStartedCantJoin": "Game has already started, you can't join other players. But other players can still join you.",
                     "publicTab": {
                         "title": "Public lobbies",
                         "hostLobby": {
@@ -479,7 +479,9 @@
                 "doesntUntap": "Doesn't untap",
                 "toggleCounter1": "Toggle counter 1",
                 "toggleCounter2": "Toggle counter 2",
-                "editNotes": "Edit notes"
+                "editNotes": "Edit notes",
+                "hide": "Hide",
+                "reveal": "Reveal"
             },
             "rightClickMenuMultiSelect": {
                 "applyTo": {
@@ -492,6 +494,13 @@
                 "presentForward": "Present forward",
                 "cancelForward": "Cancel forward",
                 "clearSelection": "Clear selection"
+            },
+            "warning": {
+                "title": "Warning",
+                "handVisibleByOpponents": "Currently visible to your opponents",
+                "boardVisiblePlayerOnly": "Only visible to you",
+                "cardNotLegal": "Illegal in this format",
+                "cardUnreleased": "Unreleased"
             }
         },
         "deck": {
@@ -649,7 +658,7 @@
                 "hide": "hid {{card}}",
                 "hideFromOpponents": "hid {{card}} from other players",
                 "hideFromPlayer": "hid {{card}} from {{playerName}}",
-                "revealToPlayer": "hid {{card}} from {{playerName}}",
+                "revealToPlayer": "reveal {{card}} to {{playerName}}",
                 "sendTo": "sent {{card}} to {{section}}",
                 "multiReveal": {
                     "one": "revealed {{cards}} ({{count}} card)",
