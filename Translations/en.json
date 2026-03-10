@@ -645,12 +645,12 @@
                 "hidAllToOpponent": "hid all cards in {{section}} to other players",
                 "revealedAll": "revealed all cards in {{section}}",
                 "toDeckBottomRandom": {
-                    "one": "Put randomly all {{count}} card from {{section}} to the bottom of their deck",
-                    "other": "Put randomly all {{count}} cards from {{section}} to the bottom of their deck"
+                    "one": "put randomly all {{count}} card from {{section}} to the bottom of their deck",
+                    "other": "put randomly all {{count}} cards from {{section}} to the bottom of their deck"
                 },
                 "toDeckBottom": {
-                    "one": "Put all {{count}} card from {{section}} to the bottom of their deck in order",
-                    "other": "Put all {{count}} cards from {{section}} to the bottom of their deck in order"
+                    "one": "put all {{count}} card from {{section}} to the bottom of their deck in order",
+                    "other": "put all {{count}} cards from {{section}} to the bottom of their deck in order"
                 }
             },
             "card": {
