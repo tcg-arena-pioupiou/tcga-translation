@@ -348,7 +348,8 @@
                         "disableSideboard": "Disable sideboard for all players"
                     },
                     "restartWarning": "End current game and start a new one.",
-                    "startButton": "Start"
+                    "startButton": "Start",
+                    "restartButton": "Restart with the same decks"
                 },
                 "deckPickerPanel": {
                     "title": "Deck selection",
@@ -398,7 +399,7 @@
                 "hoverInfo": "Roll a dice",
                 "title": "Dice",
                 "info": "Choose a dice to roll",
-                "rolled": "Rolled !"
+                "rolled": "Rolled!"
             },
             "forwardCancel": {
                 "hoverInfo": "Cancel all forwards cards"
@@ -497,7 +498,7 @@
             },
             "warning": {
                 "title": "Warning",
-                "handVisibleByOpponents": "Currently visible to your opponents",
+                "handVisibleByOpponents": "Visible to your opponents",
                 "boardVisiblePlayerOnly": "Only visible to you",
                 "cardNotLegal": "Illegal in this format",
                 "cardUnreleased": "Unreleased"
@@ -608,8 +609,8 @@
                 "matchmaking": {
                     "noOpponentFound": "No opponent found in time"
                 },
-                "joinSpectators": "is now spectating",
-                "leaveSpectators": "left spectators",
+                "joinSpectators": "{{playerName}} is now spectating",
+                "leaveSpectators": "{{playerName}} stopped spectating",
                 "changeLobbyPlayerLimit": "changed the players limit to {{limit}}"
             },
             "game": {
@@ -768,8 +769,8 @@
                             "hand": "played {{card}} from hand",
                             "discard": "played {{card}} from discard",
                             "sideboard": "played {{card}} from sideboard",
-                            "exile": "played {{card}} from exile",
-                            "exileHidden": "played {{card}} from exile face down",
+                            "exile": "played {{card}} from removed",
+                            "exileHidden": "played {{card}} from removed face down",
                             "deck": "played {{card}} from their deck"
                         }
                     },
@@ -779,8 +780,8 @@
                             "hand": "played {{card}} from hand to {{section}}",
                             "discard": "played {{card}} from discard to {{section}}",
                             "sideboard": "played {{card}} from sideboard to {{section}}",
-                            "exile": "played {{card}} from exile to {{section}}",
-                            "exileHidden": "played {{card}} from exile face down to {{section}}",
+                            "exile": "played {{card}} from removed to {{section}}",
+                            "exileHidden": "played {{card}} from removed face down to {{section}}",
                             "deck": "played {{card}} from their deck to {{section}}"
                         }
                     },
@@ -870,6 +871,9 @@
                 },
                 "hideOpponentPlaymats": {
                     "label": "Hide opponent's playmats"
+                },
+                "showHiddenCardsToSpecs": {
+                    "label": "Show hidden cards to spectators (requires all players' consent)"
                 }
             },
             "game": {
