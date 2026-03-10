@@ -428,7 +428,6 @@
         "content": "Utilisez le bouton {{image}} pour apprendre à utiliser l'application et voir tous les raccourcis disponibles."
       },
       "connect": {
-        "title": "Connection"
       },
       "play": {
         "title": "Jouer",
@@ -887,7 +886,7 @@
         }
       },
       "connectivity": {
-        "title": "Connection",
+        "title": "Connexion",
         "useSafeMode": {
           "label": "Utiliser le mode de connexion stable"
         },
