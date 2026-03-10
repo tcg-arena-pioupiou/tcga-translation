@@ -428,6 +428,7 @@
         "content": "Utilisez le bouton {{image}} pour apprendre à utiliser l'application et voir tous les raccourcis disponibles."
       },
       "connect": {
+        "title": "Connexion"
       },
       "play": {
         "title": "Jouer",
