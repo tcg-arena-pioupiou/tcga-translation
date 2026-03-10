@@ -348,7 +348,8 @@
             "disableSideboard": "Désactiver la réserver pour tous les joueurs"
           },
           "restartWarning": "Mettre fin à la partie en cours et en commencer une nouvelle.",
-          "startButton": "Commencer"
+          "startButton": "Commencer",
+          "restartButton": "Rejouer avec les mêmes decks"
         },
         "deckPickerPanel": {
           "title": "Sélection du deck",
@@ -396,7 +397,7 @@
         "hoverInfo": "Lancer un dé",
         "title": "Dé",
         "info": "Choisissez un dé à lancer",
-        "rolled": "Résultat !"
+        "rolled": "Lancé !"
       },
       "forwardCancel": {
         "hoverInfo": "Annuler toutes les cartes avancées"
@@ -606,8 +607,8 @@
         "matchmaking": {
           "noOpponentFound": "Aucun adversaire trouvé dans les temps"
         },
-        "joinSpectators": "a rejoins les spectateurs",
-        "leaveSpectators": "a quitté les spectateurs",
+        "joinSpectators": "{{playerName}} est maintenant spectateur",
+        "leaveSpectators": "{{playerName}} n'est plus spectateur",
         "changeLobbyPlayerLimit": "a changé la limite du nombre de joueurs à {{limit}}"
       },
       "game": {
@@ -642,8 +643,12 @@
         "hidAllToOpponent": "a caché toutes les cartes de {{section}} à ses adversaires",
         "revealedAll": "a révélé toutes les cartes de {{section}}",
         "toDeckBottomRandom": {
+          "one": "a mis dans un ordre aléatoire {{count}} carte depuis {{section}} en dessous de son deck",
+          "other": "a mis dans un ordre aléatoire {{count}} cartes depuis {{section}} en dessous de son deck"
         },
         "toDeckBottom": {
+          "one": "a mis {{count}} carte depuis {{section}} en dessous de son deck tout en conservant l'ordre",
+          "other": "a mis {{count}} cartes depuis {{section}} en dessous de son deck tout en conservant l'ordre"
         }
       },
       "card": {
@@ -693,6 +698,7 @@
         "shuffledInto": "a mélangé {{card}} dans son {{deck}}",
         "toBottom": "a mis {{card}} en dessous de son {{deck}}",
         "toTop": "a mis {{card}} en dessus de son deck {{deck}}",
+        "xFromTop": "a mis {{card}} au-dessus {{deck}} en position {{x}}",
         "topCardReveal": "a révélé la carte du dessus de son {{deck}}",
         "topCardRevealToYourself": "a regardé la carte du dessus de son {{deck}}",
         "topCardHideFromPlayer": "a caché la carte de dessus de son {{deck}} à {{playerName}}",
@@ -863,6 +869,9 @@
         },
         "hideOpponentPlaymats": {
           "label": "Masquer les tapis de jeu adverses"
+        },
+        "showHiddenCardsToSpecs": {
+          "label": "Montrer des cartes cachées aux spectateurs (nécessite le consentement de tous les joueurs)"
         }
       },
       "game": {
@@ -893,6 +902,7 @@
         }
       },
       "generic": {
+        "leavePlayToApply": "retournez au menu principal et appuyez à nouveau sur jouer"
       }
     },
     "profile": {
