@@ -1,7 +1,6 @@
 {
   "generic": {
     "or": "ou",
-    "cancel": "Annuler",
     "continue": "Continuer",
     "copy": "Copier",
     "copySuccess": "Copié !",
@@ -9,14 +8,7 @@
     "search": "Rechercher",
     "recently": "récemment",
     "select": "Sélectionner",
-    "unselect": "Désélectionner",
-    "disabled": "Désactivé",
-    "online": "En ligne",
-    "offline": "Hors ligne",
-    "refresh": "Actualiser",
-    "wait": "Attendez",
-    "applyChanges": "Appliquer les changements",
-    "applyChangesSuccess": "Appliqué !"
+    "unselect": "Désélectionner"
   },
   "navigation": {
     "games": "Jeux",
@@ -38,8 +30,6 @@
     "playerGames": {
       "title": "Vos jeux",
       "empty": {
-        "partOne": "Vous n'avez encore aucune jeux. Pour jouer, vous devez d'abord en ajouter.",
-        "partTwo": "Ajoutez un jeu ci-dessous."
       },
       "delete": {
         "title": "Supprimer le jeu",
@@ -51,8 +41,7 @@
     "findGames": {
       "title": "Trouver d'autres jeux",
       "game": {
-        "addButton": "Ajouter à vos jeux",
-        "manageBy": "Mod géré par {{author}}"
+        "addButton": "Ajouter à vos jeux"
       }
     }
   },
@@ -87,8 +76,6 @@
         "edit": {
           "title": "Modifier le deck"
         },
-        "createdTimeAgo": "Créé {{time}}",
-        "lastModifiedTimeAgo": "Modifié {{time}}",
         "export": {
           "button": "Exporter",
           "title": "Exporter",
@@ -149,37 +136,20 @@
       }
     },
     "legality": {
-      "deckIsLegal": "le deck est légal",
-      "deckIsNotLegal": "le deck est légal",
-      "playerDeckIsLegal": "le deck de {{player}} est légal",
-      "playerDeckIsNotLegal": "le deck de {{player}} n'est pas légal",
       "total": {
         "min": {
-          "one": "Votre deck doit avoir au moins {{limit}} carte",
-          "other": "Votre deck doit avoir au moins {{limit}} cartes"
         },
         "max": {
-          "one": "Votre deck ne peut avoir plus de {{limit}} carte",
-          "other": "Votre deck ne peut avoir plus de {{limit}} cartes"
         }
       },
       "maxPerCard": {
-        "title": "Vous avez trop d'exemplaires des cartes suivantes :",
-        "max": "{{card}} : max {{limit}}",
-        "maxForCategory": "{{card}} : max {{limit}} dans {{category}}"
       },
       "cardLegality": {
-        "title": "Les cartes suivantes ne sont pas autorisées dans ce format :"
       },
       "categoryCardTotal": {
-        "title": "Total de cartes incorrects :",
         "min": {
-          "one": "{{category}} nécessite au moins {{limit}} carte, actuellement {{current}}",
-          "other": "{{category}} nécessite au moins {{limit}} cartes, actuellement {{current}}"
         },
         "max": {
-          "one": "{{category}} ne peut pas avoir plus de {{limit}} carte, actuellement {{current}}",
-          "other": "{{category}} ne peut pas avoir plus de {{limit}} cartes, actuellement {{current}}"
         }
       }
     }
@@ -246,7 +216,6 @@
           "button": "Connexion",
           "title": "Se connecter avec d’autres joueurs",
           "browserCompatibilityWarning": "Si vous avez des problèmes, utilisez Chrome ou Firefox.",
-          "gameStartedCantJoin": "La partie a déjà commencé. Vous ne pouvez plus rejoindre d'autres joueurs, mais ils peuvent encore vous rejoindre.",
           "publicTab": {
             "title": "Salons publics",
             "hostLobby": {
@@ -272,7 +241,6 @@
               "lobby": {
                 "noDescription": "Aucune description",
                 "join": "Rejoindre",
-                "createdAt": "Créé {{time}}",
                 "passwordFieldLabel": "Mot de passe",
                 "passwordFieldPlaceholder": "Mot de passe"
               }
@@ -283,15 +251,9 @@
             "sendToOtherPlayers": "Envoyez votre ID aux autres joueurs",
             "enterFromOtherPlayer": "Ou entrez leur ID",
             "connectButton": "Connexion",
-            "connectButtonProgress": "Connexion...",
-            "spectateButton": "Observer"
+            "connectButtonProgress": "Connexion..."
           },
           "friendsTab": {
-            "title": "Amis",
-            "subtitle": "Vos amis",
-            "noFriends": "Vous n'avez pas encore ajouté d'amis. Ajoutez des amis dans Préférences > Compte.",
-            "inGame": "En jeu",
-            "inLobby": "Salons"
           },
           "matchmakingTab": {
             "title": "Matchmaking",
@@ -303,8 +265,7 @@
                 "title": "1v1 uniquement."
               },
               "info2": {
-                "title": "Aucun matchmaking basé sur votre niveau de jeu.",
-                "content": "Les parties ne sont pas déterminées par un rang, car l’application ne stocke pas ces données."
+                "title": "Aucun matchmaking basé sur votre niveau de jeu."
               }
             }
           }
@@ -318,15 +279,9 @@
           "players": {
             "title": "Joueurs et Ordre de tour",
             "header": {
-              "name": "Nom",
-              "ping": "Ping",
-              "turnOrder": "Ordre de tour"
             },
             "kickButton": "Expulser",
             "blockButton": {
-              "default": "Bloquer le joueur",
-              "blocked": "Bloqué",
-              "loggedOut": "Connectez vous pour bloquer"
             },
             "goToSpectators": "Passer en spectateur",
             "leaveSpectators": "Quitter le mode spectateur"
@@ -342,18 +297,12 @@
         "startPanel": {
           "title": "Démarrer la partie",
           "option": {
-            "title": "Paramètres de la partie",
-            "format": "Format",
-            "startingPlayer": "Premier joueur",
-            "disableSideboard": "Désactiver la réserver pour tous les joueurs"
           },
           "restartWarning": "Mettre fin à la partie en cours et en commencer une nouvelle.",
-          "startButton": "Commencer",
-          "restartButton": "Rejouer avec les mêmes decks"
+          "startButton": "Commencer"
         },
         "deckPickerPanel": {
           "title": "Sélection du deck",
-          "searchFieldPlaceholder": "Nom du deck",
           "yourDecksTab": {
             "title": "Vos decks",
             "description": "Vos decks pour ce format.",
@@ -371,9 +320,7 @@
           "title": "Échanger des cartes avec votre réserve",
           "swapButton": "Cliquez pour échanger",
           "deckTitle": "Deck",
-          "sideboardTitle": "Réserve",
-          "sideboardDisabled": "Désactivé pour tous les joueurs par l'hôte",
-          "cancelChanges": "Réinitialiser la réserve"
+          "sideboardTitle": "Réserve"
         },
         "mulliganPanel": {
           "title": "Mulligan",
@@ -396,8 +343,7 @@
       "dice": {
         "hoverInfo": "Lancer un dé",
         "title": "Dé",
-        "info": "Choisissez un dé à lancer",
-        "rolled": "Lancé !"
+        "info": "Choisissez un dé à lancer"
       },
       "forwardCancel": {
         "hoverInfo": "Annuler toutes les cartes avancées"
@@ -478,9 +424,7 @@
         "doesntUntap": "Ne se dégage pas",
         "toggleCounter1": "Activer/Désactiver compteur 1",
         "toggleCounter2": "Activer/Désactiver compteur 2",
-        "editNotes": "Éditer les notes",
-        "hide": "Cacher",
-        "reveal": "Révéler"
+        "editNotes": "Éditer les notes"
       },
       "rightClickMenuMultiSelect": {
         "applyTo": {
@@ -495,11 +439,6 @@
         "clearSelection": "Annuler la sélection"
       },
       "warning": {
-        "title": "Attention",
-        "handVisibleByOpponents": "Visible par vos adversaires",
-        "boardVisiblePlayerOnly": "Seulement visible par vous",
-        "cardNotLegal": "Illégal dans ce format",
-        "cardUnreleased": "Pas encore sortie"
       }
     },
     "deck": {
@@ -590,440 +529,214 @@
     },
     "logs": {
       "server": {
-        "playerKicked": "{{playerName}} a été expulsé",
-        "youKicked": "Vous avez été expulsé",
-        "playerJoined": "{{playerName}} à rejoins le salon",
         "errors": {
-          "LOBBY_FULL": "Le salon est pleins",
-          "WRONG_APPVERSION": "L'hôte joue sur une version différente de TCGA",
-          "WRONG_GAME": "L'hôte joue à un jeu différent"
         },
-        "connectionLostWith": "Connexion perdue avec {{playerName}}",
-        "reconnectedWith": "Reconnexion réussie avec {{playerName}}",
-        "youAreOffline": "Vous êtes hors ligne",
-        "connectingWithYourself": "Vous ne pouvez pas vous connecter avec vous-mêmes",
-        "cantConnectWith": "Aucun joueur trouvé avec l'id {{playerId}}",
-        "playerHasLeft": "{{playerName}} a quitté le salon",
         "matchmaking": {
-          "noOpponentFound": "Aucun adversaire trouvé dans les temps"
-        },
-        "joinSpectators": "{{playerName}} est maintenant spectateur",
-        "leaveSpectators": "{{playerName}} n'est plus spectateur",
-        "changeLobbyPlayerLimit": "a changé la limite du nombre de joueurs à {{limit}}"
+        }
       },
       "game": {
-        "turnEnded": "{{playerName}} a finis son tour",
-        "turnStarted": "{{playerName}} commence son tour {{turnCount}}",
-        "tokenLost": "a perdu le jeton {{token}}",
-        "tokenTaken": "a pris le jeton {{token}}",
-        "hasLost": "est éliminé",
-        "giveCardHidden": "a donné une carte face cachée",
-        "giveCard": "a donné {{card}}",
         "dice": {
-          "roll": "a obtenu un {{result}}/{{faces}}",
-          "flip": "a obtenu {{result}}",
-          "heads": "pile",
-          "tails": "face"
         },
         "mulligan": {
           "drawAgainX": {
-            "one": "a mulligan {{count}} carte",
-            "other": "a mulligan {{count}} cartes"
           },
-          "drawAgainHand": "a pioché une nouvelle main",
           "putBottomX": {
-            "one": "a remis {{count}} carte en dessous de son deck",
-            "other": "a remis {{count}} cartes en dessous de son deck"
-          },
-          "complete": "a finis son mulligan"
+          }
         }
       },
       "section": {
-        "hidAll": "a caché toutes les cartes de {{section}}",
-        "hidAllToOpponent": "a caché toutes les cartes de {{section}} à ses adversaires",
-        "revealedAll": "a révélé toutes les cartes de {{section}}",
         "toDeckBottomRandom": {
-          "one": "a mis dans un ordre aléatoire {{count}} carte depuis {{section}} en dessous de son deck",
-          "other": "a mis dans un ordre aléatoire {{count}} cartes depuis {{section}} en dessous de son deck"
         },
         "toDeckBottom": {
-          "one": "a mis {{count}} carte depuis {{section}} en dessous de son deck tout en conservant l'ordre",
-          "other": "a mis {{count}} cartes depuis {{section}} en dessous de son deck tout en conservant l'ordre"
         }
       },
       "card": {
-        "hiddenCardNameReplacement": "une carte",
-        "reveal": "a révélé {{card}}",
-        "hide": "a caché {{card}}",
-        "hideFromOpponents": "a caché {{card}} aux autres joueurs",
-        "hideFromPlayer": "a caché {{card}} à {{playerName}}",
-        "revealToPlayer": "a révélé {{card}} à {{playerName}}",
-        "sendTo": "a envoyé {{card}} dans {{section}}",
         "multiReveal": {
-          "one": "a révélé {{cards}} ({{count}} carte)",
-          "other": "a révélé {{cards}} ({{count}} cartes)"
         },
         "multiHide": {
-          "one": "a caché {{cards}} ({{count}} carte)",
-          "other": "a caché {{cards}} ({{count}} cartes)"
         },
         "multiHideFromOpponents": {
-          "one": "a caché {{cards}} ({{count}} carte) aux autres joueurs",
-          "other": "a caché {{cards}} ({{count}} cartes) aux autres joueurs"
         },
         "multiHideFromPlayer": {
-          "one": "a caché {{cards}} ({{count}} carte) à {{playerName}}",
-          "other": "a caché {{cards}} ({{count}} cartes) à {{playerName}}"
         },
         "multiRevealToPlayer": {
-          "one": "a révélé {{cards}} ({{count}} carte) à {{playerName}}",
-          "other": "a révélé {{cards}} ({{count}} cartes) à {{playerName}}"
         },
         "multiShuffledInto": {
-          "one": "a mélangé {{cards}} ({{count}} carte) dans son {{deck}}",
-          "other": "a mélangé {{cards}} ({{count}} cartes) dans son {{deck}}"
         },
         "multiToTop": {
-          "one": "a mis {{cards}} ({{count}} carte) au dessus de son {{deck}}",
-          "other": "a mis {{cards}} ({{count}} cartes) au dessus de son {{deck}}"
         },
         "multiToBottom": {
-          "one": "a mis {{cards}} ({{count}} carte) en dessous de son {{deck}}",
-          "other": "a mis {{cards}} ({{count}} cartes) en dessous de son {{deck}}"
         }
       },
       "deck": {
-        "searched": "a recherché et mélangé son {{deck}}",
-        "shuffled": "a mélangé son {{deck}}",
-        "shuffledInto": "a mélangé {{card}} dans son {{deck}}",
-        "toBottom": "a mis {{card}} en dessous de son {{deck}}",
-        "toTop": "a mis {{card}} en dessus de son deck {{deck}}",
-        "xFromTop": "a mis {{card}} au-dessus {{deck}} en position {{x}}",
-        "topCardReveal": "a révélé la carte du dessus de son {{deck}}",
-        "topCardRevealToYourself": "a regardé la carte du dessus de son {{deck}}",
-        "topCardHideFromPlayer": "a caché la carte de dessus de son {{deck}} à {{playerName}}",
-        "topCardRevealToPlayer": "a révélé la carte du dessus de son {{deck}} à {{playerName}}",
-        "keepDeckVisibilityEnable": "la carte du dessus de son {{deck}} sera caché si le deck change",
-        "keepDeckVisibilityDisable": "la visibilité de la carte du dessus de son {{deck}} sera conservé si le deck change",
-        "topCardHidden": "a masqué la carte du dessus de son {{deck}}",
-        "revealCard": "a révélé {{card}} de son {{deck}}",
-        "lookedToBottom": "a mis {{card}} du dessus de son {{deck}} en dessous",
         "allLookedToBottom": {
-          "one": "a mis la carte regardée en dessous de son {{deck}} dans un ordre aléatoire",
-          "other": "a mis toutes les cartes regardées en dessous de son {{deck}} dans un ordre aléatoire"
         },
         "lookedAtTopDeck": {
-          "one": "a regardé la carte du dessus de son {{deck}}",
-          "other": "a regardé les {{count}} cartes du dessus de son {{deck}}"
         },
         "lookedAtTopDeckAndReorganized": {
-          "one": "a regardé la carte du dessus de son {{deck}} et en a réorganisé l'ordre",
-          "other": "a regardé les {{count}} cartes du dessus de son {{deck}} et en a réorganisé l'ordre"
         }
       },
       "discard": {
         "multiShuffleInto": {
-          "one": "a mélangé {{cards}} ({{count}} carte) dans son {{deck}} depuis {{section}}",
-          "other": "a mélangé {{cards}} ({{count}} cartes) dans son {{deck}} depuis {{section}}"
         },
         "multiToTop": {
-          "one": "a mis {{cards}} ({{count}} carte) au dessus de son {{deck}} depuis {{section}}",
-          "other": "a mis {{cards}} ({{count}} cartes) au dessus de son {{deck}} depuis {{section}}"
         },
         "multiToBottom": {
-          "one": "a mis {{cards}} ({{count}} carte) en dessous de son {{deck}} depuis {{section}}",
-          "other": "a mis {{cards}} ({{count}} cartes) en dessous de son {{deck}} depuis {{section}}"
         },
         "multiToTopRandomOrder": {
-          "one": "a mis {{cards}} ({{count}} carte) au dessus de son {{deck}} dans un ordre aléatoire depuis {{section}}",
-          "other": "a mis {{cards}} ({{count}} cartes) au dessus de son {{deck}} dans un ordre aléatoire depuis {{section}}"
         },
         "multiToBottomRandomOrder": {
-          "one": "a mis {{cards}} ({{count}} carte) en dessous de son {{deck}} dans un ordre aléatoire depuis {{section}}",
-          "other": "a mis {{cards}} ({{count}} cartes) en dessous de son {{deck}} dans un ordre aléatoire depuis {{section}}"
-        },
-        "ping": "a pingé {{card}} depuis {{section}}"
+        }
       },
       "hand": {
-        "hide": "a caché sa main",
-        "reveal": "a révélé sa main",
         "toDeckBottom": {
-          "one": "a mis sa main ({{count}} carte) en dessous de son deck dans un ordre aléatoire",
-          "other": "a mis sa main ({{count}} cartes) en dessous de son deck dans un ordre aléatoire"
         }
       },
       "player": {
-        "counterIncrease": "le compteur {{counter}} a été augmenté de {{difference}} pour atteindre {{value}}",
-        "counterDecrease": "le compteur {{counter}} a diminué de {{difference}} pour atteindre {{value}}",
-        "createToken": "a créé un jeton {{card}}",
-        "draw": "a pioché {{count}}",
-        "drawFromBottom": "a pioché {{count}} depuis le dessous de son deck",
-        "drawTo": "a pioché {{count}} jusque dans {{section}}",
-        "drawToFromBottom": "a pioché {{count}} jusque dans {{section}} depuis le dessous de son deck",
         "cardMove": {
           "play": {
-            "root": "a joué {{card}}",
             "from": {
-              "hand": "a joué {{card}} depuis sa main",
-              "discard": "a joué {{card}} depuis sa défausse",
-              "sideboard": "a joué {{card}} depuis sa réserve",
-              "exile": "a joué {{card}} depuis ses cartes retirées",
-              "exileHidden": "a joué {{card}} depuis ses cartes retirées face cachées",
-              "deck": "a joué {{card}} depuis son deck"
             }
           },
           "playTo": {
-            "root": "a joué {{card}} depuis {{section}}",
             "from": {
-              "hand": "a joué {{card}} depuis sa main dans {{section}}",
-              "discard": "a joué {{card}} depuis sa défausse dans {{section}}",
-              "sideboard": "a joué {{card}} depuis sa réserve dans {{section}}",
-              "exile": "a joué {{card}} depuis ses cartes retirées dans {{section}}",
-              "exileHidden": "a joué {{card}} depuis ses cartes retirées face cachées dans {{section}}",
-              "deck": "a joué {{card}} depuis son deck dans {{section}}"
             }
           },
           "hand": {
-            "root": "a retourné {{card}} dans sa main",
             "from": {
-              "deck": "a pioché {{card}} depuis son deck",
-              "deckBottom": "a pioché {{card}} depuis le dessous de son deck",
-              "discard": "a retourné {{card}} dans sa main depuis sa défausse",
-              "exile": "a retourné {{card}} dans sa main depuis ses cartes retirées",
-              "exileHidden": "a retourné {{card}} dans sa main depuis ses cartes retirées face cachées"
             }
           },
           "discard": {
-            "root": "a défaussé {{card}}",
             "from": {
-              "hand": "a défaussé {{card}} depuis sa main",
-              "deck": "a défaussé {{card}} depuis son deck",
-              "deckBottom": "a défaussé {{card}} depuis le dessous de son deck"
             }
           },
           "exile": {
-            "root": "a retiré {{card}}",
             "from": {
-              "deck": "a retiré {{card}} depuis son deck",
-              "deckBottom": "a retiré {{card}} depuis le dessous de son deck"
             }
           },
           "exileHidden": {
-            "root": "a retiré {{card}} face cachée",
             "from": {
-              "deck": "a retiré {{card}} face caché depuis son deck",
-              "deckBottom": "a retiré {{card}} face caché depuis le dessous de son deck"
             }
           }
         }
       }
     },
     "playerCounter": {
-      "notesPlaceholder": "Notes...",
       "token": {
-        "take": "Prendre {{token}}",
-        "remove": "Retirer {{token}}"
-      },
-      "linkToPlayer": "Vers le joueur"
+      }
     },
     "others": {
       "connectionStatus": {
-        "disconnected": "Déconnecté",
-        "timeout": "Connexion perdue"
       },
       "logsSection": {
         "chat": {
-          "sendMessagePlaceholder": "Chat..."
         }
       }
     }
   },
   "preferences": {
     "options": {
-      "title": "Options",
       "gameplay": {
-        "title": "Gameplay",
         "visiblePlayArea": {
-          "label": "Gardez les zones de jeu visibles en permanence"
         },
         "autopayRessources": {
-          "label": "Paiement automatique des coûts lorsque vous jouez une carte"
         },
         "focusedCardSize": {
-          "label": "Taille de la carte survolée",
           "values": {
-            "None": "Acune",
-            "Default": "Défaut",
-            "Bigger": "Plus grosse",
-            "Huge": "Énorme"
           }
         },
         "autoPlayToStack": {
-          "label": "Le placement automatique depuis la main va toujours dans la pile"
         },
         "zoomOnActivePlayer": {
-          "label": "Zoomer sur le joueur actif à chaque nouveau tour"
         },
         "allowCardReplacements": {
-          "label": "Afficher les images personnalisées des cartes"
         },
         "hideOpponentPlaymats": {
-          "label": "Masquer les tapis de jeu adverses"
         },
         "showHiddenCardsToSpecs": {
-          "label": "Montrer des cartes cachées aux spectateurs (nécessite le consentement de tous les joueurs)"
         }
       },
       "game": {
-        "title": "Jeu",
         "uiLanguage": {
-          "label": "Langue de l'interface utilisateur"
         },
         "gameLanguage": {
-          "label": "Langue de jeu (si disponible)"
         },
         "tappedRotation": {
-          "label": "Remplacer l'angle de rotation des cartes tapées dans les jeux"
         }
       },
       "connectivity": {
-        "title": "Connection",
         "useSafeMode": {
-          "label": "Utiliser le mode de connexion stable"
         },
         "preferredServer": {
-          "label": "Serveur préféré"
         }
       },
       "others": {
-        "title": "Autres",
         "debugMode": {
-          "label": "Activer le mode débogage"
         }
       },
       "generic": {
-        "leavePlayToApply": "retournez au menu principal et appuyez à nouveau sur jouer"
       }
     },
     "profile": {
-      "title": "Profil",
       "username": {
-        "title": "Nom d'utilisateur"
       },
       "avatar": {
-        "title": "Avatar",
-        "content": "Votre avatar s'affichera à côté de vos compteurs. Pour une meilleure visibilité, essayez de choisir une image carrée.",
-        "noAvatar": "Aucun avatar"
       },
       "reactions": {
-        "title": "Réactions",
-        "content": "Sélectionnez 7 émojis pour réagir rapidement en jeu. Vous les trouverez près du chat. Le premier peut être envoyé rapidement en appuyant sur Entrée."
       }
     },
     "playmat": {
-      "title": "Tapis de jeu",
       "current": {
-        "title": "Tapis de jeu actuel"
       },
       "previous": {
-        "title": "Tapis de jeu précédents",
-        "noPreviousPlaymats": "Vous n'avez pas encore utilisé de tapis de jeu."
       },
       "custom": {
-        "title": "Tapis de jeu personnalisé",
-        "content": "Pour que le tapis de jeu soit du plus bel effet, essayez de trouver une image au format 16:9 avec une résolution d'au moins 1080p.",
-        "invalidURL": "URL invalide"
       },
       "defaults": {
-        "title": "Tapis de jeu par défaut pour {{game}}",
-        "applyColor": "Appliquer la couleur"
       }
     },
     "account": {
-      "title": "Compte",
-      "loggedOut": "Vous devez être connecté"
     },
     "sleeves": {
-      "title": "Protège-cartes"
     },
     "imageReplacement": {
-      "title": "Images personnalisées"
     },
     "generic": {
-      "inPlayLocked": "Retournez au menu principal pour modifier ce paramètre.",
-      "imageUrl": "Lien vers l'image..."
     }
   },
   "login": {
     "signIn": {
-      "title": "Se connecter",
-      "buttonLabel": "Connexion",
-      "buttonLabelProgress": "Connexion...",
       "bottomTextSignUp": {
-        "content": "Pas de compte ?",
-        "link": "Inscrivez-vous"
       },
       "bottomTextResetPassword": {
-        "link": "Mot de passe oublié ?"
       }
     },
     "signUp": {
-      "title": "Créer un compte",
-      "buttonLabel": "S'inscrire",
-      "buttonLabelProgress": "Inscription...",
       "bottomTextSignIn": {
-        "content": "Vous avez déjà un compte ?",
-        "link": "Se connecter"
       },
       "emailVerification": {
-        "info": "Rien reçu ? (Vérifiez vos mail indésirables)",
-        "buttonLabel": "Envoyer un autre mail",
-        "buttonLabelSuccess": "Envoyé !",
-        "error": "Une erreur est survenue lors de l'envoi."
-      },
-      "success": "Compte créé ! Un mail de vérification a été envoyé. Veuillez consulter votre boîte de réception."
+      }
     },
     "resetPassword": {
-      "title": "Réinitialiser le mot de passe",
-      "buttonLabel": "Envoyer le lien de réinitialisation",
-      "buttonLabelProgress": "Envoi...",
       "bottomText": {
-        "content": "Pas de compte ?",
-        "link": "Inscrivez-vous"
       },
       "bottomTextSignIn": {
-        "content": "Vous vous souvenez de votre mot de passe ?",
-        "link": "Connectez-vous"
-      },
-      "success": "Mail de réinitialisation envoyé. Veuillez consulter votre boîte de réception."
+      }
     },
     "generic": {
       "email": {
-        "title": "Adresse mail",
-        "placeholder": "Entrez votre mail"
       },
       "password": {
-        "title": "Mot de passe",
-        "placeholder": "Entrez votre mot de passe"
       },
       "confirmPassword": {
-        "title": "Confirmer mot de passe",
-        "placeholder": "Confirmez votre mot de passe"
       }
     },
     "error": {
-      "unverifiedLogin": "Veuillez vérifier votre adresse mail avant de vous connecter.",
-      "differentPasswords": "Les mots de passe ne correspondent pas."
     },
     "info": {
-      "title": "Pourquoi créer un compte ?",
       "feature": {
-        "feature1": "Sauvegarder vos decks en ligne",
-        "feature2": "Accéder à vos decks et préférences sur tous vos appareils"
       },
       "warning": {
-        "warning1": "L'utilisation de l'application ne nécessite pas de compte !",
-        "warning2": "Si vous supportez l'application, veuillez utiliser le même mail sur KoFi pour obtenir le statut Supporter."
       }
     }
   }
