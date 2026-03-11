@@ -871,7 +871,7 @@
           "label": "Masquer les tapis de jeu adverses"
         },
         "showHiddenCardsToSpecs": {
-          "label": "Montrer des cartes cachées aux spectateurs (nécessite le consentement de tous les joueurs)"
+          "label": "Autoriser les spectateurs à voir les cartes cachées (nécessite le consentement de tous les joueurs)"
         }
       },
       "game": {
