@@ -150,7 +150,7 @@
     },
     "legality": {
       "deckIsLegal": "le deck est légal",
-      "deckIsNotLegal": "le deck est légal",
+      "deckIsNotLegal": "le deck n'est pas légal",
       "playerDeckIsLegal": "le deck de {{player}} est légal",
       "playerDeckIsNotLegal": "le deck de {{player}} n'est pas légal",
       "total": {
