@@ -25,7 +25,7 @@
     "preferences": "Opciones",
     "customGames": "Juegos personalizados (BETA)",
     "discord": "Discord",
-    "support": "Ayuda",
+    "support": "Apoyar",
     "login": "Iniciar sesión"
   },
   "homepage": {
@@ -149,8 +149,9 @@
       }
     },
     "legality": {
-      "deckIsLegal": "el mazo es legal",
-      "deckIsNotLegal": "el mazo no es legal",
+      "deckIsLegal": "El mazo es legal",
+      "deckIsNotLegal": "El mazo no es legal",
+      "playerDeckIsLegal": "El mazo de {{player}} es legal",
       "playerDeckIsNotLegal": "El mazo de {{player}} no es legal",
       "total": {
         "min": {
@@ -245,6 +246,7 @@
           "button": "Conectar",
           "title": "Conectar con otros jugadores",
           "browserCompatibilityWarning": "Si tienes problemas al conectar con tus amigos, por favor asegúrense de que todos usen Chrome o Firefox.",
+          "gameStartedCantJoin": "El juego ya ha comenzado, no puedes unirte a otros jugadores. Pero otro jugadores aún pueden unirse a ti.",
           "publicTab": {
             "title": "Salas públicas",
             "hostLobby": {
@@ -346,7 +348,8 @@
             "disableSideboard": "Desactivar banquillo a todos los jugadores"
           },
           "restartWarning": "Terminar partida actual y comenzar una nueva",
-          "startButton": "Comenzar"
+          "startButton": "Comenzar",
+          "restartButton": "Reiniciar con el mismo mazo"
         },
         "deckPickerPanel": {
           "title": "Selección de mazo",
@@ -455,8 +458,8 @@
         "resource": "Recurso",
         "unselect": "Deseleccionar",
         "select": "Seleccionar",
-        "untap": "Girar",
-        "tap": "Enderezar"
+        "untap": "Enderezar",
+        "tap": "Girar"
       },
       "rightClickMenu": {
         "toDeck": {
@@ -470,11 +473,13 @@
         "ungroup": "Desagrupar",
         "duplicate": "Duplicar",
         "createToken": "Crear ficha",
-        "giveToPlayer": "Dar al jugar",
-        "doesntUntap": "No se endereza",
+        "giveToPlayer": "Dar al jugador",
+        "doesntUntap": "Mantener girada",
         "toggleCounter1": "Alternar contador 1",
         "toggleCounter2": "Alternar contador 2",
-        "editNotes": "Editar notas"
+        "editNotes": "Editar notas",
+        "hide": "Ocultar",
+        "reveal": "Revelar"
       },
       "rightClickMenuMultiSelect": {
         "applyTo": {
@@ -487,6 +492,13 @@
         "presentForward": "Presentar adelante",
         "cancelForward": "Cancelar adelantar",
         "clearSelection": "Limpiar selección"
+      },
+      "warning": {
+        "title": "Aviso",
+        "handVisibleByOpponents": "Visible por tus oponentes",
+        "boardVisiblePlayerOnly": "Solo visible por ti",
+        "cardNotLegal": "Ilegal en este formato",
+        "cardUnreleased": "Aún no lanzada"
       }
     },
     "deck": {
@@ -516,7 +528,7 @@
           "cardsCount": "Cartas mostradas",
           "showOneMore": "Mostrar una más",
           "autoRevealToggle": "Revelar cartas nuevas",
-          "allToBottom": "Todo al fondo al azar",
+          "allToBottom": "Todas al fondo al azar",
           "empty": "Aún no estás mirando ninguna carta"
         },
         "giveTopHidden": "Dar el tope oculto",
@@ -594,8 +606,8 @@
         "matchmaking": {
           "noOpponentFound": "No se encontró oponente a tiempo"
         },
-        "joinSpectators": "ahora está observando",
-        "leaveSpectators": "dejó de observar",
+        "joinSpectators": "{{playerName}} está observando ahora",
+        "leaveSpectators": "{{playerName}} dejó de observar",
         "changeLobbyPlayerLimit": "cambió el límite de jugadores a {{limit}}"
       },
       "game": {
@@ -630,12 +642,12 @@
         "hidAllToOpponent": "ocultó todo en {{section}} a los otros jugadores",
         "revealedAll": "reveló todo en {{section}}",
         "toDeckBottomRandom": {
-          "one": "Envió {{count}} carta desde {{section}} al fondo de su mazo",
-          "other": "Envió las {{count}} cartas de {{section}} al fondo de su mazo"
+          "one": "envió al azar {{count}} carta de {{section}} al fondo de su mazo",
+          "other": "envió al azar las {{count}} cartas de {{section}} al fondo de su mazo"
         },
         "toDeckBottom": {
-          "one": "Envió {{count}} carta de {{section}} al fondo del mazo en orden",
-          "other": "Envió las {{count}} cartas de {{section}} al fondo del mazo en orden"
+          "one": "envió en orden {{count}} carta de {{section}} al fondo de su mazo",
+          "other": "envió en orden las {{count}} cartas de {{section}} al fondo de su mazo"
         }
       },
       "card": {
@@ -644,6 +656,7 @@
         "hide": "ocultó {{card}}",
         "hideFromOpponents": "ocultó {{card}} a los demás jugadores",
         "hideFromPlayer": "ocultó {{card}} a {{playerName}}",
+        "revealToPlayer": "reveló {{card}} a {{playerName}}",
         "sendTo": "envió {{card}} a {{section}}",
         "multiReveal": {
           "one": "reveló {{cards}} ({{count}} carta)",
@@ -753,8 +766,8 @@
               "hand": "jugó {{card}} de la mano",
               "discard": "jugó {{card}} del descarte",
               "sideboard": "jugó {{card}} del banquillo",
-              "exile": "jugó {{card}} del exilio",
-              "exileHidden": "jugó {{card}} del exilio boca abajo",
+              "exile": "jugó {{card}} de las removidas",
+              "exileHidden": "jugó {{card}} de las removidas boca abajo",
               "deck": "jugó {{card}} de su mazo"
             }
           },
@@ -764,8 +777,8 @@
               "hand": "jugó {{card}} de la mano en {{section}}",
               "discard": "jugó {{card}} del descarte en {{section}}",
               "sideboard": "jugó {{card}} del banquillo en {{section}}",
-              "exile": "jugó {{card}} del exilio en {{section}}",
-              "exileHidden": "jugó {{card}} del exilio boca abajo en {{section}}",
+              "exile": "jugó {{card}} desde las removidas a {{section}}",
+              "exileHidden": "jugó {{card}} desde las removidas boca abajo a {{section}}",
               "deck": "jugó {{card}} de su mazo en {{section}}"
             }
           },
@@ -855,6 +868,9 @@
         },
         "hideOpponentPlaymats": {
           "label": "Ocultar los playmats de los oponentes"
+        },
+        "showHiddenCardsToSpecs": {
+          "label": "Mostrar las cartas ocultas a los observadores (requiere el consentimiento de todos los jugadores)"
         }
       },
       "game": {
@@ -894,6 +910,7 @@
         "title": "Nombre de usuario"
       },
       "avatar": {
+        "title": "Avatar",
         "content": "Tu avatar será mostrado al lado de tu marcador. Intenta usar una imágen cuadrada para que se vea mejor.",
         "noAvatar": "Sin avatar"
       },
@@ -903,6 +920,7 @@
       }
     },
     "playmat": {
+      "title": "Playmat",
       "current": {
         "title": "Playmat actual"
       },
