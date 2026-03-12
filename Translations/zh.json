@@ -584,6 +584,8 @@
       "tapRessource": "资源 -",
       "untapRessource": "资源 +",
       "hand": {
+        "discardOneRandomly": "随机丢弃一个",
+        "hideAll": "全部隐藏"
       }
     },
     "logs": {
