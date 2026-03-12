@@ -1,0 +1,1030 @@
+{
+  "generic": {
+    "or": "或",
+    "cancel": "取消",
+    "continue": "继续",
+    "copy": "复制",
+    "copySuccess": "复制成功！",
+    "close": "关闭",
+    "search": "搜索",
+    "recently": "最近",
+    "select": "选择",
+    "unselect": "取消选择",
+    "disabled": "已禁用",
+    "online": "在线",
+    "offline": "离线",
+    "refresh": "刷新",
+    "wait": "请稍候",
+    "applyChanges": "应用更改",
+    "applyChangesSuccess": "已应用！"
+  },
+  "navigation": {
+    "games": "游戏",
+    "decks": "卡组",
+    "play": "对战",
+    "preferences": "偏好设置",
+    "customGames": "自定义游戏 - BETA",
+    "discord": "Discord",
+    "support": "支持",
+    "login": "登录"
+  },
+  "homepage": {
+    "main": {
+      "title": "适用于<b>所有你喜爱的 TCG</b> 的易用模拟器",
+      "subtitle": "构筑卡组并与最多 3 名其他玩家对战。"
+    }
+  },
+  "games": {
+    "playerGames": {
+      "title": "你的游戏",
+      "empty": {
+        "partOne": "你还没有添加任何游戏。你需要先添加游戏才能开始对战。",
+        "partTwo": "在下方添加游戏。"
+      },
+      "delete": {
+        "title": "删除游戏",
+        "content": "此操作无法撤销。",
+        "deleteKeepDataButton": "删除游戏但保留数据",
+        "deleteAllDataButton": "删除游戏及所有数据"
+      }
+    },
+    "findGames": {
+      "title": "寻找更多游戏",
+      "game": {
+        "addButton": "添加到你的游戏",
+        "manageBy": "由 {{author}} 管理的 Mod"
+      }
+    }
+  },
+  "decks": {
+    "playerDecks": {
+      "formatPickerLabel": "选择赛制",
+      "create": {
+        "button": "创建卡组",
+        "title": "新卡组",
+        "nameFieldLabel": "名称",
+        "nameFieldPlaceholder": "卡组名称",
+        "formatsPickerLabel": "赛制",
+        "confirmButton": "创建卡组"
+      },
+      "deckbox": {
+        "editButton": "编辑卡组",
+        "cardCount": "卡牌数: {{count}}",
+        "delete": {
+          "title": "删除卡组",
+          "content": "此操作无法撤销。",
+          "confirmButton": "删除卡组"
+        }
+      },
+      "saveOrderChangeButton": "保存卡组排序",
+      "cancelOrderChangeButton": "取消卡组排序"
+    },
+    "deckbuilder": {
+      "categories": {
+        "sideboard": "备牌"
+      },
+      "deckInfo": {
+        "edit": {
+          "title": "编辑卡组"
+        },
+        "createdTimeAgo": "创建于 {{time}}",
+        "lastModifiedTimeAgo": "上次修改于 {{time}}",
+        "export": {
+          "button": "导出",
+          "title": "导出",
+          "standardTab": {
+            "title": "标准"
+          },
+          "starterTab": {
+            "title": "预组卡组",
+            "info": "仅当你正在为自定义游戏构筑预组卡组时才使用此功能。这是应用程序内部使用的卡组列表。除了构筑预组卡组外，你没有任何理由使用它。"
+          }
+        },
+        "import": {
+          "button": "导入",
+          "title": "导入",
+          "cardListPlaceholder": "X 卡牌名称",
+          "importAndAdd": "导入并添加",
+          "importAndReplace": "导入并替换"
+        },
+        "saveButton": "保存",
+        "saveButtonSuccess": "已保存！"
+      },
+      "cardSearch": {
+        "filters": {
+          "title": "筛选",
+          "cardType": "类型",
+          "cardName": "卡牌名称",
+          "multiPickers": {
+            "exactly": "完全匹配",
+            "including": "包含",
+            "atMost": "最多"
+          }
+        },
+        "currentFilterInfo": {
+          "allCards": "所有卡牌",
+          "cardsWithName": "名称中包含 {{name}} 的所有卡牌",
+          "cardsWithFilter": "符合 {{filters}} 的所有卡牌",
+          "cardsWithNameAndFilter": "名称中包含 {{name}} 且符合 {{filters}} 的所有卡牌"
+        },
+        "resultsRange": "显示第 {{start}} 至 {{end}} 张结果，共 {{total}} 张"
+      },
+      "cardList": {
+        "cardsTotal": "总卡牌数",
+        "move": {
+          "moveTo": "移至 {{name}}",
+          "removeFrom": "从 {{name}} 中移出",
+          "one": "一张",
+          "all": "全部"
+        }
+      },
+      "costCurve": {
+        "graphXAxis": "按费用统计",
+        "graphBarHoverInfo": "费用 {{cost}}: {{total}} 张卡牌",
+        "averageAndMedian": "平均费用为 {{average}}，中位数费用为 {{median}}。"
+      },
+      "handSimulation": {
+        "drawButton": "抽牌 (剩余 {{count}})",
+        "newHandButton": "重新起手"
+      }
+    },
+    "legality": {
+      "deckIsLegal": "卡组合法",
+      "deckIsNotLegal": "卡组不合法",
+      "playerDeckIsLegal": "{{player}} 的卡组合法",
+      "playerDeckIsNotLegal": "{{player}} 的卡组不合法",
+      "total": {
+        "min": {
+          "one": "卡组至少需要 {{limit}} 张卡牌",
+          "other": "卡组至少需要 {{limit}} 张卡牌"
+        },
+        "max": {
+          "one": "卡组不能超过 {{limit}} 张卡牌",
+          "other": "卡组不能超过 {{limit}} 张卡牌"
+        }
+      },
+      "maxPerCard": {
+        "title": "以下卡牌数量过多:",
+        "max": "{{card}}: 最多 {{limit}} 张",
+        "maxForCategory": "{{card}}: 在 {{category}} 中最多 {{limit}} 张"
+      },
+      "cardLegality": {
+        "title": "以下卡牌在当前赛制中被禁用:"
+      },
+      "categoryCardTotal": {
+        "title": "卡牌数量不正确:",
+        "min": {
+          "one": "{{category}} 至少需要 {{limit}} 张卡牌，当前为 {{current}}",
+          "other": "{{category}} 至少需要 {{limit}} 张卡牌，当前为 {{current}}"
+        },
+        "max": {
+          "one": "{{category}} 不能超过 {{limit}} 张卡牌，当前为 {{current}}",
+          "other": "{{category}} 不能超过 {{limit}} 张卡牌，当前为 {{current}}"
+        }
+      }
+    }
+  },
+  "play": {
+    "generic": {
+      "shuffle": "洗牌",
+      "top": "牌顶",
+      "bottom": "牌底",
+      "shuffled": "已洗牌",
+      "discard": "弃牌",
+      "remove": "移除 / 放逐",
+      "removeHidden": "面朝下移除",
+      "random": "随机",
+      "show": "展示",
+      "play": "打出",
+      "reveal": "展示",
+      "allToHand": "全部加入手牌",
+      "allToDiscard": "全部弃置",
+      "allToRemove": "全部移除",
+      "allToRemoveHidden": "全部面朝下移除",
+      "visible": {
+        "visibleBy": "可见者",
+        "topCardVisibleBy": "顶牌可见性",
+        "all": "所有人",
+        "noOne": "无人可见 (面朝下)",
+        "onlyYou": "仅你可见",
+        "you": "你",
+        "keepOnDeckChange": "牌库变动时保持原状"
+      },
+      "panelCard": {
+        "toHand": "加入手牌",
+        "toDiscard": "弃置",
+        "toRemove": "移除",
+        "toRemoveHidden": "面朝下移除",
+        "toRemoveHiddenCompact": "隐藏移除",
+        "toDeck": "放入牌库",
+        "toTop": "置于牌顶",
+        "toBottom": "置于牌底",
+        "givePlayer": "交给玩家",
+        "playAll": "全部打出",
+        "toDeckRandomOrder": "洗入牌库 (随机顺序)"
+      }
+    },
+    "leftMenuBar": {
+      "turnCount": "回合",
+      "endTurn": {
+        "hoverInfo": "结束你的回合 (空格键)"
+      },
+      "turnStartPauseToggle": {
+        "hoverInfo": "在你的下个回合抽牌前暂停。再次点击以继续你的回合"
+      },
+      "manualModeToggle": {
+        "hoverInfo": "禁用自动重置和抽牌"
+      },
+      "eliminationToggle": {
+        "hoverInfo": "切换淘汰状态"
+      },
+      "connect": {
+        "hoverInfo": "与其他玩家连接并管理回合顺序",
+        "title": "多人对战",
+        "closeHostingButton": "隐藏大厅并关闭",
+        "connectTab": {
+          "button": "连接",
+          "title": "与其他玩家连接",
+          "browserCompatibilityWarning": "如果与好友连接出现问题，请确保大家都使用 Chrome 或 Firefox 浏览器。",
+          "gameStartedCantJoin": "游戏已经开始，你无法加入其他玩家。但其他玩家仍然可以加入你。",
+          "publicTab": {
+            "title": "公开大厅",
+            "hostLobby": {
+              "title": {
+                "hosting": "你的大厅现已对所有人可见",
+                "notHosting": "创建你自己的大厅"
+              },
+              "hostToggle": "创建大厅",
+              "descriptionField": {
+                "label": "描述",
+                "placeholder": "卡组强度、新手等..."
+              },
+              "passwordField": {
+                "label": "密码",
+                "placeholder": "选填"
+              }
+            },
+            "publicLobbies": {
+              "title": "{{name}} 的公开大厅",
+              "refreshButton": "刷新大厅",
+              "refreshButtonProgress": "正在刷新...",
+              "empty": "未找到大厅。",
+              "lobby": {
+                "noDescription": "无描述",
+                "join": "加入",
+                "createdAt": "创建于 {{time}}",
+                "passwordFieldLabel": "输入密码",
+                "passwordFieldPlaceholder": "密码"
+              }
+            }
+          },
+          "directConnectTab": {
+            "title": "直连",
+            "sendToOtherPlayers": "将你的 ID 发送给其他玩家",
+            "enterFromOtherPlayer": "或输入他们的 ID",
+            "connectButton": "连接",
+            "connectButtonProgress": "连接中...",
+            "spectateButton": "观战"
+          },
+          "friendsTab": {
+            "title": "好友",
+            "subtitle": "你的好友",
+            "noFriends": "尚未添加好友。请通过 偏好设置 > 账户 添加好友。",
+            "inGame": "游戏中",
+            "inLobby": "大厅中"
+          },
+          "matchmakingTab": {
+            "title": "匹配",
+            "button": "开始匹配",
+            "inProgress": "匹配中...",
+            "initialization": "初始化...",
+            "hoverInfo": {
+              "info1": {
+                "title": "仅限 1v1。"
+              },
+              "info2": {
+                "title": "无基于技术的匹配系统 (SBMM)。",
+                "content": "对局不考虑玩家段位，本应用不追踪任何排位数据。"
+              }
+            }
+          }
+        },
+        "playersTab": {
+          "button": "玩家与观战者",
+          "maxPlayers": {
+            "title": "人数上限",
+            "label": "房间允许的最大玩家数量"
+          },
+          "players": {
+            "title": "玩家与回合顺序",
+            "header": {
+              "name": "名称",
+              "ping": "Ping",
+              "turnOrder": "回合顺序"
+            },
+            "kickButton": "踢出",
+            "blockButton": {
+              "default": "屏蔽玩家",
+              "blocked": "已屏蔽",
+              "loggedOut": "登录以屏蔽"
+            },
+            "goToSpectators": "转为观战",
+            "leaveSpectators": "取消观战"
+          },
+          "becomeActivePlayer": {
+            "label": "结束当前玩家的回合，并成为当前活跃玩家",
+            "button": "成为活跃玩家"
+          }
+        }
+      },
+      "start": {
+        "hoverInfo": "开始新对局",
+        "startPanel": {
+          "title": "开始游戏",
+          "option": {
+            "title": "游戏选项",
+            "format": "赛制",
+            "startingPlayer": "先手玩家",
+            "disableSideboard": "为所有玩家禁用备牌"
+          },
+          "restartWarning": "结束当前对局并开始新对局。",
+          "startButton": "开始",
+          "restartButton": "使用相同卡组重新开始"
+        },
+        "deckPickerPanel": {
+          "title": "选择卡组",
+          "searchFieldPlaceholder": "卡组名称",
+          "yourDecksTab": {
+            "title": "你的卡组",
+            "description": "你在此赛制下的卡组。",
+            "noDecksAvailable": "你在此赛制下没有卡组，请使用预组卡组。",
+            "deckSelectorLabel": "选择你的卡组"
+          },
+          "preconstructedDecksTab": {
+            "title": "预组卡组",
+            "description": "你可以使用此游戏在当前赛制下提供的任何预组卡组。",
+            "noDecksAvailable": "此游戏没有预组卡组。",
+            "deckSelectorLabel": "选择预组"
+          }
+        },
+        "sideboardPanel": {
+          "title": "与备牌进行更换",
+          "swapButton": "点击以更换",
+          "deckTitle": "主卡组",
+          "sideboardTitle": "备牌",
+          "sideboardDisabled": "主机已为所有玩家禁用备牌",
+          "cancelChanges": "重置备牌修改"
+        },
+        "mulliganPanel": {
+          "title": "调度",
+          "keepAndStart": "保留手牌并开始",
+          "putAtBottomAndStart": "将选中的卡牌置于牌底并开始"
+        }
+      },
+      "preferences": {
+        "hoverInfo": "偏好设置"
+      },
+      "help": {
+        "hoverInfo": "帮助",
+        "shortucut": {
+          "general": {
+          },
+          "cards": {
+          }
+        }
+      },
+      "dice": {
+        "hoverInfo": "掷骰子",
+        "title": "骰子",
+        "info": "选择要投掷的骰子",
+        "rolled": "已投掷！"
+      },
+      "forwardCancel": {
+        "hoverInfo": "取消所有前置/宣告的卡牌"
+      },
+      "linksCancel": {
+        "hoverInfo": "删除你所有的卡牌链接标记"
+      },
+      "createTokens": {
+        "hoverInfo": "创建衍生物与卡牌",
+        "title": "创建衍生物与卡牌",
+        "searchFieldPlaceholder": "衍生物名称",
+        "searchCardsToggle": "搜索非衍生物卡牌",
+        "create": "创建",
+        "created": "已创建！",
+        "noTokens": "此游戏没有任何衍生物",
+        "noPreviouslyPicked": "最近没有选择衍生物。请在左上角通过名称搜索衍生物。"
+      },
+      "exit": {
+        "hoverInfo": "退出",
+        "title": "退出",
+        "content": "你确定要返回主菜单吗？当前对局进度将会丢失。",
+        "button": "退出"
+      }
+    },
+    "landing": {
+      "learn": {
+        "title": "学习",
+        "content": "使用 {{image}} 按钮来学习如何使用本应用，并查看所有可用的快捷键。"
+      },
+      "connect": {
+        "title": "连接"
+      },
+      "play": {
+        "title": "对战",
+        "content": "当所有玩家都加入后，使用 {{image}} 按钮来开始对局。"
+      }
+    },
+    "card": {
+      "hover": {
+        "target": "指定目标",
+        "play": "打出",
+        "groupWith": "编入成组",
+        "ping": "高亮标记",
+        "addToken": "添加衍生物",
+        "forward": "前置 / 宣告",
+        "hand": "手牌",
+        "addEffect": "添加效果",
+        "invert": "反转",
+        "hideReveal": "隐藏/展示",
+        "flip": "翻面",
+        "noFlip": "无法翻面！",
+        "primaryAdd": "主属性 +1",
+        "secondaryAdd": "副属性 +1",
+        "primaryRemove": "主属性 -1",
+        "secondaryRemove": "副属性 -1",
+        "ungroup": "取消成组",
+        "group": "成组",
+        "alreadyGrouped": "已成组",
+        "resource": "资源",
+        "unselect": "取消选择",
+        "select": "选择",
+        "untap": "重置",
+        "tap": "横置"
+      },
+      "rightClickMenu": {
+        "toDeck": {
+          "title": "放入牌库",
+          "xFromTop": "置于牌顶往下第 X 张"
+        },
+        "returnToSideboard": "返回备牌",
+        "to": "至",
+        "flip": "翻面",
+        "group": "成组",
+        "ungroup": "取消成组",
+        "duplicate": "复制",
+        "createToken": "创建衍生物",
+        "giveToPlayer": "交给玩家",
+        "doesntUntap": "不响应重置",
+        "toggleCounter1": "切换指示物 1",
+        "toggleCounter2": "切换指示物 2",
+        "editNotes": "编辑笔记",
+        "hide": "隐藏",
+        "reveal": "翻开"
+      },
+      "rightClickMenuMultiSelect": {
+        "applyTo": {
+          "one": "应用到 {{count}} 张卡牌",
+          "other": "应用到 {{count}} 张卡牌"
+        },
+        "toDeckRandom": {
+          "title": "放入牌库 (随机顺序)"
+        },
+        "presentForward": "展示前置",
+        "cancelForward": "取消前置",
+        "clearSelection": "清除选择"
+      },
+      "warning": {
+        "title": "警告",
+        "handVisibleByOpponents": "对你的对手可见",
+        "boardVisiblePlayerOnly": "仅对你可见",
+        "cardNotLegal": "在当前赛制中非法",
+        "cardUnreleased": "未发售"
+      }
+    },
+    "deck": {
+      "hover": {
+        "draw": "抽牌",
+        "drawBottom": "从牌底抽牌",
+        "discard": "弃牌库顶牌",
+        "discardBottom": "弃牌库底牌",
+        "remove": "移除",
+        "removeBottom": "牌底移除",
+        "ressource": "作为资源放置",
+        "ressourceBottom": "从牌底作为资源放置",
+        "dropToTop": "置于牌顶",
+        "dropToBottom": "置于牌底"
+      },
+      "rightClickMenu": {
+        "searchPanel": {
+          "button": "搜索",
+          "title": "在牌库中搜索卡牌",
+          "closeAndShuffle": "关闭并洗牌",
+          "searchFieldLabel": "搜索",
+          "searchFieldPlaceholder": "卡牌名称"
+        },
+        "manageTopPanel": {
+          "button": "管理顶牌",
+          "title": "查看并管理牌库顶牌",
+          "cardsCount": "显示的卡牌",
+          "showOneMore": "再翻一张",
+          "autoRevealToggle": "展示新卡牌",
+          "allToBottom": "全部随机置于牌底",
+          "empty": "你目前没有在查看任何卡牌"
+        },
+        "giveTopHidden": "暗扣交出顶牌",
+        "drawXPanel": {
+          "button": "抽 X 张牌",
+          "title": "抽 X 张牌",
+          "cardsCountLabel": "抽牌数量",
+          "destinationLabel": "去向",
+          "drawX": "抽 {{count}} 张"
+        }
+      }
+    },
+    "discard": {
+      "rightClickMenu": {
+        "generic": {
+          "multiSelectToggle": "选择多张卡牌",
+          "selectAll": "全选",
+          "unselectAll": "取消全选",
+          "applyToSelection": "应用到当前选择"
+        },
+        "discardPanel": {
+          "button": "显示弃牌区",
+          "title": "弃牌区中的卡牌",
+          "empty": "你的弃牌区是空的"
+        },
+        "removedPanel": {
+          "button": "显示移除区",
+          "title": "从本局游戏中移除的卡牌",
+          "empty": "你没有任何被移除的卡牌"
+        },
+        "removedHiddenPanel": {
+          "button": "显示面朝下移除区",
+          "title": "被移除且对对手面朝下隐藏的卡牌",
+          "empty": "你没有任何面朝下移除的卡牌"
+        },
+        "sideboardPanel": {
+          "button": "显示备牌",
+          "title": "备牌中的卡牌",
+          "empty": "你的备牌是空的"
+        }
+      }
+    },
+    "sectionQuickAction": {
+      "tapAll": "全部横置",
+      "untapAll": "全部重置",
+      "toHandAll": "全部加入手牌",
+      "revealAllToYou": "全部对你翻开",
+      "revealAll": "全部翻开",
+      "hideAll": "全部隐藏 (面朝下)",
+      "allToDeckBottom": "全部置于牌底",
+      "allToDeckBottomRandom": "全部置于牌底 (随机顺序)",
+      "tapRessource": "资源 -",
+      "untapRessource": "资源 +",
+      "hand": {
+        "discardOneRandomly": "随机丢弃一个",
+        "hideAll": "全部隐藏"
+      }
+    },
+    "logs": {
+      "server": {
+        "playerKicked": "{{playerName}} 已被踢出",
+        "youKicked": "你已被踢出",
+        "playerJoined": "{{playerName}} 加入了大厅",
+        "errors": {
+          "LOBBY_FULL": "大厅已满",
+          "WRONG_APPVERSION": "主机的 TCGA 版本与你不同",
+          "WRONG_GAME": "主机正在游玩不同的游戏"
+        },
+        "connectionLostWith": "与 {{playerName}} 的连接丢失",
+        "reconnectedWith": "已成功重新连接 {{playerName}}",
+        "youAreOffline": "你当前处于离线状态",
+        "connectingWithYourself": "你不能与自己连接",
+        "cantConnectWith": "未找到 ID 为 {{playerId}} 的玩家",
+        "playerHasLeft": "{{playerName}} 已离开大厅",
+        "matchmaking": {
+          "noOpponentFound": "未在规定时间内找到对手"
+        },
+        "joinSpectators": "{{playerName}} 开始观战",
+        "leaveSpectators": "{{playerName}} 停止了观战",
+        "changeLobbyPlayerLimit": "将玩家人数上限更改为 {{limit}}"
+      },
+      "game": {
+        "turnEnded": "{{playerName}} 结束了回合",
+        "turnStarted": "{{playerName}} 开始了第 {{turnCount}} 回合",
+        "tokenLost": "失去了 {{token}} 衍生物",
+        "tokenTaken": "获得了 {{token}} 衍生物",
+        "hasLost": "已被淘汰",
+        "giveCardHidden": "暗扣交出了一张卡牌",
+        "giveCard": "交出了 {{card}}",
+        "dice": {
+          "roll": "掷出了 {{result}}/{{faces}}",
+          "flip": "抛出了 {{result}}",
+          "heads": "正面",
+          "tails": "反面"
+        },
+        "mulligan": {
+          "drawAgainX": {
+            "one": "调度了 {{count}} 张牌",
+            "other": "调度了 {{count}} 张牌"
+          },
+          "drawAgainHand": "重新抽取了起手",
+          "putBottomX": {
+            "one": "将 {{count}} 张牌放回了牌底",
+            "other": "将 {{count}} 张牌放回了牌底"
+          },
+          "complete": "已完成调度"
+        }
+      },
+      "section": {
+        "hidAll": "隐藏了 {{section}} 中的所有卡牌",
+        "hidAllToOpponent": "向其他玩家隐藏了 {{section}} 中的所有卡牌",
+        "revealedAll": "翻开了 {{section}} 中的所有卡牌",
+        "toDeckBottomRandom": {
+          "one": "将 {{section}} 中的 {{count}} 张牌随机放回了牌底",
+          "other": "将 {{section}} 中的所有 {{count}} 张牌随机放回了牌底"
+        },
+        "toDeckBottom": {
+          "one": "将 {{section}} 中的 {{count}} 张牌按顺序放回了牌底",
+          "other": "将 {{section}} 中的所有 {{count}} 张牌按顺序放回了牌底"
+        }
+      },
+      "card": {
+        "hiddenCardNameReplacement": "一张牌",
+        "reveal": "翻开了 {{card}}",
+        "hide": "隐藏了 {{card}}",
+        "hideFromOpponents": "对其他玩家隐藏了 {{card}}",
+        "hideFromPlayer": "对 {{playerName}} 隐藏了 {{card}}",
+        "revealToPlayer": "向 {{playerName}} 展示了 {{card}}",
+        "sendTo": "将 {{card}} 送入了 {{section}}",
+        "multiReveal": {
+          "one": "翻开了 {{cards}} ({{count}} 张)",
+          "other": "翻开了 {{cards}} ({{count}} 张)"
+        },
+        "multiHide": {
+          "one": "隐藏了 {{cards}} ({{count}} 张)",
+          "other": "隐藏了 {{cards}} ({{count}} 张)"
+        },
+        "multiHideFromOpponents": {
+          "one": "对其他玩家隐藏了 {{cards}} ({{count}} 张)",
+          "other": "对其他玩家隐藏了 {{cards}} ({{count}} 张)"
+        },
+        "multiHideFromPlayer": {
+          "one": "对 {{playerName}} 隐藏了 {{cards}} ({{count}} 张)",
+          "other": "对 {{playerName}} 隐藏了 {{cards}} ({{count}} 张)"
+        },
+        "multiRevealToPlayer": {
+          "one": "向 {{playerName}} 展示了 {{cards}} ({{count}} 张)",
+          "other": "向 {{playerName}} 展示了 {{cards}} ({{count}} 张)"
+        },
+        "multiShuffledInto": {
+          "one": "将 {{cards}} ({{count}} 张) 洗入了 {{deck}}",
+          "other": "将 {{cards}} ({{count}} 张) 洗入了 {{deck}}"
+        },
+        "multiToTop": {
+          "one": "将 {{cards}} ({{count}} 张) 放在了 {{deck}} 牌顶",
+          "other": "将 {{cards}} ({{count}} 张) 放在了 {{deck}} 牌顶"
+        },
+        "multiToBottom": {
+          "one": "将 {{cards}} ({{count}} 张) 放在了 {{deck}} 牌底",
+          "other": "将 {{cards}} ({{count}} 张) 放在了 {{deck}} 牌底"
+        }
+      },
+      "deck": {
+        "searched": "搜索并洗牌了 {{deck}}",
+        "shuffled": "洗牌了 {{deck}}",
+        "shuffledInto": "将 {{card}} 洗入了 {{deck}}",
+        "toBottom": "将 {{card}} 置于了 {{deck}} 牌底",
+        "toTop": "将 {{card}} 置于了 {{deck}} 牌顶",
+        "xFromTop": "将 {{card}} 置于了 {{deck}} 牌顶往下第 {{x}} 张的位置",
+        "topCardReveal": "翻开了 {{deck}} 的顶牌",
+        "topCardRevealToYourself": "查看了 {{deck}} 的顶牌",
+        "topCardHideFromPlayer": "对 {{playerName}} 隐藏了 {{deck}} 的顶牌",
+        "topCardRevealToPlayer": "向 {{playerName}} 翻开了 {{deck}} 的顶牌",
+        "keepDeckVisibilityEnable": "牌库顶牌在牌库变动时将被隐藏",
+        "keepDeckVisibilityDisable": "牌库顶牌在牌库变动时将保持其原有的可见状态",
+        "topCardHidden": "隐藏了 {{deck}} 的顶牌",
+        "revealCard": "从 {{deck}} 翻开了 {{card}}",
+        "lookedToBottom": "将查看的 {{card}} 从 {{deck}} 牌顶放到了牌底",
+        "allLookedToBottom": {
+          "one": "将查看的牌以随机顺序放到了 {{deck}} 牌底",
+          "other": "将查看的 {{count}} 张牌以随机顺序放到了 {{deck}} 牌底"
+        },
+        "lookedAtTopDeck": {
+          "one": "查看了 {{deck}} 的顶牌",
+          "other": "查看了 {{deck}} 顶部的 {{count}} 张牌"
+        },
+        "lookedAtTopDeckAndReorganized": {
+          "one": "查看了 {{deck}} 的顶牌并重新排序",
+          "other": "查看了 {{deck}} 顶部的 {{count}} 张牌并重新排序"
+        }
+      },
+      "discard": {
+        "multiShuffleInto": {
+          "one": "将 {{section}} 中的 {{cards}} ({{count}} 张) 洗入了 {{deck}}",
+          "other": "将 {{section}} 中的 {{cards}} ({{count}} 张) 洗入了 {{deck}}"
+        },
+        "multiToTop": {
+          "one": "将 {{section}} 中的 {{cards}} ({{count}} 张) 置于了 {{deck}} 牌顶",
+          "other": "将 {{section}} 中的 {{cards}} ({{count}} 张) 置于了 {{deck}} 牌顶"
+        },
+        "multiToBottom": {
+          "one": "将 {{section}} 中的 {{cards}} ({{count}} 张) 置于了 {{deck}} 牌底",
+          "other": "将 {{section}} 中的 {{cards}} ({{count}} 张) 置于了 {{deck}} 牌底"
+        },
+        "multiToTopRandomOrder": {
+          "one": "将 {{section}} 中的 {{cards}} ({{count}} 张) 以随机顺序置于了 {{deck}} 牌顶",
+          "other": "将 {{section}} 中的 {{cards}} ({{count}} 张) 以随机顺序置于了 {{deck}} 牌顶"
+        },
+        "multiToBottomRandomOrder": {
+          "one": "将 {{section}} 中的 {{cards}} ({{count}} 张) 以随机顺序置于了 {{deck}} 牌底",
+          "other": "将 {{section}} 中的 {{cards}} ({{count}} 张) 以随机顺序置于了 {{deck}} 牌底"
+        },
+        "ping": "高亮标记了 {{section}} 中的 {{card}}"
+      },
+      "hand": {
+        "hide": "隐藏了手牌",
+        "reveal": "展示了手牌",
+        "toDeckBottom": {
+          "one": "将手牌 ({{count}} 张) 以随机顺序放到了牌底",
+          "other": "将手牌 ({{count}} 张) 以随机顺序放到了牌底"
+        }
+      },
+      "player": {
+        "counterIncrease": "指示物 {{counter}} 增加了 {{difference}}，当前为 {{value}}",
+        "counterDecrease": "指示物 {{counter}} 减少了 {{difference}}，当前为 {{value}}",
+        "createToken": "创建了 {{card}} 衍生物",
+        "draw": "抽了 {{count}} 张牌",
+        "drawFromBottom": "从牌底抽了 {{count}} 张牌",
+        "drawTo": "抽了 {{count}} 张牌并放入 {{section}}",
+        "drawToFromBottom": "从牌底抽了 {{count}} 张牌并放入 {{section}}",
+        "cardMove": {
+          "play": {
+            "root": "打出了 {{card}}",
+            "from": {
+              "hand": "从手牌打出了 {{card}}",
+              "discard": "从弃牌区打出了 {{card}}",
+              "sideboard": "从备牌打出了 {{card}}",
+              "exile": "从移除区打出了 {{card}}",
+              "exileHidden": "从面朝下移除区打出了 {{card}}",
+              "deck": "从牌库打出了 {{card}}"
+            }
+          },
+          "playTo": {
+            "root": "将 {{card}} 打出至 {{section}}",
+            "from": {
+              "hand": "从手牌将 {{card}} 打出至 {{section}}",
+              "discard": "从弃牌区将 {{card}} 打出至 {{section}}",
+              "sideboard": "从备牌将 {{card}} 打出至 {{section}}",
+              "exile": "从移除区将 {{card}} 打出至 {{section}}",
+              "exileHidden": "从面朝下移除区将 {{card}} 打出至 {{section}}",
+              "deck": "从牌库将 {{card}} 打出至 {{section}}"
+            }
+          },
+          "hand": {
+            "root": "将 {{card}} 移回手牌",
+            "from": {
+              "deck": "从牌库抽到了 {{card}}",
+              "deckBottom": "从牌库底抽到了 {{card}}",
+              "discard": "从弃牌区将 {{card}} 移回手牌",
+              "exile": "从移除区将 {{card}} 移回手牌",
+              "exileHidden": "从面朝下移除区将 {{card}} 移回手牌"
+            }
+          },
+          "discard": {
+            "root": "弃置了 {{card}}",
+            "from": {
+              "hand": "从手牌弃置了 {{card}}",
+              "deck": "将牌库中的 {{card}} 置入弃牌区",
+              "deckBottom": "将牌库底的 {{card}} 置入弃牌区"
+            }
+          },
+          "exile": {
+            "root": "移除了 {{card}}",
+            "from": {
+              "deck": "从牌库移除了 {{card}}",
+              "deckBottom": "从牌底移除了 {{card}}"
+            }
+          },
+          "exileHidden": {
+            "root": "面朝下移除了 {{card}}",
+            "from": {
+              "deck": "从牌库面朝下移除了 {{card}}",
+              "deckBottom": "从牌底面朝下移除了 {{card}}"
+            }
+          }
+        }
+      }
+    },
+    "playerCounter": {
+      "notesPlaceholder": "笔记...",
+      "token": {
+        "take": "获得 {{token}}",
+        "remove": "移除 {{token}}"
+      },
+      "linkToPlayer": "链接至玩家"
+    },
+    "others": {
+      "connectionStatus": {
+        "disconnected": "已断开连接",
+        "timeout": "连接超时"
+      },
+      "logsSection": {
+        "chat": {
+          "sendMessagePlaceholder": "聊天..."
+        }
+      }
+    }
+  },
+  "preferences": {
+    "options": {
+      "title": "选项",
+      "gameplay": {
+        "title": "游戏玩法",
+        "visiblePlayArea": {
+          "label": "始终保持卡牌游玩区域可见"
+        },
+        "autopayRessources": {
+          "label": "打出卡牌时自动支付资源费用"
+        },
+        "focusedCardSize": {
+          "label": "聚焦卡牌放大尺寸",
+          "values": {
+            "None": "无",
+            "Default": "默认",
+            "Bigger": "大",
+            "Huge": "超大"
+          }
+        },
+        "autoPlayToStack": {
+          "label": "从手牌打出的卡牌自动进入堆叠区"
+        },
+        "zoomOnActivePlayer": {
+          "label": "在每个新回合自动缩放至当前玩家桌面"
+        },
+        "allowCardReplacements": {
+          "label": "显示你与对手的卡牌替换 (Alt Art)"
+        },
+        "hideOpponentPlaymats": {
+          "label": "隐藏对手的牌垫"
+        },
+        "showHiddenCardsToSpecs": {
+          "label": "向观战者显示隐藏卡牌 (需要所有玩家同意)"
+        }
+      },
+      "game": {
+        "title": "游戏",
+        "uiLanguage": {
+          "label": "首选 UI 语言"
+        },
+        "gameLanguage": {
+          "label": "首选游戏卡牌语言 (当提供时)"
+        },
+        "tappedRotation": {
+          "label": "覆盖游戏默认的横置旋转角度"
+        }
+      },
+      "connectivity": {
+        "title": "连接",
+        "useSafeMode": {
+          "label": "使用安全连接模式"
+        },
+        "preferredServer": {
+          "label": "首选服务器"
+        }
+      },
+      "others": {
+        "title": "其他",
+        "debugMode": {
+          "label": "启用调试模式"
+        }
+      },
+      "generic": {
+        "leavePlayToApply": "返回主菜单并再次点击对战以应用设置"
+      }
+    },
+    "profile": {
+      "title": "个人资料",
+      "username": {
+        "title": "用户名"
+      },
+      "avatar": {
+        "title": "头像",
+        "content": "你的头像将显示在指示物旁边。为了获得更好的显示效果，请尽量使用正方形图片。",
+        "noAvatar": "无头像"
+      },
+      "reactions": {
+        "title": "快捷反应",
+        "content": "选择 7 个表情包以便在游戏中快速发送反应。你可以在聊天栏旁找到它们。按下 Enter 键可以快速发送第一个表情包。"
+      }
+    },
+    "playmat": {
+      "title": "牌垫",
+      "current": {
+        "title": "当前牌垫"
+      },
+      "previous": {
+        "title": "之前使用的牌垫",
+        "noPreviousPlaymats": "你没有以前使用过的牌垫。"
+      },
+      "custom": {
+        "title": "自定义牌垫",
+        "content": "为确保牌垫在你的桌面上看起来美观，请尝试寻找分辨率至少为 1080p 的 16:9 比例图片。",
+        "invalidURL": "无效的 URL"
+      },
+      "defaults": {
+        "title": "{{game}} 的默认牌垫",
+        "applyColor": "应用颜色"
+      }
+    },
+    "account": {
+      "title": "账户",
+      "loggedOut": "你需要先登录。"
+    },
+    "sleeves": {
+      "title": "卡套"
+    },
+    "imageReplacement": {
+      "title": "替换图像"
+    },
+    "generic": {
+      "inPlayLocked": "返回主菜单以更改此设置。",
+      "imageUrl": "图像的网络链接..."
+    }
+  },
+  "login": {
+    "signIn": {
+      "title": "登录",
+      "buttonLabel": "登录",
+      "buttonLabelProgress": "登录中...",
+      "bottomTextSignUp": {
+        "content": "没有账户？",
+        "link": "注册"
+      },
+      "bottomTextResetPassword": {
+        "link": "忘记密码？"
+      }
+    },
+    "signUp": {
+      "title": "注册",
+      "buttonLabel": "注册",
+      "buttonLabelProgress": "注册中...",
+      "bottomTextSignIn": {
+        "content": "已有账户？",
+        "link": "登录"
+      },
+      "emailVerification": {
+        "info": "没收到邮件？ (检查垃圾邮件)",
+        "buttonLabel": "发送新邮件",
+        "buttonLabelSuccess": "已发送！",
+        "error": "发送出错。"
+      },
+      "success": "账户已创建！验证邮件已发送。请检查你的邮箱。"
+    },
+    "resetPassword": {
+      "title": "重置密码",
+      "buttonLabel": "发送重置链接",
+      "buttonLabelProgress": "发送中...",
+      "bottomText": {
+        "content": "没有账户？",
+        "link": "注册"
+      },
+      "bottomTextSignIn": {
+        "content": "想起密码了？",
+        "link": "登录"
+      },
+      "success": "重置邮件已发送。请检查你的收件箱。"
+    },
+    "generic": {
+      "email": {
+        "title": "邮箱",
+        "placeholder": "输入邮箱"
+      },
+      "password": {
+        "title": "密码",
+        "placeholder": "密码"
+      },
+      "confirmPassword": {
+        "title": "确认密码",
+        "placeholder": "确认密码"
+      }
+    },
+    "error": {
+      "unverifiedLogin": "登录前请先验证你的邮箱地址。",
+      "differentPasswords": "密码不匹配。"
+    },
+    "info": {
+      "title": "为什么要创建账户？",
+      "feature": {
+        "feature1": "将你的卡组在线保存",
+        "feature2": "在你的所有设备上同步访问卡组和偏好设置"
+      },
+      "warning": {
+        "warning1": "不登录账户也可以正常使用应用！",
+        "warning2": "如果你通过 KoFi 赞助了项目，请确保使用相同的邮箱以获取赞助者奖励"
+      }
+    }
+  }
+}
