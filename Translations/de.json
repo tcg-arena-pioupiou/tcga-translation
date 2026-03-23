@@ -1,0 +1,1030 @@
+{
+  "generic": {
+    "or": "oder",
+    "cancel": "Abbrechen",
+    "continue": "Weiter",
+    "copy": "Kopieren",
+    "copySuccess": "Kopiert!",
+    "close": "Schließen",
+    "search": "Suchen",
+    "recently": "kürzlich",
+    "select": "Wählen",
+    "unselect": "Auswahl aufheben",
+    "disabled": "Deaktiviert",
+    "online": "Online",
+    "offline": "Offline",
+    "refresh": "Aktualisieren",
+    "wait": "Warten",
+    "applyChanges": "Änderungen anwenden",
+    "applyChangesSuccess": "Angewandt!"
+  },
+  "navigation": {
+    "games": "Spiele",
+    "decks": "Decks",
+    "play": "Spielen",
+    "preferences": "Präferenzen",
+    "customGames": "Eigenes Spiel - BETA",
+    "discord": "Discord",
+    "support": "Support",
+    "login": "Login"
+  },
+  "homepage": {
+    "main": {
+      "title": "Spiele alle deine liebsten TCGs – so einfach wie nie",
+      "subtitle": "Stelle Decks zusammen und spiele mit bis zu 3 anderen Spielern."
+    }
+  },
+  "games": {
+    "playerGames": {
+      "title": "Deine Spiele",
+      "empty": {
+        "partOne": "Noch keine Spiele. Füge zuerst ein Spiel hinzu.",
+        "partTwo": "Füge unten Spiele hinzu."
+      },
+      "delete": {
+        "title": "Spiel löschen",
+        "content": "Diese Aktion kann nicht rückgängig gemacht werden.",
+        "deleteKeepDataButton": "Spiel löschen, aber Daten behalten",
+        "deleteAllDataButton": "Spiel und alle Daten löschen"
+      }
+    },
+    "findGames": {
+      "title": "Entdecke weitere Spiele",
+      "game": {
+        "addButton": "Deinen Spielen hinzufügen",
+        "manageBy": "Mod verwaltet von {{author}}"
+      }
+    }
+  },
+  "decks": {
+    "playerDecks": {
+      "formatPickerLabel": "Format auswählen",
+      "create": {
+        "button": "Deck erstellen",
+        "title": "Neues Deck",
+        "nameFieldLabel": "Name",
+        "nameFieldPlaceholder": "Deckname",
+        "formatsPickerLabel": "Formate",
+        "confirmButton": "Deck erstellen"
+      },
+      "deckbox": {
+        "editButton": "Deck bearbeiten",
+        "cardCount": "Karten: {{count}}",
+        "delete": {
+          "title": "Deck löschen",
+          "content": "Diese Handlung kann nicht rückgängig gemacht werden.",
+          "confirmButton": "Deck löschen"
+        }
+      },
+      "saveOrderChangeButton": "Neue Reihenfolge speichern",
+      "cancelOrderChangeButton": "Neue Reihenfolge abbrechen"
+    },
+    "deckbuilder": {
+      "categories": {
+        "sideboard": "Sideboard"
+      },
+      "deckInfo": {
+        "edit": {
+          "title": "Deck bearbeiten"
+        },
+        "createdTimeAgo": "Erstellt {{time}}",
+        "lastModifiedTimeAgo": "Zuletzt geändert um {{time}}",
+        "export": {
+          "button": "Export",
+          "title": "Export",
+          "standardTab": {
+            "title": "Standard"
+          },
+          "starterTab": {
+            "title": "Starterdeck",
+            "info": "Verwende diese Liste NUR, wenn du Starterdecks für dein eigenes Spiel erstellst. Dies sind die internen Decklisten der App."
+          }
+        },
+        "import": {
+          "button": "Import",
+          "title": "Import",
+          "cardListPlaceholder": "X Kartenname",
+          "importAndAdd": "Importieren und hinzufügen",
+          "importAndReplace": "Importieren und ersetzen"
+        },
+        "saveButton": "Speichern",
+        "saveButtonSuccess": "Gespeichert!"
+      },
+      "cardSearch": {
+        "filters": {
+          "title": "Filter",
+          "cardType": "Typ",
+          "cardName": "Kartenname",
+          "multiPickers": {
+            "exactly": "genau",
+            "including": "Einschließlich",
+            "atMost": "Maximal"
+          }
+        },
+        "currentFilterInfo": {
+          "allCards": "Alle Karten",
+          "cardsWithName": "Alle Karten mit {{name}} im Namen",
+          "cardsWithFilter": "Alle Karten mit {{filters}}",
+          "cardsWithNameAndFilter": "Alle Karten, die {{name}} im Namen und {{filters}} enthalten."
+        },
+        "resultsRange": "Ergebnisse {{start}} bis {{end}} von {{total}}"
+      },
+      "cardList": {
+        "cardsTotal": "Gesamtzahl der Karten",
+        "move": {
+          "moveTo": "Verschieben nach {{name}}",
+          "removeFrom": "Verschieben nach {{name}}",
+          "one": "eins",
+          "all": "alle"
+        }
+      },
+      "costCurve": {
+        "graphXAxis": "Karten nach Kosten",
+        "graphBarHoverInfo": "Kosten {{cost}}: {{total}} Karten",
+        "averageAndMedian": "Die durchschnittlichen Kosten betragen {{average}}, der Median liegt bei {{median}}."
+      },
+      "handSimulation": {
+        "drawButton": "Karte ziehen ({{count}} verbleibend)",
+        "newHandButton": "Neue Handkarten"
+      }
+    },
+    "legality": {
+      "deckIsLegal": "Deck ist regelkonform",
+      "deckIsNotLegal": "Deck ist nicht regelkonform",
+      "playerDeckIsLegal": "Das Deck von {{player}} ist regelkonform",
+      "playerDeckIsNotLegal": "Das Deck von {{player}} ist nicht regelkonform.",
+      "total": {
+        "min": {
+          "one": "Das Deck muss mindestens {{limit}} Karten enthalten.",
+          "other": "Das Deck muss mindestens {{limit}} Karten enthalten."
+        },
+        "max": {
+          "one": "Ein Deck darf nicht mehr als {{limit}} Karten enthalten.",
+          "other": "Das Deck darf maximal {{limit}} Karten enthalten."
+        }
+      },
+      "maxPerCard": {
+        "title": "Zu viele der folgenden Karten:",
+        "max": "{{card}}: max {{limit}}",
+        "maxForCategory": "{{card}}: max {{limit}} in {{category}}"
+      },
+      "cardLegality": {
+        "title": "Folgende Karten sind in diesem Format nicht zulässig:"
+      },
+      "categoryCardTotal": {
+        "title": "Ungültige Kartenanzahl:",
+        "min": {
+          "one": "{{category}} benötigt mindestens {{limit}} Karten. ( Aktuelle Anzahl {{current}})",
+          "other": "{{category}} benötigt mindestens {{limit}} Karten. ( Aktuelle Anzahl {{current}})"
+        },
+        "max": {
+          "one": "{{category}} darf maximal {{limit}} Karten besitzen, (Aktuelle Anzahl: {{current}})",
+          "other": "{{category}} darf maximal {{limit}} Karten enthalten.  (Aktuelle Anzahl: {{current}})"
+        }
+      }
+    }
+  },
+  "play": {
+    "generic": {
+      "shuffle": "Mischen",
+      "top": "Top",
+      "bottom": "Unten",
+      "shuffled": "Gemischt",
+      "discard": "Abwerfen",
+      "remove": "Entfernen",
+      "removeHidden": "Versteckte entfernen",
+      "random": "Zufällig",
+      "show": "Zeigen",
+      "play": "Spielen",
+      "reveal": "Aufdecken",
+      "allToHand": "Alles auf die Hand",
+      "allToDiscard": "Alles abverwerfen",
+      "allToRemove": "Alles zu entfernen",
+      "allToRemoveHidden": "Alles verdeckt entfernen",
+      "visible": {
+        "visibleBy": "Sichtbar für",
+        "topCardVisibleBy": "Top-Karten-Sichtbarkeit",
+        "all": "Alle",
+        "noOne": "Niemand (verdeckt)",
+        "onlyYou": "Nur Du",
+        "you": "Du",
+        "keepOnDeckChange": "Bei Deckwechsel behalten"
+      },
+      "panelCard": {
+        "toHand": "Auf die Hand",
+        "toDiscard": "Abwerfen",
+        "toRemove": "Entfernen",
+        "toRemoveHidden": "Versteckte entfernen",
+        "toRemoveHiddenCompact": "Verdeckt",
+        "toDeck": "Zum Deck",
+        "toTop": "Nach oben",
+        "toBottom": "Nach unten",
+        "givePlayer": "Dem Spieler geben",
+        "playAll": "Alle ausspielen",
+        "toDeckRandomOrder": "Ins Deck (zufällige Reihenfolge)"
+      }
+    },
+    "leftMenuBar": {
+      "turnCount": "Drehen",
+      "endTurn": {
+        "hoverInfo": "Beende deinen Zug (Leertaste)"
+      },
+      "turnStartPauseToggle": {
+        "hoverInfo": "Pause vor dem Ziehen im nächsten Zug. Klicke erneut, um weiterzuspielen."
+      },
+      "manualModeToggle": {
+        "hoverInfo": "Automatisches enttappen und ziehen deaktivieren"
+      },
+      "eliminationToggle": {
+        "hoverInfo": "Schalter entfernt"
+      },
+      "connect": {
+        "hoverInfo": "Verbinde mit anderen Spielern und bestimme die Zugreihenfolge.",
+        "title": "Mehrspieler",
+        "closeHostingButton": "Lobby ausblenden und schließen",
+        "connectTab": {
+          "button": "Verbinden",
+          "title": "Mit anderen Spielern verbinden",
+          "browserCompatibilityWarning": "Falls du Probleme beim Verbinden mit anderen Spieler hast, stelle sicher, dass  alle Chrome oder Firefox verwenden.",
+          "gameStartedCantJoin": "Das Spiel hat bereits begonnen, du kannst dem Spiel nicht mehr beitreten. Andere Spieler können diesem Spiel aber weiterhin beitreten.",
+          "publicTab": {
+            "title": "Öffentliche Lobbys",
+            "hostLobby": {
+              "title": {
+                "hosting": "Deine Lobby ist nun für andere sichtbar.",
+                "notHosting": "Eigene Lobby erstellen"
+              },
+              "hostToggle": "Lobby erstellen",
+              "descriptionField": {
+                "label": "Beschreibung",
+                "placeholder": "Decklevel, neue Spieler usw."
+              },
+              "passwordField": {
+                "label": "Passwort",
+                "placeholder": "Optional"
+              }
+            },
+            "publicLobbies": {
+              "title": "Öffentliche Lobbys für {{name}}",
+              "refreshButton": "Lobbys aktualisieren",
+              "refreshButtonProgress": "Aktualisieren...",
+              "empty": "Keine Lobbys gefunden.",
+              "lobby": {
+                "noDescription": "Keine Beschreibung",
+                "join": "Verbinden",
+                "createdAt": "Erstellt {{time}}",
+                "passwordFieldLabel": "Passwort eingeben",
+                "passwordFieldPlaceholder": "Passwort"
+              }
+            }
+          },
+          "directConnectTab": {
+            "title": "Direktverbindung",
+            "sendToOtherPlayers": "Sende deine ID an andere Spieler.",
+            "enterFromOtherPlayer": "Oder gebe  deren ID ein.",
+            "connectButton": "Verbinden",
+            "connectButtonProgress": "Verbindung wird hergestellt...",
+            "spectateButton": "Zuschauer"
+          },
+          "friendsTab": {
+            "title": "Freunde",
+            "subtitle": "Deine Freunde",
+            "noFriends": "Noch keine Freunde hinzugefügt. Freunde hinzufügen unter Einstellungen > Konto.",
+            "inGame": "Im Spiel",
+            "inLobby": "Lobby"
+          },
+          "matchmakingTab": {
+            "title": "Spiel suchen",
+            "button": "Spiel suchen",
+            "inProgress": "Warten...",
+            "initialization": "Initialisierung...",
+            "hoverInfo": {
+              "info1": {
+                "title": "Nur 1v1."
+              },
+              "info2": {
+                "title": "Kein skillbasiertes Matchmaking",
+                "content": "Spiele werden nicht nach Spielerrang zugeteilt, da keine Rangdaten gespeichert werden."
+              }
+            }
+          }
+        },
+        "playersTab": {
+          "button": "Spieler und Zuschauer",
+          "maxPlayers": {
+            "title": "Maximale Spieleranzahl",
+            "label": "Maximale Spieleranzahl in diesem Raum"
+          },
+          "players": {
+            "title": "Spieler und Zugreihenfolge",
+            "header": {
+              "name": "Name",
+              "ping": "Ping",
+              "turnOrder": "Zugreihenfolge"
+            },
+            "kickButton": "Kick",
+            "blockButton": {
+              "default": "Spieler blockieren",
+              "blocked": "Blockiert",
+              "loggedOut": "Anmelden, um Spieler zu blockieren"
+            },
+            "goToSpectators": "Zuschauermodus",
+            "leaveSpectators": "Zuschauermodus beenden"
+          },
+          "becomeActivePlayer": {
+            "label": "Beende den Zug des aktuellen Spielers und werde zum aktiven Spieler.",
+            "button": "Werde aktiver Spieler"
+          }
+        }
+      },
+      "start": {
+        "hoverInfo": "Neues Spiel starten",
+        "startPanel": {
+          "title": "Starte das Spiel",
+          "option": {
+            "title": "Spieloptionen",
+            "format": "Format",
+            "startingPlayer": "Startspieler",
+            "disableSideboard": "Sideboard für alle Spieler deaktivieren"
+          },
+          "restartWarning": "Aktuelle Spiel beenden und ein neues starten.",
+          "startButton": "Start",
+          "restartButton": "Mit denselben Decks neu starten"
+        },
+        "deckPickerPanel": {
+          "title": "Deckauswahl",
+          "searchFieldPlaceholder": "Deckname",
+          "yourDecksTab": {
+            "title": "Deine Decks",
+            "description": "Deine Decks für dieses Format.",
+            "noDecksAvailable": "Du hast keine Decks für dieses Format, verwende ein vorgefertigtes Deck.",
+            "deckSelectorLabel": "Wählen dein Deck"
+          },
+          "preconstructedDecksTab": {
+            "title": "Vorgefertigte Decks",
+            "description": "Du kannst mit allen vorgefertigten Decks spielen, die für dieses Spiel in diesem Format verfügbar sind.",
+            "noDecksAvailable": "Dieses Spiel enthält keine vorgefertigte Decks.",
+            "deckSelectorLabel": "Wählen ein vorgefertigtes Deck"
+          }
+        },
+        "sideboardPanel": {
+          "title": "Tausche Karten mit deinem Sideboard",
+          "swapButton": "Zum Tauschen klicken",
+          "deckTitle": "Deck",
+          "sideboardTitle": "Sideboard",
+          "sideboardDisabled": "Vom Host für alle Spieler deaktiviert.",
+          "cancelChanges": "Sideboard zurücksetzen"
+        },
+        "mulliganPanel": {
+          "title": "Mulligan",
+          "keepAndStart": "Hand behalten und starten",
+          "putAtBottomAndStart": "Lege die ausgewählten Karten unter dein Deck und beginne."
+        }
+      },
+      "preferences": {
+        "hoverInfo": "Einstellungen"
+      },
+      "help": {
+        "hoverInfo": "Hilfe",
+        "shortucut": {
+          "general": {
+          },
+          "cards": {
+          }
+        }
+      },
+      "dice": {
+        "hoverInfo": "Würfle",
+        "title": "Würfel",
+        "info": "Wähle einen Würfel",
+        "rolled": "Gerollt!"
+      },
+      "forwardCancel": {
+        "hoverInfo": "Alle löschen"
+      },
+      "linksCancel": {
+        "hoverInfo": "Lösche alle Kartenverknüpfungen."
+      },
+      "createTokens": {
+        "hoverInfo": "Erstelle Tokens ​​und Karten",
+        "title": "Erstelle Tokens ​​und Karten",
+        "searchFieldPlaceholder": "Token-Name",
+        "searchCardsToggle": "Suche nach Nicht-Token-Karten",
+        "create": "Erstellen",
+        "created": "Erstellt!",
+        "noTokens": "Dieses Spiel hat keine Tokens.",
+        "noPreviouslyPicked": "Es wurden keine Token ausgewählt. Suche in der oberen linken Ecke nach einem Token."
+      },
+      "exit": {
+        "hoverInfo": "Schließen",
+        "title": "Schliessen",
+        "content": "Möchtest du wirklich zum Hauptmenü zurückkehren? Dein Spielfortschritt geht dabei verloren.",
+        "button": "Schließen"
+      }
+    },
+    "landing": {
+      "learn": {
+        "title": "Anleitungen",
+        "content": "Klicke auf {image} für eine Einführung und alle verfügbaren Shortcuts."
+      },
+      "connect": {
+        "title": "Verbinden"
+      },
+      "play": {
+        "title": "Spielen",
+        "content": "Sobald alle Spieler beigetreten sind, klicke {{image}}, um das Spiel zu starten."
+      }
+    },
+    "card": {
+      "hover": {
+        "target": "Ziel",
+        "play": "Spielen",
+        "groupWith": "Gruppieren mit",
+        "ping": "Ping",
+        "addToken": "Token hinzufügen",
+        "forward": "Nach vorne",
+        "hand": "Hand",
+        "addEffect": "Effekt hinzufügen",
+        "invert": "Umkehren",
+        "hideReveal": "Verdecken/Aufdecken",
+        "flip": "Umdrehen",
+        "noFlip": "Kein Flip!",
+        "primaryAdd": "Primär +1",
+        "secondaryAdd": "Sekundär +1",
+        "primaryRemove": "Primär -1",
+        "secondaryRemove": "Sekundär -1",
+        "ungroup": "Gruppierung aufheben",
+        "group": "Gruppe",
+        "alreadyGrouped": "Bereits gruppiert",
+        "resource": "Ressource",
+        "unselect": "Auswahl aufheben",
+        "select": "Wählen",
+        "untap": "Untapp",
+        "tap": "Klopfen"
+      },
+      "rightClickMenu": {
+        "toDeck": {
+          "title": "Zum Deck",
+          "xFromTop": "X von oben"
+        },
+        "returnToSideboard": "Zurück zum Sideboard",
+        "to": "Zu",
+        "flip": "Umdrehen",
+        "group": "Gruppe",
+        "ungroup": "Gruppierung aufheben",
+        "duplicate": "Duplizieren",
+        "createToken": "Token erstellen",
+        "giveToPlayer": "Einem Spieler geben",
+        "doesntUntap": "Nicht untappen",
+        "toggleCounter1": "Zähler 1",
+        "toggleCounter2": "Zähler 2",
+        "editNotes": "Notiz erstellen",
+        "hide": "Verdecken",
+        "reveal": "Aufdecken"
+      },
+      "rightClickMenuMultiSelect": {
+        "applyTo": {
+          "one": "Auf {{count}} Karte anwenden",
+          "other": "Auf {{count}} Karten anwenden"
+        },
+        "toDeckRandom": {
+          "title": "Ins Deck (zufällige Reihenfolge)"
+        },
+        "presentForward": "Zeigen",
+        "cancelForward": "Abbrechen",
+        "clearSelection": "Auswahl löschen"
+      },
+      "warning": {
+        "title": "Warnung",
+        "handVisibleByOpponents": "Für deine Gegner sichtbar",
+        "boardVisiblePlayerOnly": "Nur für dich sichtbar",
+        "cardNotLegal": "In diesem Format unzulässig.",
+        "cardUnreleased": "Unveröffentlicht"
+      }
+    },
+    "deck": {
+      "hover": {
+        "draw": "Ziehen",
+        "drawBottom": "Von unten ziehen",
+        "discard": "Karte abwerfen",
+        "discardBottom": "Karte von unten abwerfen",
+        "remove": "Entfernen",
+        "removeBottom": "Entfernen von unten",
+        "ressource": "Ressource",
+        "ressourceBottom": "Von unten zu den Ressourcen",
+        "dropToTop": "Aufs Deck",
+        "dropToBottom": "Unters Deck"
+      },
+      "rightClickMenu": {
+        "searchPanel": {
+          "button": "Suchen",
+          "title": "Suche nach Karten in deinem Deck",
+          "closeAndShuffle": "Schließen und mischen",
+          "searchFieldLabel": "Suchen",
+          "searchFieldPlaceholder": "Kartenname"
+        },
+        "manageTopPanel": {
+          "button": "Top-Karten verwalten",
+          "title": "Obere Karten vom Deck anschauen und verwalten",
+          "cardsCount": "Sichtbare Karten",
+          "showOneMore": "Weitere zeigen",
+          "autoRevealToggle": "Neue Karten aufdecken",
+          "allToBottom": "Alle zufällig unter das Deck",
+          "empty": "Du schaust dir noch keine Karte an"
+        },
+        "giveTopHidden": "Gib Oberste versteckt",
+        "drawXPanel": {
+          "button": "Ziehe X",
+          "title": "Ziehe X",
+          "cardsCountLabel": "Karten zum Ziehen",
+          "destinationLabel": "Ort",
+          "drawX": "Ziehe {{count}}"
+        }
+      }
+    },
+    "discard": {
+      "rightClickMenu": {
+        "generic": {
+          "multiSelectToggle": "Mehrere Karten auswählen",
+          "selectAll": "Alle auswählen",
+          "unselectAll": "Alle abwählen",
+          "applyToSelection": "Auswahl anwenden"
+        },
+        "discardPanel": {
+          "button": "Ablagestapel anzeigen",
+          "title": "Karten in deinem Ablagestapel",
+          "empty": "Dein Ablagestapel ist leer"
+        },
+        "removedPanel": {
+          "button": "Entfernte Karten anzeigen",
+          "title": "Karten aus dem Spiel entfernen",
+          "empty": "Es wurden keine Karten aus dem Spiel entfernt."
+        },
+        "removedHiddenPanel": {
+          "button": "Verdeckt entfernte Karten anzeigen",
+          "title": "Aus dem Spiel entfernte und vor den Gegnern verborgene Karten",
+          "empty": "Es wurden keine Karten aus dem verdeckt aus Spiel entfernt"
+        },
+        "sideboardPanel": {
+          "button": "Sideboard anzeigen",
+          "title": "Karten in deinem Sideboard",
+          "empty": "Ihr Sideboard ist leer"
+        }
+      }
+    },
+    "sectionQuickAction": {
+      "tapAll": "Alle tappen",
+      "untapAll": "Alle enttappen",
+      "toHandAll": "Alles in die Hand",
+      "revealAllToYou": "Alles für mich aufdecken",
+      "revealAll": "Alles aufdecken",
+      "hideAll": "Alle verstecken (verdeckt)",
+      "allToDeckBottom": "Alles unter das Deck",
+      "allToDeckBottomRandom": "Unter das Deck (zufällige Reihenfolge)",
+      "tapRessource": "Ressource -",
+      "untapRessource": "Ressource +",
+      "hand": {
+        "discardOneRandomly": " Zufällig eine Karte abwerfen",
+        "hideAll": "Alles ausblenden"
+      }
+    },
+    "logs": {
+      "server": {
+        "playerKicked": "{{playerName}} wurde rausgeworfen.",
+        "youKicked": "Du wurdest rausgeworfen.",
+        "playerJoined": "{{playerName}} ist der Lobby beigetreten",
+        "errors": {
+          "LOBBY_FULL": "Die Lobby ist bereits voll",
+          "WRONG_APPVERSION": "Der Host spielt auf einer anderen Version von TCGA.",
+          "WRONG_GAME": "Der Host spielt ein anderes Spiel"
+        },
+        "connectionLostWith": "Verbindung zu {{playerName}} unterbrochen",
+        "reconnectedWith": "Verbindung mit {{playerName}} erfolgreich wiederhergestellt",
+        "youAreOffline": "Du bist offline",
+        "connectingWithYourself": "Du kannst keine Verbindung zu dir selbst herstellen.",
+        "cantConnectWith": "Es wurde kein Spieler mit der ID {{playerId}} gefunden.",
+        "playerHasLeft": "{{playerName}} hat die Lobby verlassen",
+        "matchmaking": {
+          "noOpponentFound": "Kein Gegner rechtzeitig gefunden"
+        },
+        "joinSpectators": "{{playerName}} schaut jetzt zu",
+        "leaveSpectators": "{{playerName}} hat das Zuschauen beendet",
+        "changeLobbyPlayerLimit": "Das Spielerlimit wurde auf {{limit}} geändert."
+      },
+      "game": {
+        "turnEnded": "{{playerName}} hat seinen Zug beendet.",
+        "turnStarted": "{{playerName}} beginnt den Zug {{turnCount}}",
+        "tokenLost": "hat den {{token}}-Token verloren",
+        "tokenTaken": "hat den {{token}}-Token genommen",
+        "hasLost": "ist eliminiert",
+        "giveCardHidden": "hat eine verdeckte Karte gegeben",
+        "giveCard": "hat {{card}} gegeben",
+        "dice": {
+          "roll": "{{result}}/{{faces}} gewürfelt",
+          "flip": "{{result}} geflippt",
+          "heads": "Kopf",
+          "tails": "Zahl"
+        },
+        "mulligan": {
+          "drawAgainX": {
+            "one": "neu geworfene {{count}} Karte",
+            "other": "Mulligan für {{count}} Karten"
+          },
+          "drawAgainHand": "zog eine neue Hand",
+          "putBottomX": {
+            "one": "Legte {{count}} Karte unter dein Deck",
+            "other": "Legte {{count}} Karte unter ihr Deck"
+          },
+          "complete": "hat seinen Mulligan beendet"
+        }
+      },
+      "section": {
+        "hidAll": "Alle Karten in {{section}} ausgeblendet",
+        "hidAllToOpponent": "Alle Karten in {{section}} wurden vor anderen Spielern ausgeblendet.",
+        "revealedAll": "Alle Karten in {{section}} wurden aufgedeckt",
+        "toDeckBottomRandom": {
+          "one": "Lege alle {{count}} Karten aus {{section}} zufällig unter dein Deck",
+          "other": "Lege alle {{count}} Karten aus {{section}} zufällig unter dein Deck"
+        },
+        "toDeckBottom": {
+          "one": "Lege alle {{count}} Karten aus {{section}} der Reihe nach unter dein Deck",
+          "other": "Lege alle {{count}} Karten aus {{section}} der Reihe nach unter dein Deck"
+        }
+      },
+      "card": {
+        "hiddenCardNameReplacement": "eine Karte",
+        "reveal": "{{card}} aufgedeckt",
+        "hide": "ausgeblendet {{card}}",
+        "hideFromOpponents": "{{card}} wurde vor anderen Spielern ausgeblendet.",
+        "hideFromPlayer": "{{card}} vor {{playerName}} ausgeblendet",
+        "revealToPlayer": "{{card}} an {{playerName}} zeigen",
+        "sendTo": "{{card}} wurde an {{section}} gesendet",
+        "multiReveal": {
+          "one": "aufgedeckt {{cards}} ({{count}} Karte)",
+          "other": "aufgedeckte {{Karten}} ({{count}} Karten)"
+        },
+        "multiHide": {
+          "one": "hid {{cards}} ({{count}} Karte)",
+          "other": "Verdeckte {{cards}} ({{count}} Karten)"
+        },
+        "multiHideFromOpponents": {
+          "one": "hat {{cards}} ({{count}} Karten) vor anderen Spielern verdeckt.",
+          "other": "hat {{cards}} ({{count}} Karten) vor anderen Spielern versteckt."
+        },
+        "multiHideFromPlayer": {
+          "one": "{{cards}} ({{count}} Karte) vor {{playerName}} ausgeblendet",
+          "other": "{{cards}} ({{count}} Karten) vor {{playerName}} ausgeblendet"
+        },
+        "multiRevealToPlayer": {
+          "one": "hat {{cards}} ({{count}} Karte) an {{playerName}} aufgedeckt.",
+          "other": "hat {{cards}} ({{count}} Karten) an {{playerName}} aufgedeckt."
+        },
+        "multiShuffledInto": {
+          "one": "{{cards}} ({{count}} Karte) in ihren {{deck}} gemischt",
+          "other": "{{cards}} ({{count}} Karten) in ihren {{deck}} gemischt"
+        },
+        "multiToTop": {
+          "one": "hat {{cards}} ({{count}} Karte) oben auf ihren {{deck}} gelegt.",
+          "other": "hat {{cards}} ({{count}} Karten) oben auf ihren {{deck}} gelegt."
+        },
+        "multiToBottom": {
+          "one": "hat {{cards}} ({{count}} Karte) an den unteren Rand ihres {{deck}}-Decks gesendet.",
+          "other": "hat {{cards}} ({{count}} Karten) an den unteren Rand seines {{deck}}-Decks gelegt."
+        }
+      },
+      "deck": {
+        "searched": "Sie durchsuchten und mischten ihr {{deck}}",
+        "shuffled": "Sie mischten ihr {{deck}}",
+        "shuffledInto": "Sie mischten {{card}} in ihr {{deck}}",
+        "toBottom": "{{card}} wurde ganz unten in ihren {{deck}} gelegt.",
+        "toTop": "{{card}} wurde ganz oben auf ihren {{deck}} gelegt.",
+        "xFromTop": "{{card}} wurde von trop an ihr {{deck}} {{x}} gesendet.",
+        "topCardReveal": "enthüllten ihre {{deck}} oberste Karte",
+        "topCardRevealToYourself": "sahen sich die oberste Karte ihres {{deck}} an",
+        "topCardHideFromPlayer": "Die oberste Karte ihres {{deck}}-Decks vor {{playerName}} verbergen.",
+        "topCardRevealToPlayer": "enthüllten {{playerName}} ihre {{deck}} oberste Karte.",
+        "keepDeckVisibilityEnable": "Die oberste Karte des Decks wird beim Kartenwechsel verdeckt.",
+        "keepDeckVisibilityDisable": "Die oberste Karte des {{deck}} behält die Sichtbarkeit der Deckänderung.",
+        "topCardHidden": "Sie verbargen ihre oberste Karte des {{deck}}",
+        "revealCard": "enthüllte {{card}} aus {{deck}}",
+        "lookedToBottom": "Lege {{card}} von der Oberseite ihres {{deck}} nach unten.",
+        "allLookedToBottom": {
+          "one": "Lege die angesehene Karte in zufälliger Reihenfolge unten auf ihren {{deck}}.",
+          "other": "Lege alle {{count}} angesehenen Karten in zufälliger Reihenfolge unter ihren {{deck}}."
+        },
+        "lookedAtTopDeck": {
+          "one": "schauten auf die oberste Karte ihres {{deck}}",
+          "other": "betrachteten die obersten {{count}} Karten ihres {{deck}}"
+        },
+        "lookedAtTopDeckAndReorganized": {
+          "one": "Sie sahen sich die oberste Karte ihres {{deck}} an und ordneten sie neu.",
+          "other": "betrachtete die obersten {{count}} Karten ihres {{deck}} und ordnete sie neu an."
+        }
+      },
+      "discard": {
+        "multiShuffleInto": {
+          "one": "{{cards}} ({{count}} Karte) aus {{section}} in ihren {{deck}} gemischt",
+          "other": "{{cards}} ({{count}} Karten) aus {{section}} in ihren {{deck}} gemischt"
+        },
+        "multiToTop": {
+          "one": "hat {{cards}} ({{count}} Karte) von {{section}} oben auf ihren {{deck}} gelegt.",
+          "other": "hat {{cards}} ({{count}} Karten) aus {{section}} oben auf seinen {{deck}} gelegt."
+        },
+        "multiToBottom": {
+          "one": "hat {{cards}} ({{count}} Karte) von {{section}} an den unteren Rand ihres {{deck}} gelegt.",
+          "other": "{{cards}} ({{count}} Karten) wurden von {{section}} an den unteren Rand ihres {{deck}} gelegt."
+        },
+        "multiToTopRandomOrder": {
+          "one": "{{cards}} ({{count}} Karten) wurden in zufälliger Reihenfolge von {{section}} oben auf ihren {{deck}}-Deck gelegt.",
+          "other": "{{cards}} ({{count}} Karten) wurden in zufälliger Reihenfolge von {{section}} oben auf ihren {{deck}}-Deck gelegt."
+        },
+        "multiToBottomRandomOrder": {
+          "one": "{{cards}} ({{count}} Karten) wurden in zufälliger Reihenfolge von {{section}} an das Ende ihres {{deck}} gelegt.",
+          "other": "{{cards}} ({{count}} Karten) wurden in zufälliger Reihenfolge von {{section}} an den unteren Rand ihres {{deck}} gelegt."
+        },
+        "ping": "{{card}} wurde von {{section}} angepingt"
+      },
+      "hand": {
+        "hide": "ihre Hand verbargen",
+        "reveal": "Sie enthüllten ihre Hand",
+        "toDeckBottom": {
+          "one": "Lege die Hand ({{count}} Karten) in zufälliger Reihenfolge unten auf ihren Stapel.",
+          "other": "Lege die Hand ({{count}} Karten) in zufälliger Reihenfolge unter ihren Stapel."
+        }
+      },
+      "player": {
+        "counterIncrease": "Der Zähler {{counter}} wurde um {{difference}} auf {{value}} erhöht.",
+        "counterDecrease": "Der Zähler {{counter}} verringerte sich um {{difference}} auf {{value}}.",
+        "createToken": "{{card}}-Token erstellt",
+        "draw": "zog {{count}}",
+        "drawFromBottom": "zog {{count}} von unten",
+        "drawTo": "zog {{count}} zu {{section}}",
+        "drawToFromBottom": "zog {{count}} bis {{section}} von unten",
+        "cardMove": {
+          "play": {
+            "root": "gespielt {{card}}",
+            "from": {
+              "hand": "gespielt {{card}} aus der Hand",
+              "discard": "gespielt {{card}} aus dem Ablagestapel",
+              "sideboard": "{{card}} wurde vom Sideboard gespielt",
+              "exile": "gespielt {{card}} aus entfernt",
+              "exileHidden": "{{card}} wurde verdeckt aus der aussortierten Karte gespielt.",
+              "deck": "spielte {{card}} aus ihrem Deck"
+            }
+          },
+          "playTo": {
+            "root": "spielte {{card}} an {{section}}",
+            "from": {
+              "hand": "spielte {{card}} von der Hand nach {{section}}",
+              "discard": "gespielt {{card}} vom Ablagestapel nach {{section}}",
+              "sideboard": "{{card}} wurde vom Sideboard in {{section}} gespielt.",
+              "exile": "gespielt {{card}} von entfernt nach {{section}}",
+              "exileHidden": "{{card}} wurde verdeckt aus dem entfernten Abschnitt in {{section}} gespielt.",
+              "deck": "spielte {{card}} aus ihrem Deck nach {{section}}"
+            }
+          },
+          "hand": {
+            "root": "{{card}} wurde wieder in die Hand genommen",
+            "from": {
+              "deck": "zog {{card}} vom Stapel",
+              "deckBottom": "zog {{card}} vom Boden ihres Stapels",
+              "discard": "{{card}} wurde vom Ablagestapel auf die Hand zurückgenommen.",
+              "exile": "{{card}} wurde von entfernt auf die Hand zurückgegeben.",
+              "exileHidden": "{{card}} wurde von entferntem versteckten Objekt auf die Hand zurückgegeben."
+            }
+          },
+          "discard": {
+            "root": "weggeworfene {{Karte}}",
+            "from": {
+              "hand": "aus der Hand geworfene {{Karte}}",
+              "deck": "{{card}} aus ihrem Deck abgeworfen",
+              "deckBottom": "{{card}} wurde vom Boden ihres Stapels abgelegt."
+            }
+          },
+          "exile": {
+            "root": "entfernt {{card}}",
+            "from": {
+              "deck": "{{card}} wurde aus ihrem Deck entfernt.",
+              "deckBottom": "{{card}} wurde vom unteren Ende des Kartenstapels entfernt."
+            }
+          },
+          "exileHidden": {
+            "root": "{{card}} wurde verdeckt entfernt",
+            "from": {
+              "deck": "Sie haben die verdeckte {{card}} aus ihrem Deck entfernt.",
+              "deckBottom": "Die verdeckte Karte {{card}} wurde vom unteren Ende des Kartenstapels entfernt."
+            }
+          }
+        }
+      }
+    },
+    "playerCounter": {
+      "notesPlaceholder": "Anmerkungen...",
+      "token": {
+        "take": "Nehmen Sie {{token}}",
+        "remove": "Entfernen Sie {{token}}"
+      },
+      "linkToPlayer": "Link zum Spieler"
+    },
+    "others": {
+      "connectionStatus": {
+        "disconnected": "Getrennt",
+        "timeout": "Time-out"
+      },
+      "logsSection": {
+        "chat": {
+          "sendMessagePlaceholder": "Chat..."
+        }
+      }
+    }
+  },
+  "preferences": {
+    "options": {
+      "title": "Optionen",
+      "gameplay": {
+        "title": "Gameplay",
+        "visiblePlayArea": {
+          "label": "Die Spielbereiche der Karten sollten stets sichtbar sein."
+        },
+        "autopayRessources": {
+          "label": "Automatische Bezahlung der Ressourcenkosten beim Kartenspielen"
+        },
+        "focusedCardSize": {
+          "label": "Fokussierte Kartengröße",
+          "values": {
+            "None": "Keiner",
+            "Default": "Standard",
+            "Bigger": "Größer",
+            "Huge": "Riesig"
+          }
+        },
+        "autoPlayToStack": {
+          "label": "Automatische Wiedergabe von Hand führt immer zum Stapel"
+        },
+        "zoomOnActivePlayer": {
+          "label": "Zoome bei jedem neuen Zug auf das Spielbrett des aktuellen Spielers."
+        },
+        "allowCardReplacements": {
+          "label": "Siehe deine und die Kartenersetzungen deiner Gegner"
+        },
+        "hideOpponentPlaymats": {
+          "label": "Verstecke die Spielmatten des Gegners"
+        },
+        "showHiddenCardsToSpecs": {
+          "label": "Den Zuschauern die verdeckten Karten zeigen (erfordert die Zustimmung aller Spieler)"
+        }
+      },
+      "game": {
+        "title": "Spiel",
+        "uiLanguage": {
+          "label": "Bevorzugte Benutzeroberflächensprache"
+        },
+        "gameLanguage": {
+          "label": "Bevorzugte Spielsprache (sofern verfügbar)"
+        },
+        "tappedRotation": {
+          "label": "Die Rotation der angetippten Karten im Spiel überschreiben"
+        }
+      },
+      "connectivity": {
+        "title": "Konnektivität",
+        "useSafeMode": {
+          "label": "Sicheren Verbindungsmodus verwenden"
+        },
+        "preferredServer": {
+          "label": "Bevorzugter Server"
+        }
+      },
+      "others": {
+        "title": "Andere",
+        "debugMode": {
+          "label": "Debug-Modus aktivieren"
+        }
+      },
+      "generic": {
+        "leavePlayToApply": "Kehren Sie zum Hauptmenü zurück und drücken Sie erneut auf Wiedergabe."
+      }
+    },
+    "profile": {
+      "title": "Profil",
+      "username": {
+        "title": "Benutzername"
+      },
+      "avatar": {
+        "title": "Avatar",
+        "content": "Ihr Avatar wird neben Ihren Theken angezeigt. Für eine optimale Darstellung empfiehlt sich ein quadratisches Bild.",
+        "noAvatar": "Kein Avatar"
+      },
+      "reactions": {
+        "title": "Reaktionen",
+        "content": "Wähle 7 Emojis aus, um im Spiel schnell zu reagieren. Du findest sie in der Nähe des Chats. Das erste Emoji kannst du schnell mit der Eingabetaste senden."
+      }
+    },
+    "playmat": {
+      "title": "Spielmatte",
+      "current": {
+        "title": "Aktuelle Spielmatte"
+      },
+      "previous": {
+        "title": "Frühere Spielmatten",
+        "noPreviousPlaymats": "Du hast keine zuvor benutzte Spielmatte."
+      },
+      "custom": {
+        "title": "Individuell gestaltete Spielmatte",
+        "content": "Um sicherzustellen, dass die Spielmatte auf Ihrem Spielbrett gut aussieht, versuchen Sie, ein Bild im 16:9-Format mit einer Auflösung von mindestens 1080p zu finden.",
+        "invalidURL": "Ungültige URL"
+      },
+      "defaults": {
+        "title": "Standard-Spielmatten für {{game}}",
+        "applyColor": "Farbe auftragen"
+      }
+    },
+    "account": {
+      "title": "Konto",
+      "loggedOut": "Sie müssen angemeldet sein."
+    },
+    "sleeves": {
+      "title": "Ärmel"
+    },
+    "imageReplacement": {
+      "title": "Bildersetzung"
+    },
+    "generic": {
+      "inPlayLocked": "Kehren Sie zum Hauptmenü zurück, um diese Einstellung zu ändern.",
+      "imageUrl": "Bildlink..."
+    }
+  },
+  "login": {
+    "signIn": {
+      "title": "Login",
+      "buttonLabel": "Login",
+      "buttonLabelProgress": "Anmeldung...",
+      "bottomTextSignUp": {
+        "content": "Noch kein Konto?",
+        "link": "Melden Sie sich an"
+      },
+      "bottomTextResetPassword": {
+        "link": "Passwort vergessen?"
+      }
+    },
+    "signUp": {
+      "title": "Melden Sie sich an",
+      "buttonLabel": "Melden Sie sich an",
+      "buttonLabelProgress": "Anmeldung...",
+      "bottomTextSignIn": {
+        "content": "Sie haben bereits ein Konto?",
+        "link": "Einloggen"
+      },
+      "emailVerification": {
+        "info": "Nichts? (Prüfen Sie Ihren Spam-Ordner.)",
+        "buttonLabel": "Senden Sie eine weitere E-Mail",
+        "buttonLabelSuccess": "Gesendet!",
+        "error": "Fehler beim Senden."
+      },
+      "success": "Konto erstellt! Eine Bestätigungs-E-Mail wurde versendet. Bitte überprüfen Sie Ihr E-Mail-Postfach."
+    },
+    "resetPassword": {
+      "title": "Passwort zurücksetzen",
+      "buttonLabel": "Link zum Zurücksetzen senden",
+      "buttonLabelProgress": "Wird gesendet...",
+      "bottomText": {
+        "content": "Noch kein Konto?",
+        "link": "Melden Sie sich an"
+      },
+      "bottomTextSignIn": {
+        "content": "Passwort vergessen?",
+        "link": "Einloggen"
+      },
+      "success": "E-Mail zum Zurücksetzen wurde gesendet. Bitte überprüfen Sie Ihren Posteingang."
+    },
+    "generic": {
+      "email": {
+        "title": "E-Mail",
+        "placeholder": "E-Mail-Adresse eingeben"
+      },
+      "password": {
+        "title": "Passwort",
+        "placeholder": "Passwort"
+      },
+      "confirmPassword": {
+        "title": "Passwort bestätigen",
+        "placeholder": "Passwort bestätigen"
+      }
+    },
+    "error": {
+      "unverifiedLogin": "Bitte überprüfen Sie Ihre E-Mail-Adresse, bevor Sie sich anmelden.",
+      "differentPasswords": "Die Passwörter stimmen nicht überein."
+    },
+    "info": {
+      "title": "Warum ein Konto erstellen?",
+      "feature": {
+        "feature1": "Speichern Sie Ihre Decks online",
+        "feature2": "Greifen Sie auf all Ihren Geräten auf Ihre Decks und Einstellungen zu."
+      },
+      "warning": {
+        "warning1": "Für die Nutzung der App ist kein Konto erforderlich!",
+        "warning2": "Vergiss nicht, dieselbe E-Mail-Adresse bei KoFi zu verwenden, um deine Unterstützerprämien zu erhalten."
+      }
+    }
+  }
+}
