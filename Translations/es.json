@@ -448,6 +448,7 @@
         "invert": "Invertir",
         "hideReveal": "Ocultar/Revelar",
         "flip": "Voltear",
+        "noFlip": "¡No voltear!",
         "primaryAdd": "Primario +1",
         "secondaryAdd": "Secundario +1",
         "primaryRemove": "Primario -1",
