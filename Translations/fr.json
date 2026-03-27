@@ -74,6 +74,11 @@
           "title": "Supprimer le deck",
           "content": "Cette action est irréversible.",
           "confirmButton": "Supprimer le deck"
+        },
+        "duplicate": {
+          "title": "Duplicate deck",
+          "content": "Créer une copie modifiable de ce deck.",
+          "confirmButton": "Dupliquer"
         }
       },
       "saveOrderChangeButton": "Enregistrer l’ordre des decks",
@@ -81,11 +86,16 @@
     },
     "deckbuilder": {
       "categories": {
-        "sideboard": "Réserve"
+        "sideboard": "Réserve",
+        "maybeboard": "Envisagées"
       },
       "deckInfo": {
         "edit": {
           "title": "Modifier le deck"
+        },
+        "switchFormat": {
+          "current": "La légalité des cartes et les règles de construction de deck sont basées sur ce format.",
+          "switch": "Passer à ce format."
         },
         "createdTimeAgo": "Créé {{time}}",
         "lastModifiedTimeAgo": "Modifié {{time}}",
@@ -133,10 +143,14 @@
         "cardsTotal": "Total de cartes",
         "move": {
           "moveTo": "Déplacer vers {{name}}",
-          "removeFrom": "Retirer de {{name}}",
+          "removeFrom": "Remove from {{name}}",
           "one": "une",
           "all": "toutes"
         }
+      },
+      "variantPickerPanel": {
+        "title": "Choisissez une version alternative pour {{name}}",
+        "empty": "Il n'existe aucune autre version pour cette carte."
       },
       "costCurve": {
         "graphXAxis": "Cartes par coût",
@@ -414,6 +428,9 @@
         "created": "Créé !",
         "noTokens": "Ce jeu n’a aucun jeton",
         "noPreviouslyPicked": "Aucun jeton récemment utilisé. Recherchez un jeton dans le coin supérieur gauche."
+      },
+      "optionalSections": {
+        "title": "Zones de jeux facultatives"
       },
       "exit": {
         "hoverInfo": "Quitter",
