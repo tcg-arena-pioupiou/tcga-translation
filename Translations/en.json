@@ -74,6 +74,11 @@
                     "title": "Delete deck",
                     "content": "This action cannot be undone.",
                     "confirmButton": "Delete deck"
+                },
+                "duplicate": {
+                    "title": "Duplicate deck",
+                    "content": "Create an editable copy of this deck.",
+                    "confirmButton": "Duplicate"
                 }
             },
             "saveOrderChangeButton": "Save new deck order",
@@ -81,11 +86,16 @@
         },
         "deckbuilder": {
             "categories": {
-                "sideboard": "Sideboard"
+                "sideboard": "Sideboard",
+                "maybeboard": "Considering"
             },
             "deckInfo": {
                 "edit": {
                     "title": "Edit deck"
+                },
+                "switchFormat": {
+                    "current": "Card legality and deckbuilding rules are based on this format.",
+                    "switch": "Switch to this format."
                 },
                 "createdTimeAgo": "Created {{time}}",
                 "lastModifiedTimeAgo": "Last modified {{time}}",
@@ -133,10 +143,14 @@
                 "cardsTotal": "Total cards",
                 "move": {
                     "moveTo": "Move to {{name}}",
-                    "removeFrom": "Move to {{name}}",
+                    "removeFrom": "Remove from {{name}}",
                     "one": "one",
                     "all": "all"
                 }
+            },
+            "variantPickerPanel": {
+                "title": "Choose a variant for {{name}}",
+                "empty": "There are no variants for this card."
             },
             "costCurve": {
                 "graphXAxis": "Cards by cost",
@@ -416,6 +430,9 @@
                 "created": "Created !",
                 "noTokens": "This game doesn't have any token",
                 "noPreviouslyPicked": "No tokens recently picked. Search a token by name in the top left corner."
+            },
+            "optionalSections": {
+                "title": "Optional play areas"
             },
             "exit": {
                 "hoverInfo": "Exit",
