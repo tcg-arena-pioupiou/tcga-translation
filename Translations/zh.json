@@ -74,6 +74,11 @@
           "title": "删除卡组",
           "content": "此操作无法撤销。",
           "confirmButton": "删除卡组"
+        },
+        "duplicate": {
+          "title": "复制卡组",
+          "content": "创建此卡组的可编辑副本",
+          "confirmButton": "复制"
         }
       },
       "saveOrderChangeButton": "保存卡组排序",
@@ -81,11 +86,16 @@
     },
     "deckbuilder": {
       "categories": {
-        "sideboard": "备牌"
+        "sideboard": "备牌",
+        "maybeboard": "待定"
       },
       "deckInfo": {
         "edit": {
           "title": "编辑卡组"
+        },
+        "switchFormat": {
+          "current": "卡牌的合法性以及组牌规则均以此赛制为准。",
+          "switch": "切换到此赛制."
         },
         "createdTimeAgo": "创建于 {{time}}",
         "lastModifiedTimeAgo": "上次修改于 {{time}}",
@@ -133,10 +143,14 @@
         "cardsTotal": "总卡牌数",
         "move": {
           "moveTo": "移至 {{name}}",
-          "removeFrom": "从 {{name}} 中移出",
+          "removeFrom": "从 {{name}} 中移除",
           "one": "一张",
           "all": "全部"
         }
+      },
+      "variantPickerPanel": {
+        "title": "为 {{name}} 选择版本",
+        "empty": "此卡没有其他版本."
       },
       "costCurve": {
         "graphXAxis": "按费用统计",
@@ -414,6 +428,9 @@
         "created": "已创建！",
         "noTokens": "此游戏没有任何衍生物",
         "noPreviouslyPicked": "最近没有选择衍生物。请在左上角通过名称搜索衍生物。"
+      },
+      "optionalSections": {
+        "title": "可选区域"
       },
       "exit": {
         "hoverInfo": "退出",
