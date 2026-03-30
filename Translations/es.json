@@ -74,6 +74,11 @@
           "title": "Eliminar mazo",
           "content": "Esta acción no se puede deshacer.",
           "confirmButton": "Eliminar mazo"
+        },
+        "duplicate": {
+          "title": "Duplicar mazo",
+          "content": "Crear una copia editable de este mazo.",
+          "confirmButton": "Duplicar"
         }
       },
       "saveOrderChangeButton": "Guardar nuevo orden de mazos",
@@ -81,11 +86,16 @@
     },
     "deckbuilder": {
       "categories": {
-        "sideboard": "Banquillo"
+        "sideboard": "Banquillo",
+        "maybeboard": "Considerando"
       },
       "deckInfo": {
         "edit": {
           "title": "Editar mazo"
+        },
+        "switchFormat": {
+          "current": "Legalidad de las cartas y reglas de construcción de mazo basado en este formato.",
+          "switch": "Cambiar a este formato."
         },
         "createdTimeAgo": "Creado {{time}}",
         "lastModifiedTimeAgo": "Última modificación {{time}}",
@@ -133,10 +143,14 @@
         "cardsTotal": "Total de cartas",
         "move": {
           "moveTo": "Mover a {{name}}",
-          "removeFrom": "Mover a {{name}}",
+          "removeFrom": "Remove from {{name}}",
           "one": "una",
           "all": "todo"
         }
+      },
+      "variantPickerPanel": {
+        "title": "Elegir una variante de {{name}}",
+        "empty": "No hay variantes de esta carta."
       },
       "costCurve": {
         "graphXAxis": "Cartas por coste",
@@ -414,6 +428,9 @@
         "created": "¡Creada!",
         "noTokens": "Este juego no tiene fichas",
         "noPreviouslyPicked": "Sin fichas recientes. Busca una ficha por su nombre en la esquina superior izquierda."
+      },
+      "optionalSections": {
+        "title": "Áreas de juego opcionales"
       },
       "exit": {
         "hoverInfo": "Salir",
