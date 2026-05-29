@@ -3,6 +3,7 @@
         "or": "or",
         "cancel": "Cancel",
         "continue": "Continue",
+        "confirm": "Confirm",
         "copy": "Copy",
         "copySuccess": "Copied !",
         "close": "Close",
@@ -16,7 +17,9 @@
         "refresh": "Refresh",
         "wait": "Wait",
         "applyChanges": "Apply changes",
-        "applyChangesSuccess": "Applied!"
+        "applyChangesSuccess": "Applied!",
+        "yes": "Yes",
+        "no": "No"
     },
     "navigation": {
         "games": "Games",
@@ -210,6 +213,8 @@
             "random": "Random",
             "show": "Show",
             "play": "Play",
+            "resolve": "Resolve",
+            "playBottom": "Play bottom",
             "reveal": "Reveal",
             "allToHand": "All to hand",
             "allToDiscard": "All to discard",
@@ -236,7 +241,8 @@
                 "givePlayer": "Give to player",
                 "playAll": "Play all",
                 "toDeckRandomOrder": "To deck (random order)"
-            }
+            },
+            "you": "You"
         },
         "leftMenuBar": {
             "turnCount": "Turn",
@@ -387,12 +393,24 @@
                     "deckTitle": "Deck",
                     "sideboardTitle": "Sideboard",
                     "sideboardDisabled": "Disabled for all players by the host",
-                    "cancelChanges": "Reset sideboard"
+                    "cancelChanges": "Reset sideboard",
+                    "order": {
+                        "title": "Sort by:",
+                        "byName": "Name",
+                        "byCost": "Cost",
+                        "byType": "Type"
+                    }
                 },
                 "mulliganPanel": {
                     "title": "Mulligan",
                     "keepAndStart": "Keep hand and start",
-                    "putAtBottomAndStart": "Put selected cards to the bottom and start"
+                    "mulliganHand": "Mulligan all",
+                    "mulliganSelection": "Mulligan ({{count}})"
+                },
+                "boardCardSelectionPanel": {
+                    "title": "Board card selection",
+                    "random": "Select randomly",
+                    "logRandomPick": "has selected randomly for the {{category}} section"
                 }
             },
             "preferences": {
@@ -650,11 +668,15 @@
                         "other": "mulliganed {{count}} cards"
                     },
                     "drawAgainHand": "drew a new hand",
-                    "putBottomX": {
-                        "one": "put back {{count}} card to the bottom of their deck",
-                        "other": "put back {{count}} cards to the bottom of their deck"
-                    },
-                    "complete": "has finished taking their mulligan"
+                    "complete": "has finished taking their mulligan",
+                    "revealHand": "revealed his hand {{cards}}"
+                },
+                "options": {
+                    "title": "Game options",
+                    "configurator": "Match configurator:",
+                    "startingPlayer": "Starting player:",
+                    "sideboardAllowed": "Sideboard allowed:",
+                    "keepDecks": "Keep same decks:"
                 }
             },
             "section": {
@@ -717,7 +739,7 @@
                 "shuffledInto": "shuffled {{card}} into their {{deck}}",
                 "toBottom": "sent {{card}} to the bottom of their {{deck}}",
                 "toTop": "sent {{card}} to the top of their {{deck}}",
-                "xFromTop": "sent {{card}} to their {{deck}} {{x}} from trop",
+                "xFromTop": "sent {{card}} to their {{deck}} {{x}} from top",
                 "topCardReveal": "revealed their {{deck}} top card",
                 "topCardRevealToYourself": "looked at their {{deck}} top card",
                 "topCardHideFromPlayer": "hid their {{deck}} top card from {{playerName}}",
@@ -788,7 +810,8 @@
                             "sideboard": "played {{card}} from sideboard",
                             "exile": "played {{card}} from removed",
                             "exileHidden": "played {{card}} from removed face down",
-                            "deck": "played {{card}} from their deck"
+                            "deck": "played {{card}} from their {{deck}}",
+                            "deckBottom": "played {{card}} from the bottom of their {{deck}}"
                         }
                     },
                     "playTo": {
@@ -816,22 +839,22 @@
                         "root": "discarded {{card}}",
                         "from": {
                             "hand": "discarded {{card}} from hand",
-                            "deck": "discarded {{card}} from their deck",
-                            "deckBottom": "discarded {{card}} from the bottom of their deck"
+                            "deck": "discarded {{card}} from their {{deck}}",
+                            "deckBottom": "discarded {{card}} from the bottom of their {{deck}}"
                         }
                     },
                     "exile": {
                         "root": "removed {{card}}",
                         "from": {
-                            "deck": "removed {{card}} from their deck",
-                            "deckBottom": "removed {{card}} from the bottom of deck"
+                            "deck": "removed {{card}} from their {{deck}}",
+                            "deckBottom": "removed {{card}} from the bottom of their {{deck}}"
                         }
                     },
                     "exileHidden": {
                         "root": "removed {{card}} face down",
                         "from": {
-                            "deck": "removed face down {{card}} from their deck",
-                            "deckBottom": "removed face down {{card}} from the bottom of deck"
+                            "deck": "removed face down {{card}} from their {{deck}}",
+                            "deckBottom": "removed face down {{card}} from the bottom of {{deck}}"
                         }
                     }
                 }
@@ -853,6 +876,16 @@
             "logsSection": {
                 "chat": {
                     "sendMessagePlaceholder": "Chat..."
+                }
+            },
+            "setup": {
+                "ahead": "Waiting for other players to catch up...",
+                "waitStartPick": "{{player}} is deciding who goes first.",
+                "waitStartPickRandom": "{{player}} was randomly chosen to decide who goes first.",
+                "startPicker": {
+                    "title": "Choose starting player",
+                    "chosenRandomly": "You have been randomly selected to decide who goes first.",
+                    "chosenManually": "You have been manually selected to decide who goes first."
                 }
             }
         }
@@ -912,8 +945,26 @@
                 },
                 "preferredServer": {
                     "label": "Preferred server"
+                },
+                "serverMonitor": {
+                    "region": "Region",
+                    "latency": "Latency",
+                    "quality": "Quality",
+                    "notTested": "Not tested",
+                    "button": {
+                        "test": "Test servers",
+                        "testProgress": "Pinging...",
+                        "pickServer": "Choose this server"
+                    }
                 }
             }, 
+            "sounds": {
+                "title": "Sounds",
+                "general": "General",
+                "ui": "Interface",
+                "cards": "Card effects",
+                "effects": "Game effects"
+            },
             "others": {
                 "title": "Others",
                 "debugMode": {
