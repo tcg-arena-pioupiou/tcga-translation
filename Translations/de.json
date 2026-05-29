@@ -22,7 +22,7 @@
     "games": "Spiele",
     "decks": "Decks",
     "play": "Spielen",
-    "preferences": "Präferenzen",
+    "preferences": "Einstellungen",
     "customGames": "Eigenes Spiel - BETA",
     "discord": "Discord",
     "support": "Support",
@@ -74,18 +74,28 @@
           "title": "Deck löschen",
           "content": "Diese Handlung kann nicht rückgängig gemacht werden.",
           "confirmButton": "Deck löschen"
+        },
+        "duplicate": {
+          "title": "Deck duplizieren.",
+          "content": "Erstelle eine bearbeitbare Kopie dieses Decks.",
+          "confirmButton": "Duplizieren"
         }
       },
       "saveOrderChangeButton": "Neue Reihenfolge speichern",
-      "cancelOrderChangeButton": "Neue Reihenfolge abbrechen"
+      "cancelOrderChangeButton": "Neue Reihenfolge verwerfen"
     },
     "deckbuilder": {
       "categories": {
-        "sideboard": "Sideboard"
+        "sideboard": "Sideboard",
+        "maybeboard": "In Erwägung"
       },
       "deckInfo": {
         "edit": {
           "title": "Deck bearbeiten"
+        },
+        "switchFormat": {
+          "current": "Die Regeln für die Kartenlegalität und den Deckbau basieren auf diesem Format.",
+          "switch": "Wechseln Sie zu diesem Format."
         },
         "createdTimeAgo": "Erstellt {{time}}",
         "lastModifiedTimeAgo": "Zuletzt geändert um {{time}}",
@@ -133,10 +143,14 @@
         "cardsTotal": "Gesamtzahl der Karten",
         "move": {
           "moveTo": "Verschieben nach {{name}}",
-          "removeFrom": "Verschieben nach {{name}}",
+          "removeFrom": "Aus {{name}} entfernen",
           "one": "eins",
           "all": "alle"
         }
+      },
+      "variantPickerPanel": {
+        "title": "Wähle eine Variante für {{name}}",
+        "empty": "Für diese Karte gibt es keine Varianten."
       },
       "costCurve": {
         "graphXAxis": "Karten nach Kosten",
@@ -415,6 +429,9 @@
         "noTokens": "Dieses Spiel hat keine Tokens.",
         "noPreviouslyPicked": "Es wurden keine Token ausgewählt. Suche in der oberen linken Ecke nach einem Token."
       },
+      "optionalSections": {
+        "title": "Optionale Spielbereiche"
+      },
       "exit": {
         "hoverInfo": "Schließen",
         "title": "Schliessen",
@@ -459,8 +476,8 @@
         "resource": "Ressource",
         "unselect": "Auswahl aufheben",
         "select": "Wählen",
-        "untap": "Untapp",
-        "tap": "Klopfen"
+        "untap": "Enttappen",
+        "tap": "Tappen"
       },
       "rightClickMenu": {
         "toDeck": {
@@ -669,7 +686,7 @@
         },
         "multiHideFromOpponents": {
           "one": "hat {{cards}} ({{count}} Karten) vor anderen Spielern verdeckt.",
-          "other": "hat {{cards}} ({{count}} Karten) vor anderen Spielern versteckt."
+          "other": "hat {{cards}} ({{count}} Karten) vor anderen Spielern verdeckt."
         },
         "multiHideFromPlayer": {
           "one": "{{cards}} ({{count}} Karte) vor {{playerName}} ausgeblendet",
