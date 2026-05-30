@@ -957,6 +957,8 @@
         }
       },
       "sounds": {
+        "title": "Sons",
+        "general": "Général",
         "ui": "Interface",
         "cards": "Cartes",
         "effects": "Jeu"
