@@ -3,6 +3,7 @@
     "or": "ou",
     "cancel": "Annuler",
     "continue": "Continuer",
+    "confirm": "Confirm",
     "copy": "Copier",
     "copySuccess": "Copié !",
     "close": "Fermer",
@@ -16,7 +17,9 @@
     "refresh": "Actualiser",
     "wait": "Attendez",
     "applyChanges": "Appliquer les changements",
-    "applyChangesSuccess": "Appliqué !"
+    "applyChangesSuccess": "Appliqué !",
+    "yes": "Oui",
+    "no": "No"
   },
   "navigation": {
     "games": "Jeux",
@@ -210,6 +213,8 @@
       "random": "Aléatoire",
       "show": "Voir",
       "play": "Jouer",
+      "resolve": "Résoudre",
+      "playBottom": "Jouer depuis le dessous",
       "reveal": "Révéler",
       "allToHand": "Tout mettre en main",
       "allToDiscard": "Tout défausser",
@@ -236,7 +241,8 @@
         "givePlayer": "Donner au joueur",
         "playAll": "Tout jouer",
         "toDeckRandomOrder": "Mettre dans le deck (ordre aléatoire)"
-      }
+      },
+      "you": "Vous"
     },
     "leftMenuBar": {
       "turnCount": "Tour",
@@ -387,12 +393,24 @@
           "deckTitle": "Deck",
           "sideboardTitle": "Réserve",
           "sideboardDisabled": "Désactivé pour tous les joueurs par l'hôte",
-          "cancelChanges": "Réinitialiser la réserve"
+          "cancelChanges": "Réinitialiser la réserve",
+          "order": {
+            "title": "Trier par :",
+            "byName": "Nom",
+            "byCost": "Coût",
+            "byType": "Type"
+          }
         },
         "mulliganPanel": {
           "title": "Mulligan",
           "keepAndStart": "Garder la main et commencer",
-          "putAtBottomAndStart": "Mettre les cartes sélectionnées dessous et commencer"
+          "mulliganHand": "Mulligan tout",
+          "mulliganSelection": "Mulligan ({{count}})"
+        },
+        "boardCardSelectionPanel": {
+          "title": "Sélection de cartes",
+          "random": "Sélectionner aléatoirement",
+          "logRandomPick": "a sélectionné au hasard pour la section {{category}}"
         }
       },
       "preferences": {
@@ -648,11 +666,15 @@
             "other": "a mulligan {{count}} cartes"
           },
           "drawAgainHand": "a pioché une nouvelle main",
-          "putBottomX": {
-            "one": "a remis {{count}} carte en dessous de son deck",
-            "other": "a remis {{count}} cartes en dessous de son deck"
-          },
-          "complete": "a finis son mulligan"
+          "complete": "a finis son mulligan",
+          "revealHand": "a révélé sa main {{cards}}"
+        },
+        "options": {
+          "title": "Options de jeu",
+          "configurator": "Configurateur :",
+          "startingPlayer": "Premier joueur :",
+          "sideboardAllowed": "Sideboard autorisé :",
+          "keepDecks": "Conserver les mêmes decks :"
         }
       },
       "section": {
@@ -715,7 +737,7 @@
         "shuffledInto": "a mélangé {{card}} dans son {{deck}}",
         "toBottom": "a mis {{card}} en dessous de son {{deck}}",
         "toTop": "a mis {{card}} en dessus de son deck {{deck}}",
-        "xFromTop": "a mis {{card}} au-dessus {{deck}} en position {{x}}",
+        "xFromTop": "a mis {{card}} au-dessus de son {{deck}} en position {{x}}",
         "topCardReveal": "a révélé la carte du dessus de son {{deck}}",
         "topCardRevealToYourself": "a regardé la carte du dessus de son {{deck}}",
         "topCardHideFromPlayer": "a caché la carte de dessus de son {{deck}} à {{playerName}}",
@@ -786,7 +808,8 @@
               "sideboard": "a joué {{card}} depuis sa réserve",
               "exile": "a joué {{card}} depuis ses cartes retirées",
               "exileHidden": "a joué {{card}} depuis ses cartes retirées face cachées",
-              "deck": "a joué {{card}} depuis son deck"
+              "deck": "a joué {{card}} depuis son {{deck}}",
+              "deckBottom": "a joué {{card}} du dessous de son {{deck}}"
             }
           },
           "playTo": {
@@ -814,22 +837,22 @@
             "root": "a défaussé {{card}}",
             "from": {
               "hand": "a défaussé {{card}} depuis sa main",
-              "deck": "a défaussé {{card}} depuis son deck",
-              "deckBottom": "a défaussé {{card}} depuis le dessous de son deck"
+              "deck": "a défaussé {{card}} depuis son {{deck}}",
+              "deckBottom": "a défaussé {{card}} depuis le dessous de son {{deck}}"
             }
           },
           "exile": {
             "root": "a retiré {{card}}",
             "from": {
-              "deck": "a retiré {{card}} depuis son deck",
-              "deckBottom": "a retiré {{card}} depuis le dessous de son deck"
+              "deck": "a retiré {{card}} face cachée depuis son {{deck}}",
+              "deckBottom": "a retiré {{card}} du dessous de son {{deck}}"
             }
           },
           "exileHidden": {
             "root": "a retiré {{card}} face cachée",
             "from": {
-              "deck": "a retiré {{card}} face caché depuis son deck",
-              "deckBottom": "a retiré {{card}} face caché depuis le dessous de son deck"
+              "deck": "a retiré {{card}} face cachée depuis son {{deck}}",
+              "deckBottom": "a retiré face cachée {{card}} du dessous de son {{deck}}"
             }
           }
         }
@@ -851,6 +874,16 @@
       "logsSection": {
         "chat": {
           "sendMessagePlaceholder": "Chat..."
+        }
+      },
+      "setup": {
+        "ahead": "En attente des autres joueurs...",
+        "waitStartPick": "{{player}} décide qui commence.",
+        "waitStartPickRandom": "{{player}} a été choisi aléatoirement pour décider qui commence.",
+        "startPicker": {
+          "title": "Choisissez le premier joueur",
+          "chosenRandomly": "Vous avez été sélectionnés aléatoirement pour décider qui commence.",
+          "chosenManually": "Vous avez été sélectionné manuellement pour décider qui commence."
         }
       }
     }
@@ -910,7 +943,23 @@
         },
         "preferredServer": {
           "label": "Serveur préféré"
+        },
+        "serverMonitor": {
+          "region": "Région",
+          "latency": "Latence",
+          "quality": "Qualité",
+          "notTested": "Non testé",
+          "button": {
+            "test": "Tester les serveurs",
+            "testProgress": "Ping en cours ...",
+            "pickServer": "Choisir ce serveur"
+          }
         }
+      },
+      "sounds": {
+        "ui": "Interface",
+        "cards": "Cartes",
+        "effects": "Jeu"
       },
       "others": {
         "title": "Autres",
