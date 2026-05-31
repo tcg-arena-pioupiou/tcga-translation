@@ -3,6 +3,7 @@
     "or": "或",
     "cancel": "取消",
     "continue": "继续",
+    "confirm": "确认",
     "copy": "复制",
     "copySuccess": "复制成功！",
     "close": "关闭",
@@ -16,7 +17,9 @@
     "refresh": "刷新",
     "wait": "请稍候",
     "applyChanges": "应用更改",
-    "applyChangesSuccess": "已应用！"
+    "applyChangesSuccess": "已应用！",
+    "yes": "是",
+    "no": "否"
   },
   "navigation": {
     "games": "游戏",
@@ -210,6 +213,8 @@
       "random": "随机",
       "show": "展示",
       "play": "打出",
+      "resolve": "结算",
+      "playBottom": "打出底部",
       "reveal": "展示",
       "allToHand": "全部加入手牌",
       "allToDiscard": "全部弃置",
@@ -236,7 +241,8 @@
         "givePlayer": "交给玩家",
         "playAll": "全部打出",
         "toDeckRandomOrder": "洗入牌库 (随机顺序)"
-      }
+      },
+      "you": "你"
     },
     "leftMenuBar": {
       "turnCount": "回合",
@@ -387,12 +393,24 @@
           "deckTitle": "主卡组",
           "sideboardTitle": "备牌",
           "sideboardDisabled": "主机已为所有玩家禁用备牌",
-          "cancelChanges": "重置备牌修改"
+          "cancelChanges": "重置备牌修改",
+          "order": {
+            "title": "排序方式：",
+            "byName": "名称",
+            "byCost": "费用",
+            "byType": "类型"
+          }
         },
         "mulliganPanel": {
           "title": "调度",
           "keepAndStart": "保留手牌并开始",
-          "putAtBottomAndStart": "将选中的卡牌置于牌底并开始"
+          "mulliganHand": "全部调度",
+          "mulliganSelection": "调度 ({{count}})"
+        },
+        "boardCardSelectionPanel": {
+          "title": "场地选择",
+          "random": "随机选择",
+          "logRandomPick": "已为 {{category}} 区域随机选择了"
         }
       },
       "preferences": {
@@ -648,11 +666,15 @@
             "other": "调度了 {{count}} 张牌"
           },
           "drawAgainHand": "重新抽取了起手",
-          "putBottomX": {
-            "one": "将 {{count}} 张牌放回了牌底",
-            "other": "将 {{count}} 张牌放回了牌底"
-          },
-          "complete": "已完成调度"
+          "complete": "已完成调度",
+          "revealHand": "展示了其手牌 {{cards}}"
+        },
+        "options": {
+          "title": "游戏选项",
+          "configurator": "对局配置器：",
+          "startingPlayer": "起始玩家：",
+          "sideboardAllowed": "允许备牌：",
+          "keepDecks": "保留相同牌组："
         }
       },
       "section": {
@@ -715,7 +737,7 @@
         "shuffledInto": "将 {{card}} 洗入了 {{deck}}",
         "toBottom": "将 {{card}} 置于了 {{deck}} 牌底",
         "toTop": "将 {{card}} 置于了 {{deck}} 牌顶",
-        "xFromTop": "将 {{card}} 置于了 {{deck}} 牌顶往下第 {{x}} 张的位置",
+        "xFromTop": "将 {{card}} 从顶部数第 {{x}} 张放入其 {{deck}}",
         "topCardReveal": "翻开了 {{deck}} 的顶牌",
         "topCardRevealToYourself": "查看了 {{deck}} 的顶牌",
         "topCardHideFromPlayer": "对 {{playerName}} 隐藏了 {{deck}} 的顶牌",
@@ -786,7 +808,8 @@
               "sideboard": "从备牌打出了 {{card}}",
               "exile": "从移除区打出了 {{card}}",
               "exileHidden": "从面朝下移除区打出了 {{card}}",
-              "deck": "从牌库打出了 {{card}}"
+              "deck": "从其 {{deck}} 中打出了 {{card}}",
+              "deckBottom": "从其 {{deck}} 底部打出了 {{card}}"
             }
           },
           "playTo": {
@@ -814,22 +837,22 @@
             "root": "弃置了 {{card}}",
             "from": {
               "hand": "从手牌弃置了 {{card}}",
-              "deck": "将牌库中的 {{card}} 置入弃牌区",
-              "deckBottom": "将牌库底的 {{card}} 置入弃牌区"
+              "deck": "从其 {{deck}} 中弃掉了 {{card}}",
+              "deckBottom": "从其 {{deck}} 底部弃掉了 {{card}}"
             }
           },
           "exile": {
             "root": "移除了 {{card}}",
             "from": {
-              "deck": "从牌库移除了 {{card}}",
-              "deckBottom": "从牌底移除了 {{card}}"
+              "deck": "从其 {{deck}} 中移除了 {{card}}",
+              "deckBottom": "从其 {{deck}} 底部移除了 {{card}}"
             }
           },
           "exileHidden": {
             "root": "面朝下移除了 {{card}}",
             "from": {
-              "deck": "从牌库面朝下移除了 {{card}}",
-              "deckBottom": "从牌底面朝下移除了 {{card}}"
+              "deck": "从其 {{deck}} 中移除了一个面朝下的 {{card}}",
+              "deckBottom": "从 {{deck}} 底部移除了一个面朝下的 {{card}}"
             }
           }
         }
@@ -851,6 +874,16 @@
       "logsSection": {
         "chat": {
           "sendMessagePlaceholder": "聊天..."
+        }
+      },
+      "setup": {
+        "ahead": "正在等待其他玩家就绪...",
+        "waitStartPick": "{{player}} 正在决定谁先手。",
+        "waitStartPickRandom": "{{player}} 被随机选中决定谁先手。",
+        "startPicker": {
+          "title": "选择起始玩家",
+          "chosenRandomly": "你被随机选中来决定谁先手。",
+          "chosenManually": "你被手动选中来决定谁先手。"
         }
       }
     }
@@ -910,7 +943,25 @@
         },
         "preferredServer": {
           "label": "首选服务器"
+        },
+        "serverMonitor": {
+          "region": "地区",
+          "latency": "延迟",
+          "quality": "质量",
+          "notTested": "未测试",
+          "button": {
+            "test": "测试服务器",
+            "testProgress": "正在 ping...",
+            "pickServer": "选择此服务器"
+          }
         }
+      },
+      "sounds": {
+        "title": "音效",
+        "general": "常规",
+        "ui": "界面",
+        "cards": "卡牌效果",
+        "effects": "游戏效果"
       },
       "others": {
         "title": "其他",
