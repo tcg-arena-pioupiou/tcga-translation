@@ -657,8 +657,8 @@
         "dice": {
           "roll": "a obtenu un {{result}}/{{faces}}",
           "flip": "a obtenu {{result}}",
-          "heads": "pile",
-          "tails": "face"
+          "heads": "face",
+          "tails": "pile"
         },
         "mulligan": {
           "drawAgainX": {
