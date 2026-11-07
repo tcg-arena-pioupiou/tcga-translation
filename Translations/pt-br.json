@@ -1,18 +1,29 @@
 {
   "generic": {
     "or": "ou",
+    "cancel": "Cancelar",
+    "continue": "Continuar",
+    "confirm": "Confirmar",
     "copy": "Copiar",
     "copySuccess": "Copiado !",
     "close": "Fechar",
     "search": "Procurar",
     "recently": "recentemente",
     "select": "Selecione",
+    "unselect": "Desmarque",
     "disabled": "Desabilitado",
+    "online": "On-line",
+    "offline": "Offline",
     "refresh": "Atualizar",
-    "wait": "Espere"
+    "wait": "Espere",
+    "applyChanges": "Aplicar alterações",
+    "applyChangesSuccess": "Candidatura aceita!",
+    "yes": "Sim",
+    "no": "Não"
   },
   "navigation": {
     "games": "Jogos",
+    "decks": "Decks",
     "play": "Jogar",
     "preferences": "Preferências",
     "customGames": "Jogos personalizados - BETA",
@@ -30,10 +41,12 @@
     "playerGames": {
       "title": "Seus jogos",
       "empty": {
+        "partOne": "Você ainda não tem nenhum jogo. Para jogar, você precisa adicionar jogos primeiro.",
         "partTwo": "Adicione jogos abaixo."
       },
       "delete": {
         "title": "Excluir jogo",
+        "content": "Esta ação não pode ser desfeita.",
         "deleteKeepDataButton": "Exclua o jogo, mas mantenha os dados.",
         "deleteAllDataButton": "Apague o jogo e todos os dados."
       }
@@ -41,7 +54,8 @@
     "findGames": {
       "title": "Encontre mais jogos",
       "game": {
-        "addButton": "Adicione aos seus jogos"
+        "addButton": "Adicione aos seus jogos",
+        "manageBy": "Moderação gerenciada por {{author}}"
       }
     }
   },
@@ -51,18 +65,23 @@
       "create": {
         "button": "Criar deck",
         "title": "Novo deck",
+        "nameFieldLabel": "Nome",
         "nameFieldPlaceholder": "Nome do Deck",
         "formatsPickerLabel": "Formatos",
         "confirmButton": "Criar deck"
       },
       "deckbox": {
         "editButton": "Editar deck",
+        "cardCount": "Cartas: {{count}}",
         "delete": {
           "title": "Excluir deck",
           "content": "Esta ação não pode ser desfeita.",
           "confirmButton": "Excluir deck"
         },
         "duplicate": {
+          "title": "Baralho duplicado",
+          "content": "Crie uma cópia editável deste baralho.",
+          "confirmButton": "Duplicado"
         }
       },
       "saveOrderChangeButton": "Salvar nova ordem do deck",
@@ -70,12 +89,16 @@
     },
     "deckbuilder": {
       "categories": {
+        "sideboard": "Aparador",
+        "maybeboard": "Considerando"
       },
       "deckInfo": {
         "edit": {
           "title": "Editar deck"
         },
         "switchFormat": {
+          "current": "A legalidade das cartas e as regras de construção de decks são baseadas neste formato.",
+          "switch": "Mude para este formato."
         },
         "createdTimeAgo": "Criado em {{time}}",
         "lastModifiedTimeAgo": "Última modificação {{time}}",
@@ -86,7 +109,8 @@
             "title": "Padrão"
           },
           "starterTab": {
-            "title": "Deck inicial"
+            "title": "Deck inicial",
+            "info": "Use isto SOMENTE se estiver criando decks iniciais para seu jogo personalizado. Estas são as listas de decks internas usadas pelo aplicativo. Além de criar decks iniciais, não há outros motivos para usar isto."
           }
         },
         "import": {
@@ -112,6 +136,7 @@
         },
         "currentFilterInfo": {
           "allCards": "Todos os cards",
+          "cardsWithName": "Todas as cartas com {{name}} no nome",
           "cardsWithFilter": "Todos os cards com {{filters}}",
           "cardsWithNameAndFilter": "Todos os cards com {{name}} no nome e {{filters}}"
         },
@@ -127,10 +152,13 @@
         }
       },
       "variantPickerPanel": {
+        "title": "Escolha uma variante para {{name}}",
+        "empty": "Não existem variantes para esta carta."
       },
       "costCurve": {
         "graphXAxis": "cards por preço",
-        "graphBarHoverInfo": "Custo: {{cost}} (total de {{total}} cartas)"
+        "graphBarHoverInfo": "Custo: {{cost}} (total de {{total}} cartas)",
+        "averageAndMedian": "O custo médio é {{average}}, o custo mediano é {{median}}."
       },
       "handSimulation": {
         "drawButton": "Draw ({{count}} restantes)",
@@ -139,6 +167,7 @@
     },
     "legality": {
       "deckIsLegal": "o deck é legal",
+      "deckIsNotLegal": "O deck não é legal",
       "playerDeckIsLegal": "o deck de {{player}} é legal",
       "playerDeckIsNotLegal": "o deck de {{player}} não é legal",
       "total": {
@@ -184,6 +213,8 @@
       "random": "Aleatório",
       "show": "Mostrar",
       "play": "Play",
+      "resolve": "Resolver",
+      "playBottom": "Jogue na parte inferior",
       "reveal": "Revelar",
       "allToHand": "Tudo à mão",
       "allToDiscard": "Tudo para descartar",
@@ -192,85 +223,201 @@
       "visible": {
         "visibleBy": "Visível por",
         "topCardVisibleBy": "Visibilidade do card superior",
-        "all": "Todos"
+        "all": "Todos",
+        "noOne": "Ninguém (de bruços)",
+        "onlyYou": "Só você",
+        "you": "Você",
+        "keepOnDeckChange": "Continue a troca de convés"
       },
       "panelCard": {
-      }
+        "toHand": "Para entregar",
+        "toDiscard": "Descartar",
+        "toRemove": "Remover",
+        "toRemoveHidden": "Remover oculto",
+        "toRemoveHiddenCompact": "Escondido",
+        "toDeck": "Para o convés",
+        "toTop": "Para o topo",
+        "toBottom": "Para baixo",
+        "givePlayer": "Dê ao jogador",
+        "playAll": "Reproduzir tudo",
+        "toDeckRandomOrder": "Para o baralho (ordem aleatória)"
+      },
+      "you": "Você"
     },
     "leftMenuBar": {
+      "turnCount": "Vez",
       "endTurn": {
+        "hoverInfo": "Encerre seu turno (espaço)"
       },
       "turnStartPauseToggle": {
+        "hoverInfo": "Faça uma pausa antes de desenhar na sua próxima jogada. Clique novamente para continuar sua jogada."
       },
       "manualModeToggle": {
+        "hoverInfo": "Desative o desatarraxamento e o sorteio automáticos."
       },
       "eliminationToggle": {
+        "hoverInfo": "Alternar eliminado"
       },
       "connect": {
+        "hoverInfo": "Conecte-se com outros jogadores e gerencie a ordem de turnos.",
+        "title": "Multijogador",
+        "closeHostingButton": "Ocultar o lobby e fechar",
         "connectTab": {
+          "button": "Conectar",
+          "title": "Conecte-se com outros jogadores",
+          "browserCompatibilityWarning": "Se você estiver com problemas para se conectar com seus amigos, certifique-se de que todos estejam usando o Chrome ou o Firefox.",
+          "gameStartedCantJoin": "O jogo já começou, você não pode entrar na partida de outros jogadores. Mas outros jogadores ainda podem entrar na sua partida.",
           "publicTab": {
+            "title": "saguões públicos",
             "hostLobby": {
               "title": {
+                "hosting": "Seu lobby agora está visível para outros usuários.",
+                "notHosting": "Crie seu próprio lobby"
               },
+              "hostToggle": "saguão do anfitrião",
               "descriptionField": {
+                "label": "Descrição",
+                "placeholder": "Nível do deck, jogador novo, etc..."
               },
               "passwordField": {
+                "label": "Senha",
+                "placeholder": "Opcional"
               }
             },
             "publicLobbies": {
+              "title": "Salas de espera públicas para {{name}}",
+              "refreshButton": "Atualizar lobbies",
+              "refreshButtonProgress": "Refrescante...",
+              "empty": "Nenhuma sala de espera encontrada.",
               "lobby": {
+                "noDescription": "Sem descrição",
+                "join": "Juntar",
+                "createdAt": "Criado em {{time}}",
+                "passwordFieldLabel": "Digite a senha",
+                "passwordFieldPlaceholder": "Senha"
               }
             }
           },
           "directConnectTab": {
+            "title": "Conexão direta",
+            "sendToOtherPlayers": "Envie seu ID para outros jogadores.",
+            "enterFromOtherPlayer": "Ou insira o ID deles",
+            "connectButton": "Conectar",
+            "connectButtonProgress": "Conectando...",
+            "spectateButton": "Espectador"
           },
           "friendsTab": {
+            "title": "Amigos",
+            "subtitle": "Seus amigos",
+            "noFriends": "Nenhum amigo adicionado ainda. Adicione amigos em Preferências > Conta.",
+            "inGame": "No jogo",
+            "inLobby": "Salão"
           },
           "matchmakingTab": {
+            "title": "Encontros",
+            "button": "Encontros",
+            "inProgress": "Esperando...",
+            "initialization": "Inicialização...",
             "hoverInfo": {
               "info1": {
+                "title": "Somente 1 contra 1."
               },
               "info2": {
+                "title": "Sem sistema de matchmaking baseado em habilidade.",
+                "content": "As partidas não são determinadas pela classificação do jogador, pois este aplicativo não rastreia dados de classificação."
               }
             }
           }
         },
         "playersTab": {
+          "button": "Jogadores e espectadores",
           "maxPlayers": {
+            "title": "Número máximo de jogadores",
+            "label": "Limite de jogadores permitidos nesta sala"
           },
           "players": {
+            "title": "Jogadores e Ordem de Turno",
             "header": {
+              "name": "Nome",
+              "ping": "Ping",
+              "turnOrder": "Ordem de turnos"
             },
+            "kickButton": "Chute",
             "blockButton": {
-            }
+              "default": "Jogador de bloqueio",
+              "blocked": "Bloqueado",
+              "loggedOut": "Faça login para bloquear"
+            },
+            "goToSpectators": "Vá até os espectadores",
+            "leaveSpectators": "Deixe os espectadores"
           },
           "becomeActivePlayer": {
+            "label": "Encerre a vez do jogador atual e torne-se o jogador ativo.",
+            "button": "Torne-se um jogador ativo"
           }
         }
       },
       "start": {
+        "hoverInfo": "Iniciar um novo jogo",
         "startPanel": {
+          "title": "Iniciar o jogo",
           "option": {
-          }
+            "title": "Opções de jogo",
+            "format": "Formatar",
+            "startingPlayer": "Jogador titular",
+            "disableSideboard": "Desative o sideboard para todos os jogadores."
+          },
+          "restartWarning": "Encerre o jogo atual e inicie um novo.",
+          "startButton": "Começar",
+          "restartButton": "Recomece com os mesmos decks."
         },
         "deckPickerPanel": {
+          "title": "Seleção de baralho",
+          "searchFieldPlaceholder": "Nome do baralho",
           "yourDecksTab": {
+            "title": "Seus decks",
+            "description": "Seus decks para este formato.",
+            "noDecksAvailable": "Você não tem nenhum deck para este formato, use decks pré-construídos.",
+            "deckSelectorLabel": "Escolha o seu baralho"
           },
           "preconstructedDecksTab": {
+            "title": "Decks pré-fabricados",
+            "description": "Você pode jogar com qualquer deck pré-construído que este jogo ofereça para este formato.",
+            "noDecksAvailable": "Este jogo não possui decks pré-construídos.",
+            "deckSelectorLabel": "Escolha seu modelo pré-fabricado."
           }
         },
         "sideboardPanel": {
+          "title": "Troque as cartas com as do seu aparador.",
+          "swapButton": "Clique para trocar",
+          "deckTitle": "Deck",
+          "sideboardTitle": "Aparador",
+          "sideboardDisabled": "Desativado para todos os jogadores pelo anfitrião",
+          "cancelChanges": "Reorganizar aparador",
           "order": {
+            "title": "Ordenar por:",
+            "byName": "Nome",
+            "byCost": "Custo",
+            "byType": "Tipo"
           }
         },
         "mulliganPanel": {
+          "title": "Mulligan",
+          "keepAndStart": "Mantenha a mão firme e comece.",
+          "mulliganHand": "Mulligan tudo",
+          "mulliganSelection": "Mulligan ({{count}})"
         },
         "boardCardSelectionPanel": {
+          "title": "Seleção de cartas de tabuleiro",
+          "random": "Selecione aleatoriamente",
+          "logRandomPick": "foi selecionado aleatoriamente para a seção {{category}}"
         }
       },
       "preferences": {
+        "hoverInfo": "Preferências"
       },
       "help": {
+        "hoverInfo": "Ajuda",
         "shortucut": {
           "general": {
           },
@@ -279,292 +426,672 @@
         }
       },
       "dice": {
+        "hoverInfo": "Lance um dado",
+        "title": "Dados",
+        "info": "Escolha um dado para rolar.",
+        "rolled": "Rolou!"
       },
       "forwardCancel": {
+        "hoverInfo": "Cancelar todos os cartões de encaminhamento"
       },
       "linksCancel": {
+        "hoverInfo": "Exclua todos os seus links de cartão"
       },
       "createTokens": {
+        "hoverInfo": "Crie fichas e cartas.",
+        "title": "Crie fichas e cartas.",
+        "searchFieldPlaceholder": "Nome do token",
+        "searchCardsToggle": "Procure por cartas que não sejam fichas",
+        "create": "Criar",
+        "created": "Criado!",
+        "noTokens": "Este jogo não possui fichas.",
+        "noPreviouslyPicked": "Nenhum token selecionado recentemente. Pesquise um token pelo nome no canto superior esquerdo."
       },
       "optionalSections": {
+        "title": "Áreas de recreação opcionais"
       },
       "exit": {
+        "hoverInfo": "Saída",
+        "title": "Saída",
+        "content": "Tem certeza de que deseja retornar ao menu principal? O progresso do jogo será perdido.",
+        "button": "Saída"
       }
     },
     "landing": {
       "learn": {
+        "title": "Aprender",
+        "content": "Use o botão {{image}} para aprender a usar o aplicativo e visualizar todos os atalhos disponíveis."
       },
       "connect": {
+        "title": "Conectar"
       },
       "play": {
+        "title": "Jogar",
+        "content": "Assim que todos os jogadores entrarem, use o botão {{image}} para iniciar o jogo."
       }
     },
     "card": {
       "hover": {
+        "target": "Alvo",
+        "play": "Jogar",
+        "groupWith": "Grupo com",
+        "ping": "Ping",
+        "addToken": "Adicionar token",
+        "forward": "Avançar",
+        "hand": "Mão",
+        "addEffect": "Adicionar efeito",
+        "invert": "Invertido",
+        "hideReveal": "Ocultar/Revelar",
+        "flip": "Virar",
+        "noFlip": "Sem cambalhota!",
+        "primaryAdd": "Primário +1",
+        "secondaryAdd": "Secundário +1",
+        "primaryRemove": "Primário -1",
+        "secondaryRemove": "Secundário -1",
+        "ungroup": "Desagrupar",
+        "group": "Grupo",
+        "alreadyGrouped": "Já agrupados",
+        "resource": "Recurso",
+        "unselect": "Desmarque",
+        "select": "Selecione",
+        "untap": "Desmarque",
+        "tap": "Tocar"
       },
       "rightClickMenu": {
         "toDeck": {
-        }
+          "title": "Para o convés",
+          "xFromTop": "X de cima para baixo"
+        },
+        "returnToSideboard": "Voltar ao aparador",
+        "to": "Para",
+        "flip": "Virar",
+        "group": "Grupo",
+        "ungroup": "Desagrupar",
+        "duplicate": "Duplicado",
+        "createToken": "Criar token",
+        "giveToPlayer": "Dê ao jogador",
+        "doesntUntap": "Não desvira",
+        "toggleCounter1": "Alternar contador 1",
+        "toggleCounter2": "Alternar contador 2",
+        "editNotes": "Editar notas",
+        "hide": "Esconder",
+        "reveal": "Revelar"
       },
       "rightClickMenuMultiSelect": {
         "applyTo": {
+          "one": "Aplicar ao cartão {{count}}",
+          "other": "Aplicar a {{count}} cartões"
         },
         "toDeckRandom": {
-        }
+          "title": "Para o baralho (ordem aleatória)"
+        },
+        "presentForward": "Apresentar adiante",
+        "cancelForward": "Cancelar encaminhamento",
+        "clearSelection": "Limpar seleção"
       },
       "warning": {
+        "title": "Aviso",
+        "handVisibleByOpponents": "Visível aos seus oponentes",
+        "boardVisiblePlayerOnly": "Visível apenas para você",
+        "cardNotLegal": "Ilegal neste formato.",
+        "cardUnreleased": "Não lançado"
       }
     },
     "deck": {
       "hover": {
+        "draw": "Empate",
+        "drawBottom": "Desenhe a partir da parte inferior.",
+        "discard": "Moinho",
+        "discardBottom": "Fundo do moinho",
+        "remove": "Remover",
+        "removeBottom": "Remova a parte inferior",
+        "ressource": "Recurso",
+        "ressourceBottom": "De baixo para cima",
+        "dropToTop": "Convés superior",
+        "dropToBottom": "convés inferior"
       },
       "rightClickMenu": {
         "searchPanel": {
+          "button": "Procurar",
+          "title": "Procure cartas no seu baralho.",
+          "closeAndShuffle": "Feche e embaralhe",
+          "searchFieldLabel": "Procurar",
+          "searchFieldPlaceholder": "Nome do cartão"
         },
         "manageTopPanel": {
+          "button": "Gerenciar cartões principais",
+          "title": "Observe e gerencie a parte superior do seu deck.",
+          "cardsCount": "Cartas mostradas",
+          "showOneMore": "Mostrar mais um",
+          "autoRevealToggle": "Revelar novas cartas",
+          "allToBottom": "Tudo aleatoriamente na parte inferior.",
+          "empty": "Você ainda não está visualizando nenhum cartão."
         },
+        "giveTopHidden": "Dê o topo escondido",
         "drawXPanel": {
+          "button": "Desenhe X",
+          "title": "Desenhe X",
+          "cardsCountLabel": "Cartas para sortear",
+          "destinationLabel": "Destino",
+          "drawX": "Desenhe {{count}}"
         }
       }
     },
     "discard": {
       "rightClickMenu": {
         "generic": {
+          "multiSelectToggle": "Selecione vários cartões",
+          "selectAll": "Selecionar tudo",
+          "unselectAll": "Desmarque tudo",
+          "applyToSelection": "Candidatar-se à seleção"
         },
         "discardPanel": {
+          "button": "Mostrar descartar",
+          "title": "Cartas no seu descarte",
+          "empty": "Seu descarte está vazio."
         },
         "removedPanel": {
+          "button": "Mostrar removido",
+          "title": "Cartas removidas do jogo",
+          "empty": "Você não tem nenhuma carta removida do jogo."
         },
         "removedHiddenPanel": {
+          "button": "Mostrar itens removidos ocultos",
+          "title": "As cartas são removidas do jogo e escondidas dos seus oponentes.",
+          "empty": "Você não tem nenhuma carta removida ou oculta do jogo."
         },
         "sideboardPanel": {
+          "button": "Aparador de exposição",
+          "title": "Cartas no seu aparador",
+          "empty": "Seu aparador está vazio"
         }
       }
     },
     "sectionQuickAction": {
+      "tapAll": "Toque em tudo",
+      "untapAll": "Desmarque tudo",
+      "toHandAll": "Para entregar tudo",
+      "revealAllToYou": "Revelarei tudo para você.",
+      "revealAll": "Revelar tudo",
+      "hideAll": "Esconda tudo (com a face para baixo)",
+      "allToDeckBottom": "Tudo para o fundo do convés",
+      "allToDeckBottomRandom": "Para o fundo do convés (ordem aleatória)",
+      "tapRessource": "Recurso -",
+      "untapRessource": "Recurso +",
       "hand": {
+        "discardOneRandomly": "Descarte um aleatoriamente",
+        "hideAll": "Ocultar tudo"
       }
     },
     "logs": {
       "server": {
+        "playerKicked": "{{playerName}} foi expulso",
+        "youKicked": "Você foi expulso",
+        "playerJoined": "{{playerName}} entrou no lobby",
         "errors": {
+          "LOBBY_FULL": "O saguão já está lotado",
+          "WRONG_APPVERSION": "O anfitrião está jogando em uma versão diferente do TCGA.",
+          "WRONG_GAME": "O apresentador está jogando um jogo diferente."
         },
+        "connectionLostWith": "Conexão perdida com {{playerName}}",
+        "reconnectedWith": "Reconexão bem-sucedida com {{playerName}}",
+        "youAreOffline": "Você está offline",
+        "connectingWithYourself": "Você não consegue se conectar consigo mesmo",
+        "cantConnectWith": "Nenhum jogador encontrado com o ID {{playerId}}",
+        "playerHasLeft": "{{playerName}} saiu do lobby",
         "matchmaking": {
-        }
+          "noOpponentFound": "Nenhum adversário foi encontrado a tempo."
+        },
+        "joinSpectators": "{{playerName}} agora está assistindo.",
+        "leaveSpectators": "{{playerName}} parou de assistir à partida.",
+        "changeLobbyPlayerLimit": "alterou o limite de jogadores para {{limit}}"
       },
       "game": {
+        "turnEnded": "{{playerName}} encerrou seu turno",
+        "turnStarted": "{{playerName}} inicia o turno {{turnCount}}",
+        "tokenLost": "perdeu o token {{token}}",
+        "tokenTaken": "pegou o token {{token}}",
+        "hasLost": "é eliminado",
+        "giveCardHidden": "deu um cartão escondido",
+        "giveCard": "deu {{card}}",
         "dice": {
+          "roll": "rolou um {{result}}/{{faces}}",
+          "flip": "invertido {{result}}",
+          "heads": "cabeças",
+          "tails": "caudas"
         },
         "mulligan": {
           "drawAgainX": {
-          }
+            "one": "carta {{count}} descartada",
+            "other": "cartas de descarte {{count}}"
+          },
+          "drawAgainHand": "desenhou uma nova mão",
+          "complete": "terminou de usar seu mulligan",
+          "revealHand": "revelou sua mão {{cards}}"
         },
         "options": {
+          "title": "Opções de jogo",
+          "configurator": "Configurador de correspondência:",
+          "startingPlayer": "Jogador titular:",
+          "sideboardAllowed": "Aparador permitido:",
+          "keepDecks": "Mantenha os mesmos baralhos:"
         }
       },
       "section": {
+        "hidAll": "ocultar todos os cartões em {{section}}",
+        "hidAllToOpponent": "ocultar todas as cartas em {{section}} dos outros jogadores",
+        "revealedAll": "revelou todas as cartas em {{section}}",
         "toDeckBottomRandom": {
+          "one": "Coloque aleatoriamente todas as {{count}} cartas de {{section}} no fundo do seu baralho.",
+          "other": "Coloque aleatoriamente todas as {{count}} cartas de {{section}} no fundo do seu baralho."
         },
         "toDeckBottom": {
+          "one": "Coloque todas as {{count}} cartas de {{section}} no fundo do seu baralho em ordem.",
+          "other": "Coloque todas as {{count}} cartas de {{section}} no fundo do seu baralho em ordem."
         }
       },
       "card": {
+        "hiddenCardNameReplacement": "um cartão",
+        "reveal": "revelou {{card}}",
+        "hide": "ocultar {{card}}",
+        "hideFromOpponents": "escondeu {{card}} dos outros jogadores",
+        "hideFromPlayer": "ocultou {{card}} de {{playerName}}",
+        "revealToPlayer": "revelar {{card}} para {{playerName}}",
+        "sendTo": "{{card}} enviado para {{section}}",
         "multiReveal": {
+          "one": "revelou {{cards}} ({{count}} card)",
+          "other": "revelaram {{cards}} ({{count}} cartas)"
         },
         "multiHide": {
+          "one": "ocultar {{cards}} ({{count}} card)",
+          "other": "ocultou {{cards}} ({{count}} cards)"
         },
         "multiHideFromOpponents": {
+          "one": "escondeu {{cards}} ({{count}} card) de outros jogadores",
+          "other": "escondeu {{cards}} ({{count}} cards) de outros jogadores"
         },
         "multiHideFromPlayer": {
+          "one": "ocultou {{cards}} ({{count}} card) de {{playerName}}",
+          "other": "ocultou {{cards}} ({{count}} cards) de {{playerName}}"
         },
         "multiRevealToPlayer": {
+          "one": "revelou {{cards}} ({{count}} card) para {{playerName}}",
+          "other": "revelou {{cards}} ({{count}} cartas) para {{playerName}}"
         },
         "multiShuffledInto": {
+          "one": "embaralharam {{cards}} ({{count}} card) em seu {{deck}}",
+          "other": "embaralharam {{cards}} ({{count}} cards) em seu {{deck}}"
         },
         "multiToTop": {
+          "one": "enviou {{cards}} ({{count}} card) para o topo do seu {{deck}}",
+          "other": "enviou {{cards}} ({{count}} cards) para o topo do seu {{deck}}"
         },
         "multiToBottom": {
+          "one": "enviou {{cards}} ({{count}} card) para o fundo do seu {{deck}}",
+          "other": "enviou {{cards}} ({{count}} cards) para o fundo do seu {{deck}}"
         }
       },
       "deck": {
+        "searched": "procuraram e embaralharam seu {{deck}}",
+        "shuffled": "embaralharam seus {{deck}}",
+        "shuffledInto": "embaralharam {{card}} em seu {{deck}}",
+        "toBottom": "enviou {{card}} para o fundo do seu {{deck}}",
+        "toTop": "enviou {{card}} para o topo do seu {{deck}}",
+        "xFromTop": "enviou {{card}} para o seu {{deck}} {{x}} do topo",
+        "topCardReveal": "revelaram sua carta do topo do {{deck}}",
+        "topCardRevealToYourself": "olhou para a carta do topo do seu {{deck}}",
+        "topCardHideFromPlayer": "esconderam a carta do topo do seu {{deck}} de {{playerName}}",
+        "topCardRevealToPlayer": "revelaram a carta do topo do seu {{deck}} para {{playerName}}",
+        "keepDeckVisibilityEnable": "A carta do topo do deck ficará oculta ao trocar de deck.",
+        "keepDeckVisibilityDisable": "A carta do topo do deck manterá a visibilidade mesmo após a alteração do deck.",
+        "topCardHidden": "esconderam a carta do topo do seu {{deck}}",
+        "revealCard": "revelou {{card}} do {{deck}}",
+        "lookedToBottom": "Coloque {{card}} do topo do seu {{deck}} no fundo.",
         "allLookedToBottom": {
+          "one": "Coloque a carta vista no fundo do seu {{deck}} em ordem aleatória.",
+          "other": "Coloque todas as {{count}} cartas que você olhou no fundo do seu {{deck}} em ordem aleatória."
         },
         "lookedAtTopDeck": {
+          "one": "olhou para a carta do topo do seu {{deck}}",
+          "other": "olhou para as {{count}} cartas do topo do seu {{deck}}"
         },
         "lookedAtTopDeckAndReorganized": {
+          "one": "olhou para a carta do topo do seu {{deck}} e a reorganizou.",
+          "other": "olhou para as {{count}} cartas do topo do seu {{deck}} e as reorganizou."
         }
       },
       "discard": {
         "multiShuffleInto": {
+          "one": "embaralharam {{cards}} ({{count}} card) em seu {{deck}} de {{section}}",
+          "other": "embaralharam {{cards}} ({{count}} cards) em seu {{deck}} de {{section}}"
         },
         "multiToTop": {
+          "one": "enviou {{cards}} ({{count}} card) para o topo do seu {{deck}} de {{section}}",
+          "other": "enviou {{cards}} ({{count}} cards) para o topo do seu {{deck}} de {{section}}"
         },
         "multiToBottom": {
+          "one": "enviou {{cards}} ({{count}} card) para o fundo do seu {{deck}} de {{section}}",
+          "other": "enviou {{cards}} ({{count}} cards) para o fundo do seu {{deck}} de {{section}}"
         },
         "multiToTopRandomOrder": {
+          "one": "enviou {{cards}} ({{count}} card) em ordem aleatória para o topo do seu {{deck}} de {{section}}",
+          "other": "enviou {{cards}} ({{count}} cards) em ordem aleatória para o topo do seu {{deck}} de {{section}}"
         },
         "multiToBottomRandomOrder": {
-        }
+          "one": "enviou {{cards}} ({{count}} card) em ordem aleatória para o fundo do seu {{deck}} de {{section}}",
+          "other": "enviou {{cards}} ({{count}} cards) em ordem aleatória para o fundo do seu {{deck}} de {{section}}"
+        },
+        "ping": "pingou {{card}} de {{section}}"
       },
       "hand": {
+        "hide": "esconderam a mão",
+        "reveal": "revelaram suas mãos",
         "toDeckBottom": {
+          "one": "Coloque a mão ({{count}} cartas) em ordem aleatória no fundo do seu baralho.",
+          "other": "Coloque a mão ({{count}} cartas) em ordem aleatória no fundo do seu baralho."
         }
       },
       "player": {
+        "counterIncrease": "O contador {{counter}} aumentou em {{difference}} para {{value}}",
+        "counterDecrease": "O contador {{counter}} diminuiu em {{difference}} para {{value}}",
+        "createToken": "token {{card}} criado",
+        "draw": "desenhou {{count}}",
+        "drawFromBottom": "retirou {{count}} da parte inferior",
+        "drawTo": "desenhou {{count}} para {{section}}",
+        "drawToFromBottom": "desenhou {{count}} para {{section}} a partir da parte inferior",
         "cardMove": {
           "play": {
+            "root": "jogou {{card}}",
             "from": {
+              "hand": "jogou {{card}} da mão",
+              "discard": "jogou {{card}} do descarte",
+              "sideboard": "jogou {{card}} do sideboard",
+              "exile": "jogou {{card}} de removido",
+              "exileHidden": "jogou {{card}} da carta removida virada para baixo",
+              "deck": "jogou {{card}} do seu {{deck}}",
+              "deckBottom": "jogou {{card}} do fundo do seu {{deck}}"
             }
           },
           "playTo": {
+            "root": "jogou {{card}} para {{section}}",
             "from": {
+              "hand": "jogou {{card}} da mão para {{section}}",
+              "discard": "jogou {{card}} do descarte para {{section}}",
+              "sideboard": "jogou {{card}} do sideboard para {{section}}",
+              "exile": "jogou {{card}} de removido para {{section}}",
+              "exileHidden": "jogou {{card}} da face removida para baixo em {{section}}",
+              "deck": "jogou {{card}} do seu baralho para {{section}}"
             }
           },
           "hand": {
+            "root": "retornou {{card}} para a mão",
             "from": {
+              "deck": "comprou {{card}} do baralho",
+              "deckBottom": "comprou {{card}} do fundo do seu baralho.",
+              "discard": "Devolveu {{card}} para a mão a partir do descarte.",
+              "exile": "retornou {{card}} para a mão a partir de removido",
+              "exileHidden": "retornou {{card}} para a mão a partir de uma carta oculta removida."
             }
           },
           "discard": {
+            "root": "{{card}} descartado",
             "from": {
+              "hand": "{{card}} descartada da mão",
+              "deck": "descartaram {{card}} do seu {{deck}}",
+              "deckBottom": "descartou {{card}} do fundo do seu {{deck}}"
             }
           },
           "exile": {
+            "root": "removeu {{card}}",
             "from": {
+              "deck": "removeu {{card}} do seu {{deck}}",
+              "deckBottom": "removeu {{card}} do fundo do seu {{deck}}"
             }
           },
           "exileHidden": {
+            "root": "{{card}} removida com a face para baixo",
             "from": {
+              "deck": "removeu {{card}} virado para baixo do seu {{deck}}",
+              "deckBottom": "removida com a face para baixo {{card}} do fundo do {{deck}}"
             }
           }
         }
       }
     },
     "playerCounter": {
+      "notesPlaceholder": "Notas...",
       "token": {
-      }
+        "take": "Pegue {{token}}",
+        "remove": "Remover {{token}}"
+      },
+      "linkToPlayer": "Link para o player"
     },
     "others": {
       "connectionStatus": {
+        "disconnected": "Desconectado",
+        "timeout": "Tempo esgotado"
       },
       "logsSection": {
         "chat": {
+          "sendMessagePlaceholder": "Bater papo..."
         }
       },
       "setup": {
+        "ahead": "Aguardando que outros jogadores alcancem...",
+        "waitStartPick": "{{player}} está decidindo quem joga primeiro.",
+        "waitStartPickRandom": "{{player}} foi escolhido aleatoriamente para decidir quem joga primeiro.",
         "startPicker": {
+          "title": "Escolha o jogador inicial",
+          "chosenRandomly": "Você foi escolhido aleatoriamente para decidir quem começa.",
+          "chosenManually": "Você foi selecionado manualmente para decidir quem vai primeiro."
         }
       }
     }
   },
   "preferences": {
     "options": {
+      "title": "Opções",
       "gameplay": {
+        "title": "Jogabilidade",
         "visiblePlayArea": {
+          "label": "Mantenha as áreas de jogo de cartas sempre visíveis."
         },
         "autopayRessources": {
+          "label": "Pagar automaticamente o custo do recurso ao jogar cartas."
         },
         "focusedCardSize": {
+          "label": "Tamanho do cartão focado",
           "values": {
+            "None": "Nenhum",
+            "Default": "Padrão",
+            "Bigger": "Maior",
+            "Huge": "Enorme"
           }
         },
         "autoPlayToStack": {
+          "label": "O jogo automático sempre vai para a pilha."
         },
         "zoomOnActivePlayer": {
+          "label": "A cada novo turno, aproxime a imagem do tabuleiro do jogador atual."
         },
         "allowCardReplacements": {
+          "label": "Veja as substituições de cartas suas e do seu oponente."
         },
         "hideOpponentPlaymats": {
+          "label": "Esconda os tapetes de jogo do oponente."
         },
         "showHiddenCardsToSpecs": {
+          "label": "Mostrar cartas escondidas aos espectadores (requer o consentimento de todos os jogadores)"
         }
       },
       "game": {
+        "title": "Jogo",
         "uiLanguage": {
+          "label": "Idioma de interface do usuário preferido"
         },
         "gameLanguage": {
+          "label": "Idioma preferido do jogo (quando disponível)"
         },
         "tappedRotation": {
+          "label": "Substituir a rotação de cartas viradas do jogo"
         }
       },
       "connectivity": {
+        "title": "Conectividade",
         "useSafeMode": {
+          "label": "Use o modo de conectividade segura."
         },
         "preferredServer": {
+          "label": "Servidor preferido"
         },
         "serverMonitor": {
+          "region": "Região",
+          "latency": "Latência",
+          "quality": "Qualidade",
+          "notTested": "Não testado",
           "button": {
+            "test": "Servidores de teste",
+            "testProgress": "Pingando...",
+            "pickServer": "Escolha este servidor"
           }
         }
       },
       "sounds": {
+        "title": "Sons",
+        "general": "Em geral",
+        "ui": "Interface",
+        "cards": "Efeitos das cartas",
+        "effects": "Efeitos do jogo"
       },
       "others": {
+        "title": "Outros",
         "debugMode": {
+          "label": "Ativar o modo de depuração"
         }
       },
       "generic": {
+        "leavePlayToApply": "Volte ao menu principal e pressione reproduzir novamente."
       }
     },
     "profile": {
+      "title": "Perfil",
       "username": {
+        "title": "Nome de usuário"
       },
       "avatar": {
+        "title": "Avatar",
+        "content": "Seu avatar será exibido ao lado dos seus contadores. Para uma melhor visualização, tente encontrar uma imagem quadrada.",
+        "noAvatar": "Sem avatar"
       },
       "reactions": {
+        "title": "Reações",
+        "content": "Selecione 7 emojis para reagir rapidamente no jogo. Você os encontrará perto do chat. O primeiro pode ser enviado rapidamente pressionando Enter."
       }
     },
     "playmat": {
+      "title": "Tapete de atividades",
       "current": {
+        "title": "Tapete de jogo atual"
       },
       "previous": {
+        "title": "Tapetes de jogo anteriores",
+        "noPreviousPlaymats": "Você não possui nenhum tapete de jogo usado anteriormente."
       },
       "custom": {
+        "title": "Tapete de jogo personalizado",
+        "content": "Para garantir que o playmat fique ótimo no seu tabuleiro, tente encontrar uma imagem 16:9 com resolução de pelo menos 1080p.",
+        "invalidURL": "URL inválida"
       },
       "defaults": {
+        "title": "Tapetes de jogo padrão para {{game}}",
+        "applyColor": "Aplicar cor"
       }
     },
     "account": {
+      "title": "Conta",
+      "loggedOut": "Você precisa estar conectado."
     },
     "sleeves": {
+      "title": "Mangas"
     },
     "imageReplacement": {
+      "title": "Substituição de imagem"
     },
     "generic": {
+      "inPlayLocked": "Volte ao menu principal para alterar esta configuração.",
+      "imageUrl": "Link da imagem..."
     }
   },
   "login": {
     "signIn": {
+      "title": "Conecte-se",
+      "buttonLabel": "Conecte-se",
+      "buttonLabelProgress": "Entrando...",
       "bottomTextSignUp": {
+        "content": "Não tem conta?",
+        "link": "Inscrever-se"
       },
       "bottomTextResetPassword": {
+        "link": "Esqueceu sua senha?"
       }
     },
     "signUp": {
+      "title": "Inscrever-se",
+      "buttonLabel": "Inscrever-se",
+      "buttonLabelProgress": "Inscrição...",
       "bottomTextSignIn": {
+        "content": "Já tem uma conta?",
+        "link": "Conecte-se"
       },
       "emailVerification": {
-      }
+        "info": "Nada? (verifique sua caixa de spam)",
+        "buttonLabel": "Enviar outro e-mail",
+        "buttonLabelSuccess": "Enviado!",
+        "error": "Erro ao enviar."
+      },
+      "success": "Conta criada! Um e-mail de verificação foi enviado. Por favor, verifique sua caixa de entrada."
     },
     "resetPassword": {
+      "title": "Redefinir senha",
+      "buttonLabel": "Enviar link de redefinição",
+      "buttonLabelProgress": "Enviando...",
       "bottomText": {
+        "content": "Não tem conta?",
+        "link": "Inscrever-se"
       },
       "bottomTextSignIn": {
-      }
+        "content": "Você se lembra da sua senha?",
+        "link": "Conecte-se"
+      },
+      "success": "E-mail de redefinição enviado. Verifique sua caixa de entrada."
     },
     "generic": {
       "email": {
+        "title": "E-mail",
+        "placeholder": "Digite o e-mail"
       },
       "password": {
+        "title": "Senha",
+        "placeholder": "Senha"
       },
       "confirmPassword": {
+        "title": "Confirme sua senha",
+        "placeholder": "Confirme sua senha"
       }
     },
     "error": {
+      "unverifiedLogin": "Por favor, verifique seu endereço de e-mail antes de fazer login.",
+      "differentPasswords": "As senhas não coincidem."
     },
     "info": {
+      "title": "Por que criar uma conta?",
       "feature": {
+        "feature1": "Salve seus decks online",
+        "feature2": "Acesse seus decks e preferências em todos os seus dispositivos."
       },
       "warning": {
+        "warning1": "Não é necessário ter uma conta para usar o aplicativo!",
+        "warning2": "Certifique-se de usar o mesmo e-mail cadastrado no Ko-fi para receber suas recompensas de apoiador."
       }
     }
   }
