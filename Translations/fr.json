@@ -869,6 +869,14 @@
           "other": "a mis {{cards}} ({{count}} cartes) en dessous de son {{deck}}"
         },
         "tokenCount": {
+          "add": {
+            "one": "a créé un jeton {{card}}",
+            "other": "a créé {{count}} jetons {{card}}"
+          },
+          "remove": {
+            "one": "a retiré un jeton {{card}}",
+            "other": "a retiré {{count}} jetons {{card}}"
+          }
         },
         "duplicate": "a créé une copie de {{card}}"
       },
