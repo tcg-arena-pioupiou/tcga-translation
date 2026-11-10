@@ -2,6 +2,9 @@
   "generic": {
     "or": "ou",
     "cancel": "Annuler",
+    "save": "Sauvegarder",
+    "saveSuccess": "Sauvegardé !",
+    "delete": "Supprimer",
     "continue": "Continuer",
     "confirm": "Confirm",
     "copy": "Copier",
@@ -10,7 +13,7 @@
     "search": "Rechercher",
     "recently": "récemment",
     "select": "Sélectionner",
-    "unselect": "Désélectionner",
+    "deselect": "Désélectionner",
     "disabled": "Désactivé",
     "online": "En ligne",
     "offline": "Hors ligne",
@@ -19,14 +22,30 @@
     "applyChanges": "Appliquer les changements",
     "applyChangesSuccess": "Appliqué !",
     "yes": "Oui",
-    "no": "No"
+    "no": "No",
+    "noResult": "Aucun résultat ne correspond à votre recherche",
+    "deckCount": {
+      "one": "{{count}} deck",
+      "other": "{{count}} decks"
+    },
+    "selectAll": "Tout sélectionner",
+    "deselectAll": "Désélectionner tout",
+    "cannotBeUndone": "Cette action est irréversible.",
+    "multiSelectedCount": {
+      "one": "{{count}} sélectionné",
+      "other": "{{count}} séléctionnés"
+    },
+    "tooltip": {
+      "multiSelectTooltip": "Activer la sélection multiple",
+      "dragTooltip": "Faites glisser pour réorganiser"
+    }
   },
   "navigation": {
     "games": "Jeux",
     "decks": "Decks",
     "play": "Jouer",
     "preferences": "Préférences",
-    "customGames": "Jeux personnalisés - BÊTA",
+    "customGames": "Jeux personnalisés",
     "discord": "Discord",
     "support": "Support",
     "login": "Connexion"
@@ -34,49 +53,82 @@
   "homepage": {
     "main": {
       "title": "Un simulateur simple d'utilisation pour <b>tous vos TCG préférés</b>",
-      "subtitle": "Construisez des decks et jouez jusqu'à 3 joueurs."
+      "subtitle": "Créez des decks et jouez avec jusqu'à 4 autres joueurs."
     }
   },
   "games": {
     "playerGames": {
-      "title": "Vos jeux",
-      "empty": {
-        "partOne": "Vous n'avez encore aucune jeux. Pour jouer, vous devez d'abord en ajouter.",
-        "partTwo": "Ajoutez un jeu ci-dessous."
-      },
+      "title": "Gérer vos jeux",
+      "subtitle": "Consultez les mods du jeu auxquels vous êtes abonné et supprimez ceux que vous ne voulez plus.",
+      "findGamesButton": "Obtenez des jeux",
+      "emptyMessage": "Vous n’avez aucun jeu. Pour jouer, commencez par en ajouter un.",
       "delete": {
         "title": "Supprimer le jeu",
-        "content": "Cette action est irréversible.",
         "deleteKeepDataButton": "Supprimer le jeu mais garder les données",
         "deleteAllDataButton": "Supprimer le jeu et toutes les données"
       }
     },
     "findGames": {
-      "title": "Trouver d'autres jeux",
+      "title": "Découvrez de nouveaux jeux",
+      "subtitle": "Parcourez les mods de jeu créés par d'autres joueurs.",
+      "manageGamesButton": "Gérez vos jeux",
+      "loading": "Chargement des jeux...",
+      "loadError": "Impossible de charger la bibliothèque de jeux. Réessayez plus tard.",
       "game": {
-        "addButton": "Ajouter à vos jeux",
         "manageBy": "Mod géré par {{author}}"
       }
+    },
+    "gamePage": {
+      "screenshotAlt": "Capture d'écran {{index}} de {{name}}",
+      "modBy": "Mod par",
+      "addedAt": "Ajouté le",
+      "lastModifiedAt": "Dernière modification le",
+      "lastUpdate": "Dernière mise à jour :",
+      "addButton": "Ajouter à vos jeux",
+      "alreadyAdded": "Déjà dans vos jeux",
+      "adding": "Ajout...",
+      "tags": "Tags",
+      "langs": "Langues",
+      "loadingDescription": "Chargement de la description...",
+      "descriptionError": "La description n'a pas pu être chargée.",
+      "noDescription": "Aucune description pour le moment.",
+      "updates": "Mises à jour"
+    },
+    "browser": {
+      "title": "Tous les jeux",
+      "searchPlaceholder": "Nom, tags, auteur",
+      "sorts": {
+        "popularity": "Popularité",
+        "name": "Nom (A → Z)",
+        "lastUpdated": "Récemment modifié",
+        "createdAt": "Récemment ajouté"
+      },
+      "langLabel": "Langue",
+      "hideAiArts": "Sans IA",
+      "resetFilters": "Réinitialiser les filtres",
+      "noResults": "Aucun jeu ne correspond à votre recherche."
     }
   },
   "decks": {
     "playerDecks": {
+      "title": "Gérez vos decks",
+      "subtitle": "Créez, modifiez, réorganisez, ajoutez aux favoris ou supprimez vos decks.",
       "formatPickerLabel": "Choisir un format",
+      "deckSearchPlaceholder": "Nom du deck",
       "create": {
         "button": "Créer un deck",
         "title": "Nouveau deck",
         "nameFieldLabel": "Nom",
-        "nameFieldPlaceholder": "Nom du deck",
+        "nameFieldPlaceholder": "Rechercher un deck",
         "formatsPickerLabel": "Formats",
         "confirmButton": "Créer le deck"
       },
       "deckbox": {
         "editButton": "Modifier le deck",
         "cardCount": "Cartes : {{count}}",
+        "clickToPreview": "Voir l’aperçu",
         "delete": {
-          "title": "Supprimer le deck",
-          "content": "Cette action est irréversible.",
-          "confirmButton": "Supprimer le deck"
+          "title": "Supprimer le deck"
         },
         "duplicate": {
           "title": "Duplicate deck",
@@ -84,8 +136,56 @@
           "confirmButton": "Dupliquer"
         }
       },
+      "folder": {
+        "newFolder": "Nouveau dossier",
+        "delete": {
+          "title": "Supprimer le dossier",
+          "content": "Supprimer le dossier {{folderName}} ? Les decks qu'il contient ne seront pas supprimés."
+        },
+        "create": {
+          "title": "Créer un dossier",
+          "placeholder": "Nom du dossier"
+        },
+        "rename": {
+          "title": "Renommer le dossier"
+        },
+        "field": {
+          "title": "Dossier",
+          "selectNone": "Aucun dossier sélectionné"
+        }
+      },
+      "manage": {
+        "buttonLabel": "Sélection multiple",
+        "selectedCount": {
+          "one": "{{count}} deck sélectionné",
+          "other": "{{count}} decks sélectionnés"
+        },
+        "empty": "Aucun decks à afficher.",
+        "help": "Cliquez sur un deck pour le sélectionner, Maj + clic pour sélectionner une plage. Faites glisser ⠿ pour réorganiser.",
+        "noFolder": "Aucun dossier",
+        "orderChanged": {
+          "title": "Ordre des decks",
+          "description": "Vous avez changé l’ordre de vos decks. Sauvegardez-le, ou annulez pour revenir à l’ordre précédent."
+        },
+        "move": {
+          "title": "Déplacer vers le dossier",
+          "description": "Ajoutez les decks sélectionnés dans un dossier, ou choisissez « Aucun dossier » pour les retirer de leur dossier actuel.",
+          "currentlyIn": "Actuellement dans : {{folders}}",
+          "targetFolder": "Dossier cible",
+          "chooseFolder": "Choisissez un dossier..."
+        },
+        "delete": {
+          "title": "Supprimer les decks",
+          "description": "Supprimer définitivement les decks sélectionnés. Cette action est irréversible.",
+          "confirmTitle": {
+            "one": "Supprimer le deck ?",
+            "other": "Supprimer les {{count}} decks ?"
+          }
+        }
+      },
       "saveOrderChangeButton": "Enregistrer l’ordre des decks",
-      "cancelOrderChangeButton": "Annuler"
+      "cancelOrderChangeButton": "Annuler",
+      "retiredFormatsOption": "Formats retirés ({{count}})"
     },
     "deckbuilder": {
       "categories": {
@@ -120,8 +220,7 @@
           "importAndAdd": "Importer et ajouter",
           "importAndReplace": "Importer et remplacer"
         },
-        "saveButton": "Enregistrer",
-        "saveButtonSuccess": "Enregistré !"
+        "incompatibleFormatsWarning": "Vous avez sélectionné des formats incompatibles."
       },
       "cardSearch": {
         "filters": {
@@ -216,10 +315,12 @@
       "resolve": "Résoudre",
       "playBottom": "Jouer depuis le dessous",
       "reveal": "Révéler",
+      "toHolding": "Mettre de côté",
       "allToHand": "Tout mettre en main",
       "allToDiscard": "Tout défausser",
       "allToRemove": "Tout retirer",
       "allToRemoveHidden": "Tout retirer (face cachée)",
+      "allToHolding": "Tout mettre de côté",
       "visible": {
         "visibleBy": "Visible par",
         "topCardVisibleBy": "Visibilité de la carte du dessus",
@@ -238,25 +339,45 @@
         "toDeck": "Mettre dans le deck",
         "toTop": "Mettre au-dessus",
         "toBottom": "Mettre en dessous",
+        "toHolding": "Mettre de côté",
         "givePlayer": "Donner au joueur",
         "playAll": "Tout jouer",
         "toDeckRandomOrder": "Mettre dans le deck (ordre aléatoire)"
       },
-      "you": "Vous"
+      "you": "Vous",
+      "players": "Joueurs",
+      "spectators": "Spectateurs"
     },
     "leftMenuBar": {
       "turnCount": "Tour",
       "endTurn": {
         "hoverInfo": "Finir votre tour (espace)"
       },
-      "turnStartPauseToggle": {
-        "hoverInfo": "Pause avant votre pioche au prochain tour. Cliquez pour reprendre"
+      "undoLastStep": {
+        "hoverInfo": "Annuler votre dernière action (retour arrière)"
       },
       "manualModeToggle": {
         "hoverInfo": "Désactiver le dégagement et la pioche automatiques"
       },
       "eliminationToggle": {
         "hoverInfo": "Activer/Désactiver éliminé"
+      },
+      "layout": {
+        "hoverInfo": "Changer l'affichage du plateau",
+        "submenu": {
+          "zoomOnOtherPlayer": {
+            "hoverInfo": "Zoomer sur le plateau de {{player}}"
+          },
+          "zoomOnYourself": {
+            "hoverInfo": "Zoomer sur votre plateau"
+          },
+          "layout1vAll": {
+            "hoverInfo": "Passer en affichage 1v3"
+          },
+          "layout2v2": {
+            "hoverInfo": "Passer en affichage 2v2"
+          }
+        }
       },
       "connect": {
         "hoverInfo": "Connexion avec d'autres joueurs et gestion de l'ordre de tour",
@@ -318,10 +439,11 @@
             "button": "Matchmaking",
             "inProgress": "En attente...",
             "initialization": "Initialisation...",
+            "regionLock": "Limiter la recherche aux adversaires de la même région de serveur",
+            "regionChangeInfo": "Vous pouvez changer de région de jeu dans les préférences.",
+            "roomTooSmall": "La limite de votre salon est trop basse. Augmentez le nombre maximum de joueurs.",
+            "partyTooBig": "Votre salon est déjà plein.",
             "hoverInfo": {
-              "info1": {
-                "title": "1v1 uniquement."
-              },
               "info2": {
                 "title": "Aucun matchmaking basé sur votre niveau de jeu.",
                 "content": "Les parties ne sont pas déterminées par un rang, car l’application ne stocke pas ces données."
@@ -385,7 +507,8 @@
             "description": "Jouez avec n’importe quel deck préconstruit disponible.",
             "noDecksAvailable": "Aucun deck préconstruit disponible.",
             "deckSelectorLabel": "Choisissez un deck"
-          }
+          },
+          "noDeckExit": "Retourner au menu principal"
         },
         "sideboardPanel": {
           "title": "Échanger des cartes avec votre réserve",
@@ -405,7 +528,13 @@
           "title": "Mulligan",
           "keepAndStart": "Garder la main et commencer",
           "mulliganHand": "Mulligan tout",
-          "mulliganSelection": "Mulligan ({{count}})"
+          "mulliganSelection": "Mulligan ({{count}})",
+          "turnOrderSharedTurn": "Votre main de départ",
+          "turnOrderFirst": "Tu commences",
+          "turnOrderSecond": "Tu joues en deuxième",
+          "turnOrderThird": "Tu joues en troisième",
+          "turnOrderFourth": "Tu joues en quatrième",
+          "turnOrderFifth": "Tu joues en cinquième"
         },
         "boardCardSelectionPanel": {
           "title": "Sélection de cartes",
@@ -418,7 +547,7 @@
       },
       "help": {
         "hoverInfo": "Aide",
-        "shortucut": {
+        "shortcut": {
           "general": {
           },
           "cards": {
@@ -444,10 +573,13 @@
         "searchCardsToggle": "Rechercher des cartes non-jeton",
         "create": "Créer",
         "created": "Créé !",
+        "clearListButton": "Effacer l’historique",
+        "sectionOverrideToggle": "Ignorer les sections interdites aux jetons",
         "noTokens": "Ce jeu n’a aucun jeton",
         "noPreviouslyPicked": "Aucun jeton récemment utilisé. Recherchez un jeton dans le coin supérieur gauche."
       },
       "optionalSections": {
+        "hoverInfo": "Gérer les zones de jeux optionnelles",
         "title": "Zones de jeux facultatives"
       },
       "exit": {
@@ -555,17 +687,22 @@
           "button": "Rechercher",
           "title": "Rechercher des cartes dans votre deck",
           "closeAndShuffle": "Fermer et mélanger",
+          "closeWithoutShuffle": "Fermer sans mélanger",
           "searchFieldLabel": "Recherche",
           "searchFieldPlaceholder": "Nom de la carte"
         },
         "manageTopPanel": {
           "button": "Gérer le dessus du deck",
           "title": "Voir et gérer les cartes du dessus",
+          "titleBottom": "Voir et gérer les cartes du dessous",
           "cardsCount": "Cartes regardées",
           "showOneMore": "Regarder une de plus",
           "autoRevealToggle": "Révéler automatiquement",
           "allToBottom": "Tout aléatoirement en dessous",
-          "empty": "Aucune carte révélée pour le moment"
+          "empty": "Aucune carte révélée pour le moment",
+          "noMoreCards": "Votre deck est vide",
+          "bottomSwitch": "Dessous",
+          "allToTop": "Tout aléatoirement au dessus"
         },
         "giveTopHidden": "Donner la première face cachée",
         "drawXPanel": {
@@ -579,12 +716,6 @@
     },
     "discard": {
       "rightClickMenu": {
-        "generic": {
-          "multiSelectToggle": "Sélection multiple",
-          "selectAll": "Tout sélectionner",
-          "unselectAll": "Tout désélectionner",
-          "applyToSelection": "Appliquer à la sélection"
-        },
         "discardPanel": {
           "button": "Voir la défausse",
           "title": "Cartes dans votre défausse",
@@ -613,14 +744,15 @@
       "toHandAll": "Tout en main",
       "revealAllToYou": "Tout révéler (pour vous)",
       "revealAll": "Tout révéler",
-      "hideAll": "Tout cacher (face cachée)",
+      "hideAll": "Personne (face cachée)",
       "allToDeckBottom": "Tout au-dessous du deck",
       "allToDeckBottomRandom": "Au-dessous du deck (ordre aléatoire)",
       "tapRessource": "Ressource -",
       "untapRessource": "Ressource +",
       "hand": {
         "discardOneRandomly": "Défausser une carte au hasard",
-        "hideAll": "Tout cacher"
+        "hideAll": "Tout cacher",
+        "autoReveal": "Révéler auto"
       }
     },
     "logs": {
@@ -640,7 +772,13 @@
         "cantConnectWith": "Aucun joueur trouvé avec l'id {{playerId}}",
         "playerHasLeft": "{{playerName}} a quitté le salon",
         "matchmaking": {
-          "noOpponentFound": "Aucun adversaire trouvé dans les temps"
+          "noOpponentFound": "Aucun adversaire trouvé dans les temps",
+          "playerDidNotRespond": "Un joueur n’a pas répondu. Nouvelle recherche…",
+          "roomChanged": "Votre salon a été modifié, la recherche a recommencé.",
+          "error": "La recherche de partie a échoué, veuillez réessayer.",
+          "joinedGameMode": "Partie trouvé : {{gameMode}}.",
+          "connectionFailed": "Connexion impossible. Nouvelle recherche…",
+          "matchFound": "Partie trouvée, connexion…"
         },
         "joinSpectators": "{{playerName}} est maintenant spectateur",
         "leaveSpectators": "{{playerName}} n'est plus spectateur",
@@ -729,10 +867,14 @@
         "multiToBottom": {
           "one": "a mis {{cards}} ({{count}} carte) en dessous de son {{deck}}",
           "other": "a mis {{cards}} ({{count}} cartes) en dessous de son {{deck}}"
-        }
+        },
+        "tokenCount": {
+        },
+        "duplicate": "a créé une copie de {{card}}"
       },
       "deck": {
         "searched": "a recherché et mélangé son {{deck}}",
+        "searchedNoShuffle": "a recherché dans son {{deck}} SANS MÉLANGER",
         "shuffled": "a mélangé son {{deck}}",
         "shuffledInto": "a mélangé {{card}} dans son {{deck}}",
         "toBottom": "a mis {{card}} en dessous de son {{deck}}",
@@ -751,6 +893,10 @@
           "one": "a mis la carte regardée en dessous de son {{deck}} dans un ordre aléatoire",
           "other": "a mis toutes les cartes regardées en dessous de son {{deck}} dans un ordre aléatoire"
         },
+        "allLookedToTop": {
+          "one": "a mis la carte regardée au dessus de son {{deck}} dans un ordre aléatoire",
+          "other": "a mis toutes les cartes regardées au dessus de son {{deck}} dans un ordre aléatoire"
+        },
         "lookedAtTopDeck": {
           "one": "a regardé la carte du dessus de son {{deck}}",
           "other": "a regardé les {{count}} cartes du dessus de son {{deck}}"
@@ -758,6 +904,14 @@
         "lookedAtTopDeckAndReorganized": {
           "one": "a regardé la carte du dessus de son {{deck}} et en a réorganisé l'ordre",
           "other": "a regardé les {{count}} cartes du dessus de son {{deck}} et en a réorganisé l'ordre"
+        },
+        "lookedAtBottomDeck": {
+          "one": "a regardé la carte du dessous de son {{deck}}",
+          "other": "a regardé les {{count}} cartes du dessous de son {{deck}}"
+        },
+        "lookedAtBottomDeckAndReorganized": {
+          "one": "a regardé la carte du dessous de son {{deck}} et en a réorganisé l'ordre",
+          "other": "a regardé les {{count}} cartes du dessous de son {{deck}} et en a réorganisé l'ordre"
         }
       },
       "discard": {
@@ -795,6 +949,7 @@
         "counterIncrease": "le compteur {{counter}} a été augmenté de {{difference}} pour atteindre {{value}}",
         "counterDecrease": "le compteur {{counter}} a diminué de {{difference}} pour atteindre {{value}}",
         "createToken": "a créé un jeton {{card}}",
+        "createXToken": "a créé {{count}} {{card}} jetons",
         "draw": "a pioché {{count}}",
         "drawFromBottom": "a pioché {{count}} depuis le dessous de son deck",
         "drawTo": "a pioché {{count}} jusque dans {{section}}",
@@ -837,6 +992,7 @@
             "root": "a défaussé {{card}}",
             "from": {
               "hand": "a défaussé {{card}} depuis sa main",
+              "handRandomly": "a défaussé aléatoirement {{card}} depuis sa main",
               "deck": "a défaussé {{card}} depuis son {{deck}}",
               "deckBottom": "a défaussé {{card}} depuis le dessous de son {{deck}}"
             }
@@ -864,7 +1020,13 @@
         "take": "Prendre {{token}}",
         "remove": "Retirer {{token}}"
       },
-      "linkToPlayer": "Vers le joueur"
+      "linkToPlayer": "Vers le joueur",
+      "scheduledPauses": {
+        "beforeUntap": "Planifier une pause avant l'étape de dégagement",
+        "beforeDraw": "Planifier une pause avant l'étape de pioche",
+        "beforeTurnEnd": "Planifier une pause à la fin du tour",
+        "cancelPause": "Cliquez à nouveau pour supprimer la pause"
+      }
     },
     "others": {
       "connectionStatus": {
@@ -891,6 +1053,7 @@
   "preferences": {
     "options": {
       "title": "Options",
+      "subtitle": "Ajustez le jeu selon vos préférences : langue, sons, région du serveur…",
       "gameplay": {
         "title": "Gameplay",
         "visiblePlayArea": {
@@ -915,7 +1078,7 @@
           "label": "Zoomer sur le joueur actif à chaque nouveau tour"
         },
         "allowCardReplacements": {
-          "label": "Afficher les images personnalisées des cartes"
+          "label": "Afficher vos remplacement d'images et ceux de vos adversaires"
         },
         "hideOpponentPlaymats": {
           "label": "Masquer les tapis de jeu adverses"
@@ -973,8 +1136,51 @@
         "leavePlayToApply": "retournez au menu principal et appuyez à nouveau sur jouer"
       }
     },
+    "bindings": {
+      "title": "Raccourcis clavier",
+      "subtitle": "Modifie les raccourcis clavier utilisés en jeu.",
+      "list": {
+        "ping": "Ping",
+        "link": "Créer un liens entre les cartes",
+        "present": "Présenter en avant",
+        "discard": "Déplacer la carte vers la défausse",
+        "remove": "Retirer la carte de la partie",
+        "freePlay": "Jouez la carte sans payer son coût en ressources",
+        "cardEffect": "Ajoutez une copie de la carte à la pile pour représenter son effet",
+        "hideReveal": "Retournez la carte face visible/face cachée",
+        "spin": "Faites pivoter la carte de 180 degrés.",
+        "hand": "Renvoyer la carte dans votre main",
+        "access": "Maintenez la touche enfoncée pour placer les cartes survolées au-dessus de toutes les autres cartes et y accéder plus facilement",
+        "quickGroupUngroup": "Grouper/Dégrouper la carte cliquée ou la carte du dessus de votre deck",
+        "mana": "Déplacer la carte vers la zone des ressources",
+        "counters": "Augmenter/Réduire le nombre de marqueurs sur la carte",
+        "endTurn": "Terminer votre tour",
+        "untap": "Dégager toutes les cartes sélectionnées",
+        "undo": "Annuler votre dernière action",
+        "manageTop": "Ouvrir la fenêtre de gestion du dessus de votre deck",
+        "emojiOne": "Envoyer la réaction 1",
+        "emojiTwo": "Envoyer la réaction 2",
+        "emojiThree": "Envoyer la réaction 3",
+        "emojiFour": "Envoyer la réaction 4",
+        "emojiFive": "Envoyer la réaction 5",
+        "emojiSix": "Envoyer la réaction 6",
+        "emojiSeven": "Envoyer la réaction 7"
+      },
+      "category": {
+        "actions": "Actions",
+        "interface": "Interface",
+        "emojis": "Emojis",
+        "commands": "Commandes"
+      },
+      "other": {
+        "pressKey": "Appuyez sur n'importe quelle touche",
+        "errorInvalidKey": "Touche invalide (A-Z uniquement)",
+        "errorConflict": "Touche déjà utilisée pour {{key}}"
+      }
+    },
     "profile": {
       "title": "Profil",
+      "subtitle": "Modifiez votre pseudo, votre avatar ou vos réactions.",
       "username": {
         "title": "Nom d'utilisateur"
       },
@@ -990,6 +1196,7 @@
     },
     "playmat": {
       "title": "Tapis de jeu",
+      "subtitle": "Changez votre tapis de jeu.",
       "current": {
         "title": "Tapis de jeu actuel"
       },
@@ -1009,13 +1216,33 @@
     },
     "account": {
       "title": "Compte",
+      "subtitle": "Ajoutez des amis, modifiez la liste des joueurs bloqués ou supprimez votre compte.",
       "loggedOut": "Vous devez être connecté"
     },
     "sleeves": {
-      "title": "Protège-cartes"
+      "title": "Protège-cartes",
+      "subtitle": "Ajouter des dos de cartes personnalisés."
     },
     "imageReplacement": {
-      "title": "Images personnalisées"
+      "title": "Images personnalisées",
+      "subtitle": "Remplacez l’image de n’importe quelle carte par celle de votre choix. Les autres joueurs verront également la nouvelle image.",
+      "activeReplacements": {
+        "empty": "Vous ne disposez d'aucun remplacement d'image.",
+        "placeholder": "Nom de la carte",
+        "newCardButton": "Nouvelle carte"
+      },
+      "replacementModal": {
+        "titleNew": "Ajouter un remplacement d'image",
+        "titleEdit": "Modifier un remplacement d'image",
+        "frontImageField": {
+          "label": "Liens vers l'image"
+        },
+        "backImageField": {
+          "label": "Liens vers le verso"
+        },
+        "preview": "Aperçu",
+        "previewBack": "Aperçu du dos"
+      }
     },
     "generic": {
       "inPlayLocked": "Retournez au menu principal pour modifier ce paramètre.",
