@@ -529,8 +529,6 @@
                     "keepAndStart": "Keep hand and start",
                     "mulliganHand": "Mulligan all",
                     "mulliganSelection": "Mulligan ({{count}})",
-                    "opponentDone": "Ready",
-                    "opponentInProgress": "In progress...",
                     "turnOrderSharedTurn": "Your starting hand",
                     "turnOrderFirst": "You go first",
                     "turnOrderSecond": "You go second",
@@ -869,8 +867,14 @@
                     "other": "sent {{cards}} ({{count}} cards) to the bottom of their {{deck}}"
                 },
                 "tokenCount": {
-                    "add": "created {{count}} {{card}} token",
-                    "remove": "removed {{count}} {{card}} token"
+                    "add": {
+                        "one": "created a {{card}} token",
+                        "other": "created {{count}} {{card}} tokens"
+                    },
+                    "remove": {
+                        "one": "removed a {{card}} token",
+                        "other": "removed {{count}} {{card}} tokens"
+                    }
                 },
                 "duplicate": "created a copy of {{card}}"
             },
